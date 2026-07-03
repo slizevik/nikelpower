@@ -15,8 +15,21 @@ class Settings:
     neo4j_user: str = os.getenv("NEO4J_USER", "neo4j")
     neo4j_password: str = os.getenv("NEO4J_PASSWORD", "nikelpower2026")
 
-    openai_api_key: str = os.getenv("OPENAI_API_KEY", "")
-    openai_model: str = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
+    # Yandex Cloud AI (OpenAI-совместимый API) — см. backend/sample.py
+    yandex_cloud_folder: str = os.getenv("YANDEX_CLOUD_FOLDER", "")
+    yandex_cloud_api_key: str = os.getenv("YANDEX_CLOUD_API_KEY", "")
+    yandex_cloud_model: str = os.getenv("YANDEX_CLOUD_MODEL", "")
+    yandex_embedding_model: str = os.getenv("YANDEX_EMBEDDING_MODEL", "")
+    yandex_cloud_base_url: str = os.getenv(
+        "YANDEX_CLOUD_BASE_URL", "https://ai.api.cloud.yandex.net/v1"
+    )
+
+    # Размерность вектора эмбеддингов (Yandex text-search-doc: 256)
+    embedding_dimensions: int = int(os.getenv("EMBEDDING_DIMENSIONS", "256"))
+    embedding_similarity_threshold: float = float(
+        os.getenv("EMBEDDING_SIMILARITY_THRESHOLD", "0.82")
+    )
+    dictionary_context_top_k: int = int(os.getenv("DICTIONARY_CONTEXT_TOP_K", "15"))
 
     redis_url: str = os.getenv("REDIS_URL", "redis://localhost:6379/0")
 

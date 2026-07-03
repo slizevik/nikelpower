@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import asyncio
 import logging
 from datetime import datetime, timezone
 
@@ -9,20 +10,30 @@ from graphiti_core import Graphiti
 from graphiti_core.nodes import EpisodeType
 
 from app.config import settings
+from app.dictionary.resolver import EntityDictionaryResolver
 from app.ingestion.chunker import TextChunk
-from app.ontology import EDGE_TYPE_MAP, EDGE_TYPES, ENTITY_TYPES, EXTRACTION_INSTRUCTIONS
+from app.ontology import EDGE_TYPE_MAP, EDGE_TYPES, ENTITY_TYPES
 
 logger = logging.getLogger(__name__)
 
 _graphiti: Graphiti | None = None
 _indices_built = False
+_resolver: EntityDictionaryResolver | None = None
+
+
+def get_resolver() -> EntityDictionaryResolver:
+    global _resolver
+    if _resolver is None:
+        _resolver = EntityDictionaryResolver()
+    return _resolver
 
 
 def get_graphiti() -> Graphiti:
     global _graphiti
     if _graphiti is None:
-        if not settings.openai_api_key:
-            raise RuntimeError("OPENAI_API_KEY is required for Graphiti LLM extraction")
+        if not settings.yandex_cloud_api_key:
+            raise RuntimeError("YANDEX_CLOUD_API_KEY is required for Graphiti LLM extraction")
+        # Graphiti использует OpenAI-совместимый клиент; Yandex AI подключается через base_url
         _graphiti = Graphiti(
             settings.neo4j_uri,
             settings.neo4j_user,
@@ -37,8 +48,22 @@ async def ensure_indices() -> None:
         return
     graphiti = get_graphiti()
     await graphiti.build_indices_and_constraints()
+    await asyncio.to_thread(get_resolver().ensure_ready)
     _indices_built = True
-    logger.info("Graphiti indices and constraints initialized")
+    logger.info("Graphiti and DictEntity indices initialized")
+
+
+def _instructions_for_chunk(chunk_text: str) -> str:
+    return get_resolver().build_instructions_for_chunk(chunk_text)
+
+
+def _sync_dictionary(nodes: list, source_document: str | None) -> None:
+    if not nodes:
+        return
+    try:
+        get_resolver().register_from_graphiti_nodes(nodes, source_document=source_document)
+    except Exception as exc:
+        logger.warning("Dictionary sync failed: %s", exc)
 
 
 async def ingest_chunk(chunk: TextChunk, reference_time: datetime | None = None) -> None:
@@ -52,7 +77,7 @@ async def ingest_chunk(chunk: TextChunk, reference_time: datetime | None = None)
         f"type={chunk.doc_type}; lang={chunk.language_hint}"
     )
 
-    await graphiti.add_episode(
+    result = await graphiti.add_episode(
         name=episode_name,
         episode_body=chunk.text,
         source=EpisodeType.text,
@@ -62,8 +87,11 @@ async def ingest_chunk(chunk: TextChunk, reference_time: datetime | None = None)
         entity_types=ENTITY_TYPES,
         edge_types=EDGE_TYPES,
         edge_type_map=EDGE_TYPE_MAP,
-        custom_extraction_instructions=EXTRACTION_INSTRUCTIONS,
+        custom_extraction_instructions=_instructions_for_chunk(chunk.text),
     )
+
+    nodes = getattr(result, "nodes", None) or []
+    _sync_dictionary(list(nodes), source_document=chunk.source_path)
 
 
 async def ingest_chunks_bulk(chunks: list[TextChunk]) -> None:
@@ -72,6 +100,11 @@ async def ingest_chunks_bulk(chunks: list[TextChunk]) -> None:
     ref = datetime.now(timezone.utc)
 
     from graphiti_core.utils.bulk_utils import RawEpisode
+
+    # Для bulk используем объединённый контекст словаря по первому чанку батча
+    combined_context = _instructions_for_chunk(
+        "\n".join(c.text[:1500] for c in chunks[:3])
+    )
 
     raw_episodes = []
     for chunk in chunks:
@@ -89,14 +122,19 @@ async def ingest_chunks_bulk(chunks: list[TextChunk]) -> None:
             )
         )
 
-    await graphiti.add_episode_bulk(
+    results = await graphiti.add_episode_bulk(
         raw_episodes,
         group_id=chunks[0].group_id if chunks else settings.graphiti_group_id,
         entity_types=ENTITY_TYPES,
         edge_types=EDGE_TYPES,
         edge_type_map=EDGE_TYPE_MAP,
-        custom_extraction_instructions=EXTRACTION_INSTRUCTIONS,
+        custom_extraction_instructions=combined_context,
     )
+
+    source = chunks[0].source_path if chunks else None
+    for item in results or []:
+        nodes = getattr(item, "nodes", None) or []
+        _sync_dictionary(list(nodes), source_document=source)
 
 
 async def search_graph(query: str, num_results: int = 10):
@@ -106,8 +144,11 @@ async def search_graph(query: str, num_results: int = 10):
 
 
 async def close_graphiti() -> None:
-    global _graphiti, _indices_built
+    global _graphiti, _indices_built, _resolver
     if _graphiti is not None:
         await _graphiti.close()
         _graphiti = None
         _indices_built = False
+    if _resolver is not None:
+        _resolver.store.close()
+        _resolver = None
