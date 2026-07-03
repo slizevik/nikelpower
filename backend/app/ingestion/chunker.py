@@ -32,7 +32,7 @@ def chunk_document(doc: ParsedDocument) -> list[TextChunk]:
         return []
 
     size = settings.chunk_size_chars
-    overlap = settings.chunk_overlap_chars
+    overlap = settings.effective_chunk_overlap_chars
     group_id = file_group_id(doc.source_path)
 
     chunks: list[TextChunk] = []
@@ -73,7 +73,11 @@ def chunk_document(doc: ParsedDocument) -> list[TextChunk]:
     for page_num, page_text in doc.pages:
         page_end = page_num
         segment = f"\n\n[page {page_num}]\n{page_text}"
-        while len(segment) > 0:
+        # Ограниченный цикл вместо while True: сегмент уменьшается на каждой итерации
+        max_iterations = max(1, len(segment) // max(1, size - overlap) + 2)
+        for _ in range(max_iterations):
+            if not segment:
+                break
             space = size - len(buffer)
             if len(segment) <= space:
                 buffer += segment
@@ -82,6 +86,11 @@ def chunk_document(doc: ParsedDocument) -> list[TextChunk]:
                 buffer += segment[:space]
                 segment = segment[space:]
                 flush()
+        else:
+            raise RuntimeError(
+                f"chunk_document: превышен лимит итераций ({max_iterations}) "
+                f"для {doc.source_path}"
+            )
 
     if buffer.strip():
         flush()

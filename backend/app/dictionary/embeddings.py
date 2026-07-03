@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from app.config import settings
+from app.llm.tracked_api import embeddings_create
 from app.llm.yandex_client import get_yandex_client
 
 
@@ -17,9 +18,11 @@ def _embedding_model_uri() -> str:
 
 def embed_text(text: str) -> list[float]:
     client = get_yandex_client()
-    response = client.embeddings.create(
+    clipped = text[:8000]
+    response = embeddings_create(
+        client,
         model=_embedding_model_uri(),
-        input=text[:8000],
+        input=clipped,
     )
     return response.data[0].embedding
 
@@ -28,9 +31,11 @@ def embed_texts(texts: list[str]) -> list[list[float]]:
     if not texts:
         return []
     client = get_yandex_client()
-    response = client.embeddings.create(
+    clipped = [t[:8000] for t in texts]
+    response = embeddings_create(
+        client,
         model=_embedding_model_uri(),
-        input=[t[:8000] for t in texts],
+        input=clipped,
     )
     return [item.embedding for item in response.data]
 

@@ -10,6 +10,7 @@ from graphiti_core import Graphiti
 from graphiti_core.nodes import EpisodeType
 
 from app.config import settings
+from app.llm.token_budget import count_tokens, get_token_budget
 from app.dictionary.resolver import EntityDictionaryResolver
 from app.ingestion.chunker import TextChunk
 from app.ontology import EDGE_TYPE_MAP, EDGE_TYPES, ENTITY_TYPES
@@ -66,8 +67,16 @@ def _sync_dictionary(nodes: list, source_document: str | None) -> None:
         logger.warning("Dictionary sync failed: %s", exc)
 
 
+def _charge_graphiti_tokens(chunk_text: str, operation: str) -> None:
+    """Оценка токенов Graphiti (несколько LLM-вызовов на один чанк)."""
+    instructions = _instructions_for_chunk(chunk_text)
+    estimate = (count_tokens(chunk_text) + count_tokens(instructions)) * 4
+    get_token_budget().record(estimate, operation)
+
+
 async def ingest_chunk(chunk: TextChunk, reference_time: datetime | None = None) -> None:
     await ensure_indices()
+    _charge_graphiti_tokens(chunk.text, "graphiti_ingest")
     graphiti = get_graphiti()
     ref = reference_time or datetime.now(timezone.utc)
 
@@ -96,6 +105,8 @@ async def ingest_chunk(chunk: TextChunk, reference_time: datetime | None = None)
 
 async def ingest_chunks_bulk(chunks: list[TextChunk]) -> None:
     await ensure_indices()
+    combined = "\n".join(c.text[:1500] for c in chunks[:3])
+    _charge_graphiti_tokens(combined, "graphiti_ingest_bulk")
     graphiti = get_graphiti()
     ref = datetime.now(timezone.utc)
 
@@ -139,6 +150,7 @@ async def ingest_chunks_bulk(chunks: list[TextChunk]) -> None:
 
 async def search_graph(query: str, num_results: int = 10):
     await ensure_indices()
+    get_token_budget().record(count_tokens(query) * 2, "graphiti_search")
     graphiti = get_graphiti()
     return await graphiti.search(query=query, num_results=num_results)
 

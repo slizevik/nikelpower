@@ -16,13 +16,13 @@ class Settings:
     neo4j_password: str = os.getenv("NEO4J_PASSWORD", "nikelpower2026")
 
     # Yandex Cloud AI (OpenAI-совместимый API) — см. backend/sample.py
-    yandex_cloud_folder: str = os.getenv("YANDEX_CLOUD_FOLDER", "")
-    yandex_cloud_api_key: str = os.getenv("YANDEX_CLOUD_API_KEY", "")
-    yandex_cloud_model: str = os.getenv("YANDEX_CLOUD_MODEL", "")
-    yandex_embedding_model: str = os.getenv("YANDEX_EMBEDDING_MODEL", "")
+    yandex_cloud_folder: str = os.getenv("YANDEX_CLOUD_FOLDER", "").strip().strip('"')
+    yandex_cloud_api_key: str = os.getenv("YANDEX_CLOUD_API_KEY", "").strip().strip('"')
+    yandex_cloud_model: str = os.getenv("YANDEX_CLOUD_MODEL", "").strip().strip('"')
+    yandex_embedding_model: str = os.getenv("YANDEX_EMBEDDING_MODEL", "").strip().strip('"')
     yandex_cloud_base_url: str = os.getenv(
         "YANDEX_CLOUD_BASE_URL", "https://ai.api.cloud.yandex.net/v1"
-    )
+    ).strip().strip('"')
 
     # Размерность вектора эмбеддингов (Yandex text-search-doc: 256)
     embedding_dimensions: int = int(os.getenv("EMBEDDING_DIMENSIONS", "256"))
@@ -37,10 +37,18 @@ class Settings:
     ingestion_state_dir: Path = _path_from_env("INGESTION_STATE_DIR", "data/ingestion")
 
     chunk_size_chars: int = int(os.getenv("CHUNK_SIZE_CHARS", "6000"))
-    chunk_overlap_chars: int = int(os.getenv("CHUNK_OVERLAP_CHARS", "400"))
+    chunk_overlap_percent: float = float(os.getenv("CHUNK_OVERLAP_PERCENT", "15"))
+    chunk_overlap_chars: int = int(os.getenv("CHUNK_OVERLAP_CHARS", "0"))
     ingestion_batch_size: int = int(os.getenv("INGESTION_BATCH_SIZE", "10"))
 
     graphiti_group_id: str = os.getenv("GRAPHITI_GROUP_ID", "nikelpower")
+
+    @property
+    def effective_chunk_overlap_chars(self) -> int:
+        """Перекрытие чанков: явное значение или процент от размера чанка."""
+        if self.chunk_overlap_chars > 0:
+            return self.chunk_overlap_chars
+        return max(1, int(self.chunk_size_chars * self.chunk_overlap_percent / 100.0))
 
 
 settings = Settings()
