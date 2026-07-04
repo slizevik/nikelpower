@@ -10,6 +10,7 @@ from graphiti_core import Graphiti
 from graphiti_core.nodes import EpisodeType
 
 from app.config import settings
+from app.ingestion.graphiti_factory import create_graphiti
 from app.llm.token_budget import count_tokens, get_token_budget
 from app.dictionary.resolver import EntityDictionaryResolver
 from app.ingestion.chunker import TextChunk
@@ -32,14 +33,7 @@ def get_resolver() -> EntityDictionaryResolver:
 def get_graphiti() -> Graphiti:
     global _graphiti
     if _graphiti is None:
-        if not settings.yandex_cloud_api_key:
-            raise RuntimeError("YANDEX_CLOUD_API_KEY is required for Graphiti LLM extraction")
-        # Graphiti использует OpenAI-совместимый клиент; Yandex AI подключается через base_url
-        _graphiti = Graphiti(
-            settings.neo4j_uri,
-            settings.neo4j_user,
-            settings.neo4j_password,
-        )
+        _graphiti = create_graphiti()
     return _graphiti
 
 

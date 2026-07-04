@@ -26,9 +26,11 @@ def get_yandex_client() -> OpenAI:
             raise RuntimeError(
                 "YANDEX_CLOUD_FOLDER не задан. Укажите ID каталога в .env"
             )
+        folder = settings.yandex_cloud_folder
         _client = OpenAI(
             api_key=settings.yandex_cloud_api_key,
             base_url=settings.yandex_cloud_base_url,
-            project=settings.yandex_cloud_folder,
+            project=folder,
+            default_headers={"x-folder-id": folder},
         )
     return _client

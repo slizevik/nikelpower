@@ -22,6 +22,19 @@ def _show_yandex_api_hint(exc: Exception) -> None:
             "3. Не используйте chat-модель (qwen, aliceai) для эмбеддингов\n"
             "4. folder в `emb://` должен совпадать с `YANDEX_CLOUD_FOLDER`"
         )
+    elif status == 403:
+        st.info(
+            "403 — Permission denied. Код и `.env` загружены, но **ключ не имеет прав** "
+            "на Yandex AI в этом каталоге.\n\n"
+            "В [консоли Yandex Cloud](https://console.yandex.cloud):\n"
+            "1. Каталог → **Сервисные аккаунты** → аккаунт, для которого создан API-ключ\n"
+            "2. **Роли** → добавить `ai.languageModels.user` (и при необходимости "
+            "`ai.imageGeneration.user`)\n"
+            "3. Убедитесь, что ключ создан для **того же** `YANDEX_CLOUD_FOLDER`\n"
+            "4. Проверьте, что на каталоге включена **оплата** и AI Studio доступен\n"
+            "5. Если ключ старый — создайте новый и обновите `YANDEX_CLOUD_API_KEY` в `.env`, "
+            "затем `docker compose up -d backend`"
+        )
 
 
 st.set_page_config(

@@ -1,0 +1,25 @@
+# Тестовый образ Graphiti + Yandex AI (без Streamlit/worker)
+FROM python:3.11-slim
+
+WORKDIR /app
+
+ENV PYTHONPATH=/app
+ENV PYTHONUNBUFFERED=1
+ENV PIP_DEFAULT_TIMEOUT=600
+ENV PIP_RETRIES=10
+
+COPY requirements-graphiti.txt .
+RUN --mount=type=cache,target=/root/.cache/pip \
+    pip install --upgrade pip && \
+    success=0 && \
+    for i in 1 2 3 4 5; do \
+      echo "=== pip attempt $i/5 ===" && \
+      pip install --retries 10 -r requirements-graphiti.txt && success=1 && break; \
+      echo "pip attempt $i failed, retry in 30s..."; sleep 30; \
+    done && \
+    test "$success" -eq 1
+
+COPY . .
+
+# Контейнер держим живым; тест: docker compose exec graphiti python scripts/test_graphiti.py
+CMD ["sleep", "infinity"]

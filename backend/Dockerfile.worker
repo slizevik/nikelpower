@@ -1,4 +1,4 @@
-# Полный образ worker: Graphiti, парсеры PDF/DOCX/PPTX, очередь Redis
+# Полный образ worker: Graphiti, парсеры, LibreOffice, очередь Redis
 FROM python:3.11-slim
 
 WORKDIR /app
@@ -7,6 +7,13 @@ ENV PYTHONPATH=/app
 ENV PYTHONUNBUFFERED=1
 ENV PIP_DEFAULT_TIMEOUT=300
 ENV PIP_RETRIES=5
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libreoffice-writer \
+    libreoffice-impress \
+    libreoffice-core \
+    fonts-dejavu-core \
+    && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt requirements-worker.txt ./
 RUN pip install --no-cache-dir --retries 5 \

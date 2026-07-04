@@ -2,7 +2,7 @@
 """
 Загрузка PDF из data/documents/pilot в Neo4j.
 
-Шаги: парсинг → чанки (перекрытие 15%) → эмбеддинги Yandex → DocumentChunk.
+Шаги: парсинг → paragraph chunks (~850 tok) → эмбеддинги Yandex → DocumentChunk + LexicalNode.
 
 Пример:
     cd backend
@@ -33,10 +33,10 @@ def main() -> int:
     pilot_dir = settings.documents_dir / "pilot"
     logger.info("Каталог pilot: %s", pilot_dir)
     logger.info(
-        "Параметры чанков: size=%s, overlap=%s симв. (%.0f%%)",
-        settings.chunk_size_chars,
-        settings.effective_chunk_overlap_chars,
-        settings.chunk_overlap_percent,
+        "Параметры чанков: target=%s tok, max=%s, overlap=%s para",
+        settings.chunk_target_tokens,
+        settings.chunk_max_tokens,
+        settings.chunk_overlap_paragraphs,
     )
 
     try:
@@ -56,7 +56,8 @@ def main() -> int:
         print()
 
     print("Проверка в Neo4j Browser:")
-    print("  MATCH (d:SourceDocument)-[:HAS_CHUNK]->(c) RETURN d.source_path, count(c)")
+    print("  MATCH (d:SourceDocument)-[:HAS_CHUNK]->(c) RETURN c.chunk_role, count(*)")
+    print("  MATCH (d:SourceDocument)-[:HAS_LEXICAL_NODE]->(l) RETURN l.block_type, count(*)")
     return 0
 
 

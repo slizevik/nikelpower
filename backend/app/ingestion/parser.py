@@ -1,32 +1,24 @@
-"""Extract text from PDF, DOCX, and PPTX documents."""
+"""Extract text from PDF, DOCX, and PPTX (legacy) + facade полного пайплайна."""
 
 from __future__ import annotations
 
-import re
-from dataclasses import dataclass
 from pathlib import Path
 
+from app.ingestion.exceptions import SUPPORTED_DOCUMENT_EXTENSIONS, UnsupportedFormatError
+from app.ingestion.language import detect_language_hint
+from app.ingestion.parser_types import ParsedDocument
 
-@dataclass
-class ParsedDocument:
-    source_path: str
-    doc_type: str
-    language_hint: str
-    pages: list[tuple[int, str]]  # (page_num, text)
-    full_text: str
+__all__ = [
+    "ParsedDocument",
+    "SUPPORTED_EXTENSIONS",
+    "detect_language_hint",
+    "parse_document",
+    "parse_document_legacy",
+    "iter_documents",
+    "UnsupportedFormatError",
+]
 
-
-SUPPORTED_EXTENSIONS = {".pdf", ".docx", ".pptx"}
-
-
-def detect_language_hint(text: str) -> str:
-    cyrillic = len(re.findall(r"[а-яА-ЯёЁ]", text))
-    latin = len(re.findall(r"[a-zA-Z]", text))
-    if cyrillic > latin * 1.5:
-        return "ru"
-    if latin > cyrillic * 1.5:
-        return "en"
-    return "mixed"
+SUPPORTED_EXTENSIONS = SUPPORTED_DOCUMENT_EXTENSIONS
 
 
 def parse_pdf(path: Path) -> ParsedDocument:
@@ -53,12 +45,13 @@ def parse_docx(path: Path) -> ParsedDocument:
 
     doc = Document(path)
     paragraphs = [p.text.strip() for p in doc.paragraphs if p.text.strip()]
+    pages = [(i + 1, p) for i, p in enumerate(paragraphs)]
     full_text = "\n\n".join(paragraphs)
     return ParsedDocument(
         source_path=str(path),
         doc_type="docx",
         language_hint=detect_language_hint(full_text),
-        pages=[(1, full_text)] if full_text else [],
+        pages=pages,
         full_text=full_text,
     )
 
@@ -90,6 +83,14 @@ def parse_pptx(path: Path) -> ParsedDocument:
 
 
 def parse_document(path: Path) -> ParsedDocument:
+    """Полный пайплайн: LibreOffice → PDF → VLM для изображений."""
+    from app.ingestion.orchestrator import parse_document_full, to_legacy_parsed_document
+
+    return to_legacy_parsed_document(parse_document_full(path))
+
+
+def parse_document_legacy(path: Path) -> ParsedDocument:
+    """Быстрый парсинг без LibreOffice/VLM (только текст)."""
     suffix = path.suffix.lower()
     if suffix == ".pdf":
         return parse_pdf(path)
@@ -97,14 +98,14 @@ def parse_document(path: Path) -> ParsedDocument:
         return parse_docx(path)
     if suffix == ".pptx":
         return parse_pptx(path)
-    raise ValueError(f"Unsupported format: {suffix}")
+    raise UnsupportedFormatError(str(path), suffix)
 
 
 def iter_documents(root: Path) -> list[Path]:
     if not root.exists():
         return []
-    files: list[Path] = []
-    for path in sorted(root.rglob("*")):
-        if path.is_file() and path.suffix.lower() in SUPPORTED_EXTENSIONS:
-            files.append(path)
-    return files
+    return [
+        path
+        for path in sorted(root.rglob("*"))
+        if path.is_file() and path.suffix.lower() in SUPPORTED_EXTENSIONS
+    ]

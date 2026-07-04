@@ -15,6 +15,8 @@ from neo4j import Driver, GraphDatabase
 
 from app.config import settings
 from app.ingestion.chunker import TextChunk
+from app.ingestion.lexical import ParagraphBlock
+from app.ingestion.lexical_store import LexicalNodeStore
 
 logger = logging.getLogger(__name__)
 
@@ -35,6 +37,11 @@ class DocumentChunkStore:
 
     def __init__(self, driver: Driver | None = None) -> None:
         self._driver = driver
+        self._lexical = LexicalNodeStore(driver)
+
+    @property
+    def lexical_store(self) -> LexicalNodeStore:
+        return self._lexical
 
     @property
     def driver(self) -> Driver:
@@ -43,15 +50,18 @@ class DocumentChunkStore:
                 settings.neo4j_uri,
                 auth=(settings.neo4j_user, settings.neo4j_password),
             )
+            self._lexical._driver = self._driver
         return self._driver
 
     def close(self) -> None:
         if self._driver is not None:
             self._driver.close()
             self._driver = None
+        self._lexical._driver = None
 
     def ensure_schema(self) -> None:
-        """Создаёт ограничения и векторный индекс для DocumentChunk."""
+        """Создаёт ограничения и векторный индекс для DocumentChunk и LexicalNode."""
+        self._lexical.ensure_schema()
         with self.driver.session() as session:
             session.run(
                 "CREATE CONSTRAINT document_chunk_id IF NOT EXISTS "
@@ -74,6 +84,9 @@ class DocumentChunkStore:
                 dims=settings.embedding_dimensions,
             )
         logger.info("DocumentChunk schema ensured")
+
+    def upsert_lexical_blocks(self, group_id: str, blocks: list[ParagraphBlock]) -> None:
+        self._lexical.upsert_blocks(group_id, blocks)
 
     def upsert_source_document(
         self,
@@ -128,6 +141,10 @@ class DocumentChunkStore:
                         c.language_hint = $language_hint,
                         c.source_path = $source_path,
                         c.embedding = $embedding,
+                        c.chunk_role = $chunk_role,
+                        c.block_ids = $block_ids,
+                        c.token_count = $token_count,
+                        c.section_hint = $section_hint,
                         c.updated_at = $now
                     MERGE (d)-[:HAS_CHUNK]->(c)
                     """,
@@ -141,8 +158,14 @@ class DocumentChunkStore:
                     language_hint=chunk.language_hint,
                     source_path=chunk.source_path,
                     embedding=vector,
+                    chunk_role=chunk.chunk_role,
+                    block_ids=chunk.block_ids,
+                    token_count=chunk.token_count,
+                    section_hint=chunk.section_hint,
                     now=now,
                 )
+                if chunk.block_ids:
+                    self._lexical.link_chunk_to_blocks(chunk.chunk_id, chunk.block_ids)
                 saved += 1
 
         return saved

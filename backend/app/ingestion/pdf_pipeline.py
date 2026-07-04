@@ -1,7 +1,7 @@
 """
-Пайплайн загрузки PDF в Neo4j: парсинг → чанки (15% overlap) → эмбеддинги → граф.
+Пайплайн загрузки документов в Neo4j: парсинг → чанки → эмбеддинги.
 
-Используется для документов из data/documents/pilot и других каталогов.
+Поддерживает PDF, DOCX, PPTX (LibreOffice + Qwen-VL по архитектуре парсинга).
 """
 
 from __future__ import annotations
@@ -14,19 +14,15 @@ from app.dictionary.embeddings import embed_texts
 from app.dictionary.store import EntityDictionaryStore
 from app.ingestion.chunk_store import DocumentChunkStore, IngestStats
 from app.ingestion.chunker import TextChunk, chunk_document, file_group_id
-from app.ingestion.parser import parse_document
+from app.ingestion.exceptions import SUPPORTED_DOCUMENT_EXTENSIONS
+from app.ingestion.orchestrator import parse_document_full, to_legacy_parsed_document
+from app.ingestion.paragraphs import document_to_blocks
 
 logger = logging.getLogger(__name__)
 
 
-class PdfIngestionPipeline:
-    """
-    Полный цикл обработки одного PDF-файла:
-    1. Извлечение текста
-    2. Разбиение на чанки с перекрытием (по умолчанию 15%)
-    3. Векторизация через Yandex embeddings API
-    4. Сохранение узлов SourceDocument и DocumentChunk в Neo4j
-    """
+class DocumentIngestionPipeline:
+    """Парсинг документа → paragraph chunks → Yandex embeddings → Neo4j."""
 
     def __init__(
         self,
@@ -42,102 +38,98 @@ class PdfIngestionPipeline:
             self.chunk_store.close()
             self.dict_store.close()
 
-    def ingest_pdf(self, pdf_path: Path) -> IngestStats:
-        pdf_path = pdf_path.resolve()
-        if not pdf_path.exists():
-            raise FileNotFoundError(f"Файл не найден: {pdf_path}")
-        if pdf_path.suffix.lower() != ".pdf":
-            raise ValueError(f"Ожидается PDF, получено: {pdf_path.suffix}")
+    def ingest_document(self, doc_path: Path, *, analyze_images: bool | None = None) -> IngestStats:
+        doc_path = doc_path.resolve()
+        if not doc_path.exists():
+            raise FileNotFoundError(f"Файл не найден: {doc_path}")
+        suffix = doc_path.suffix.lower()
+        if suffix not in SUPPORTED_DOCUMENT_EXTENSIONS:
+            raise ValueError(f"Формат не поддерживается: {suffix}")
 
-        logger.info("Парсинг PDF: %s", pdf_path)
-        parsed = parse_document(pdf_path)
+        logger.info("Парсинг документа: %s", doc_path.name)
+        parse_result = parse_document_full(doc_path, analyze_images=analyze_images)
+        parsed = to_legacy_parsed_document(parse_result)
 
         if not parsed.full_text.strip():
-            raise ValueError(
-                f"PDF не содержит извлекаемого текста (возможно скан): {pdf_path.name}"
-            )
+            raise ValueError(f"Документ не содержит текста: {doc_path.name}")
+
+        logger.info(
+            "Изображений: %s, описаний VLM: %s, PDF: %s",
+            len(parse_result.images),
+            len(parse_result.image_descriptions),
+            parse_result.pdf_path,
+        )
 
         chunks = chunk_document(parsed)
         if not chunks:
-            raise ValueError(f"Не удалось создать чанки для {pdf_path.name}")
+            raise ValueError(f"Не удалось создать чанки для {doc_path.name}")
 
-        overlap = settings.effective_chunk_overlap_chars
+        blocks = document_to_blocks(parsed)
         logger.info(
-            "Создано %s чанков (size=%s, overlap=%s, %.0f%%)",
+            "Чанков: %s (target=%s tok), lexical blocks: %s",
             len(chunks),
-            settings.chunk_size_chars,
-            overlap,
-            settings.chunk_overlap_percent,
+            settings.chunk_target_tokens,
+            len(blocks),
         )
 
         self.chunk_store.ensure_schema()
         self.dict_store.ensure_schema()
 
-        group_id = file_group_id(str(pdf_path))
+        group_id = file_group_id(str(doc_path))
         self.chunk_store.upsert_source_document(
-            source_path=str(pdf_path),
+            source_path=str(doc_path),
             group_id=group_id,
             doc_type=parsed.doc_type,
             language_hint=parsed.language_hint,
             chunks_count=len(chunks),
         )
+        self.chunk_store.upsert_lexical_blocks(group_id, blocks)
 
         saved_total = self._vectorize_and_save(chunks)
-
         return IngestStats(
-            source_path=str(pdf_path),
+            source_path=str(doc_path),
             group_id=group_id,
             chunks_total=len(chunks),
             chunks_saved=saved_total,
             document_node_created=True,
         )
 
+    def ingest_pdf(self, pdf_path: Path) -> IngestStats:
+        return self.ingest_document(pdf_path)
+
     def _vectorize_and_save(self, chunks: list[TextChunk]) -> int:
         batch_size = max(1, settings.ingestion_batch_size)
         saved = 0
-
         for start in range(0, len(chunks), batch_size):
             batch = chunks[start : start + batch_size]
-            texts = [c.text for c in batch]
-
-            logger.info(
-                "Эмбеддинги: батч %s–%s из %s",
-                start + 1,
-                start + len(batch),
-                len(chunks),
-            )
-            vectors = embed_texts(texts)
+            vectors = embed_texts([c.text for c in batch])
             saved += self.chunk_store.save_chunk_batch(batch, vectors)
-
         return saved
 
 
+# Обратная совместимость
+PdfIngestionPipeline = DocumentIngestionPipeline
+
+
 def ingest_pilot_pdfs(pilot_dir: Path | None = None) -> list[IngestStats]:
-    """Обрабатывает все PDF из каталога pilot."""
     root = pilot_dir or (settings.documents_dir / "pilot")
     root = root.resolve()
-
     if not root.is_dir():
         raise FileNotFoundError(f"Каталог pilot не найден: {root}")
 
-    pdf_files = sorted(root.glob("*.pdf"))
-    if not pdf_files:
-        raise FileNotFoundError(f"В {root} нет PDF-файлов")
+    files = sorted(
+        p for p in root.iterdir()
+        if p.is_file() and p.suffix.lower() in SUPPORTED_DOCUMENT_EXTENSIONS
+    )
+    if not files:
+        raise FileNotFoundError(f"В {root} нет PDF/DOCX/PPTX")
 
-    pipeline = PdfIngestionPipeline()
+    pipeline = DocumentIngestionPipeline()
     results: list[IngestStats] = []
-
     try:
-        for pdf_path in pdf_files:
-            logger.info("=== Обработка: %s ===", pdf_path.name)
-            stats = pipeline.ingest_pdf(pdf_path)
-            results.append(stats)
-            logger.info(
-                "Готово: %s чанков сохранено для %s",
-                stats.chunks_saved,
-                pdf_path.name,
-            )
+        for doc_path in files:
+            logger.info("=== %s ===", doc_path.name)
+            results.append(pipeline.ingest_document(doc_path))
     finally:
         pipeline.close()
-
     return results
