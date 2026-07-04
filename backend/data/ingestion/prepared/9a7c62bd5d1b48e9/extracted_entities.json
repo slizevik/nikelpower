@@ -1,0 +1,616 @@
+{
+  "source_path": "/data/documents/uploads/f4bed6956545_Доклад_Вязовой О.Н.pdf",
+  "document_category": "talk",
+  "document_title": "f4bed6956545_Доклад_Вязовой О.Н.pdf",
+  "language_hint": "ru",
+  "entities": [
+    {
+      "entity_type": "Material",
+      "name": "драгоценные металлы",
+      "attributes": {},
+      "evidence": "производства драгоценных металлов"
+    },
+    {
+      "entity_type": "Material",
+      "name": "никель",
+      "attributes": {},
+      "evidence": "электроэкстракции никеля"
+    },
+    {
+      "entity_type": "Material",
+      "name": "селен",
+      "attributes": {},
+      "evidence": "обогащенных селеном"
+    },
+    {
+      "entity_type": "Material",
+      "name": "SiO2",
+      "attributes": {},
+      "evidence": "SiO2"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Cu",
+      "attributes": {},
+      "evidence": "Cu"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Pt",
+      "attributes": {},
+      "evidence": "суммы Pt, Pd"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Pd",
+      "attributes": {},
+      "evidence": "суммы Pt, Pd"
+    },
+    {
+      "entity_type": "Material",
+      "name": "сульфат свинца",
+      "attributes": {},
+      "evidence": "сульфат свинца и сульфат бария"
+    },
+    {
+      "entity_type": "Material",
+      "name": "сульфат бария",
+      "attributes": {},
+      "evidence": "сульфат свинца и сульфат бария"
+    },
+    {
+      "entity_type": "Material",
+      "name": "NiO",
+      "attributes": {},
+      "evidence": "NiO"
+    },
+    {
+      "entity_type": "Material",
+      "name": "вторичные сульфиды",
+      "attributes": {},
+      "evidence": "вторичные сульфиды"
+    },
+    {
+      "entity_type": "Material",
+      "name": "силикатная составляющая",
+      "attributes": {},
+      "evidence": "силикатная составляющая"
+    },
+    {
+      "entity_type": "Material",
+      "name": "ПНТП",
+      "attributes": {},
+      "evidence": "ОХВ ПНТП"
+    },
+    {
+      "entity_type": "Material",
+      "name": "КПП",
+      "attributes": {},
+      "evidence": "товарных концентратов КПП"
+    },
+    {
+      "entity_type": "Material",
+      "name": "КМСП",
+      "attributes": {},
+      "evidence": "КМСП"
+    },
+    {
+      "entity_type": "Material",
+      "name": "МСП",
+      "attributes": {},
+      "evidence": "селекции МСП"
+    },
+    {
+      "entity_type": "Material",
+      "name": "SO2",
+      "attributes": {},
+      "evidence": "выбросы SO2"
+    },
+    {
+      "entity_type": "Material",
+      "name": "пар",
+      "attributes": {},
+      "evidence": "пар, эл. энергия"
+    },
+    {
+      "entity_type": "Material",
+      "name": "эл. энергия",
+      "attributes": {},
+      "evidence": "пар, эл. энергия"
+    },
+    {
+      "entity_type": "Process",
+      "name": "реконфигурация производства",
+      "attributes": {},
+      "evidence": "реконфигурации производства драгоценных металлов"
+    },
+    {
+      "entity_type": "Process",
+      "name": "переработка материалов",
+      "attributes": {},
+      "evidence": "технологии переработки материалов ДМ"
+    },
+    {
+      "entity_type": "Process",
+      "name": "производство концентратов",
+      "attributes": {},
+      "evidence": "технологии производства концентратов ДМ"
+    },
+    {
+      "entity_type": "Process",
+      "name": "хлорное выщелачивание",
+      "attributes": {},
+      "evidence": "Схема хлорного выщелачивания"
+    },
+    {
+      "entity_type": "Process",
+      "name": "электроэкстракция",
+      "attributes": {},
+      "evidence": "электроэкстракции никеля"
+    },
+    {
+      "entity_type": "Process",
+      "name": "электрорафинирование",
+      "attributes": {},
+      "evidence": "Схема электрорафинирования анодов"
+    },
+    {
+      "entity_type": "Process",
+      "name": "флотация",
+      "attributes": {},
+      "evidence": "пенный продукт флотации"
+    },
+    {
+      "entity_type": "Process",
+      "name": "гидрохлорирование",
+      "attributes": {},
+      "evidence": "головным переделом гидрохлорирования"
+    },
+    {
+      "entity_type": "Process",
+      "name": "аффинаж",
+      "attributes": {},
+      "evidence": "вскрываемость при аффинаже"
+    },
+    {
+      "entity_type": "Process",
+      "name": "НИОКР",
+      "attributes": {},
+      "evidence": "выполнения НИОКР"
+    },
+    {
+      "entity_type": "Process",
+      "name": "НИР",
+      "attributes": {},
+      "evidence": "НИР (Научно-исследовательские работы)"
+    },
+    {
+      "entity_type": "Process",
+      "name": "ОКР",
+      "attributes": {},
+      "evidence": "ОКР и производство"
+    },
+    {
+      "entity_type": "Process",
+      "name": "обогащение",
+      "attributes": {},
+      "evidence": "продуктов, обогащенных селеном"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "растровый электронный микроскоп",
+      "attributes": {},
+      "evidence": "на растровом электронном микроскопе"
+    },
+    {
+      "entity_type": "Property",
+      "name": "химический состав",
+      "attributes": {},
+      "evidence": "химического и фазового состава"
+    },
+    {
+      "entity_type": "Property",
+      "name": "фазовый состав",
+      "attributes": {},
+      "evidence": "химического и фазового состава"
+    },
+    {
+      "entity_type": "Property",
+      "name": "технологическое поведение",
+      "attributes": {},
+      "evidence": "их технологического поведения"
+    },
+    {
+      "entity_type": "Property",
+      "name": "селекция",
+      "attributes": {},
+      "evidence": "высокая селекция МСП"
+    },
+    {
+      "entity_type": "Property",
+      "name": "экологическая опасность",
+      "attributes": {},
+      "evidence": "экологическая опасность"
+    },
+    {
+      "entity_type": "Property",
+      "name": "автоматизация",
+      "attributes": {},
+      "evidence": "сложность автоматизации"
+    },
+    {
+      "entity_type": "Property",
+      "name": "качество концентратов",
+      "attributes": {},
+      "evidence": "качество концентратов"
+    },
+    {
+      "entity_type": "Property",
+      "name": "прямое извлечение",
+      "attributes": {},
+      "evidence": "прямым извлечением"
+    },
+    {
+      "entity_type": "Property",
+      "name": "капитальные затраты",
+      "attributes": {},
+      "evidence": "капитальными и операционными затратами"
+    },
+    {
+      "entity_type": "Property",
+      "name": "операционные затраты",
+      "attributes": {},
+      "evidence": "капитальными и операционными затратами"
+    },
+    {
+      "entity_type": "Property",
+      "name": "управляемость",
+      "attributes": {},
+      "evidence": "управляемостью и стабильностью"
+    },
+    {
+      "entity_type": "Property",
+      "name": "стабильность",
+      "attributes": {},
+      "evidence": "управляемостью и стабильностью"
+    },
+    {
+      "entity_type": "Property",
+      "name": "уровень риска",
+      "attributes": {},
+      "evidence": "Уровень риска"
+    },
+    {
+      "entity_type": "Property",
+      "name": "масштаб работ",
+      "attributes": {},
+      "evidence": "рост масштаба/стоимости работ"
+    },
+    {
+      "entity_type": "Property",
+      "name": "стоимость работ",
+      "attributes": {},
+      "evidence": "рост масштаба/стоимости работ"
+    },
+    {
+      "entity_type": "Property",
+      "name": "морфология",
+      "attributes": {},
+      "evidence": "разный контраст и морфологию"
+    },
+    {
+      "entity_type": "Property",
+      "name": "текстура",
+      "attributes": {},
+      "evidence": "демонстрирует текстуру внутри зерна"
+    },
+    {
+      "entity_type": "Property",
+      "name": "размер зерен",
+      "attributes": {},
+      "evidence": "размер зерен варьируется"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "лабораторная стадия",
+      "attributes": {},
+      "evidence": "Проведение лабораторной стадии"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "ТЭР",
+      "attributes": {},
+      "evidence": "выполнение ТЭР"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "анализ чувствительности",
+      "attributes": {},
+      "evidence": "Подготовка анализа чувствительности"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "НСТ",
+      "attributes": {},
+      "evidence": "Прохождение НТС"
+    },
+    {
+      "entity_type": "Publication",
+      "name": "Доклад Вязовой О.Н.",
+      "attributes": {},
+      "evidence": "Доклад_Вязовой О.Н.pdf"
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Вязова О.Н.",
+      "attributes": {
+        "canonical_name": "Вязова О.Н.",
+        "organization": "Норникель",
+        "is_russian": true
+      },
+      "evidence": "Доклад_Вязовой О.Н.pdf"
+    },
+    {
+      "entity_type": "Facility",
+      "name": "Норникель",
+      "attributes": {},
+      "evidence": "организации «Норникель»"
+    },
+    {
+      "entity_type": "Facility",
+      "name": "Институт Гипроникель",
+      "attributes": {},
+      "evidence": "«Институт Гипроникель»"
+    },
+    {
+      "entity_type": "Facility",
+      "name": "КГМК",
+      "attributes": {},
+      "evidence": "Сырья ХМЦ КГМК"
+    }
+  ],
+  "relations": [
+    {
+      "relation_type": "described_in",
+      "source_name": "Вязова О.Н.",
+      "source_type": "Expert",
+      "target_name": "Доклад Вязовой О.Н.",
+      "target_type": "Publication",
+      "attributes": {},
+      "evidence": "Доклад_Вязовой О.Н.pdf"
+    },
+    {
+      "relation_type": "affiliated_with",
+      "source_name": "Вязова О.Н.",
+      "source_type": "Expert",
+      "target_name": "Норникель",
+      "target_type": "Facility",
+      "attributes": {
+        "original_relation_type": "affiliated_with"
+      },
+      "evidence": "Доклад_Вязовой О.Н.pdf"
+    },
+    {
+      "relation_type": "affiliated_with",
+      "source_name": "Институт Гипроникель",
+      "source_type": "Facility",
+      "target_name": "Норникель",
+      "target_type": "Facility",
+      "attributes": {
+        "original_relation_type": "affiliated_with"
+      },
+      "evidence": "организации «Норникель» и «Институт Гипроникель»"
+    },
+    {
+      "relation_type": "affiliated_with",
+      "source_name": "КГМК",
+      "source_type": "Facility",
+      "target_name": "Норникель",
+      "target_type": "Facility",
+      "attributes": {
+        "original_relation_type": "affiliated_with"
+      },
+      "evidence": "Сырья ХМЦ КГМК"
+    },
+    {
+      "relation_type": "leads_to",
+      "source_name": "лабораторная стадия",
+      "source_type": "Experiment",
+      "target_name": "ТЭР",
+      "target_type": "Experiment",
+      "attributes": {
+        "original_relation_type": "leads_to"
+      },
+      "evidence": "Проведение лабораторной стадии и подготовка ИД для выполнения расчета ТЭР"
+    },
+    {
+      "relation_type": "leads_to",
+      "source_name": "ТЭР",
+      "source_type": "Experiment",
+      "target_name": "анализ чувствительности",
+      "target_type": "Experiment",
+      "attributes": {
+        "original_relation_type": "leads_to"
+      },
+      "evidence": "Подготовка анализа чувствительности и проведение анализа проекта"
+    },
+    {
+      "relation_type": "leads_to",
+      "source_name": "анализ чувствительности",
+      "source_type": "Experiment",
+      "target_name": "НСТ",
+      "target_type": "Experiment",
+      "attributes": {
+        "original_relation_type": "leads_to"
+      },
+      "evidence": "Подготовка анализа чувствительности... Прохождение НТС"
+    },
+    {
+      "relation_type": "part_of_process",
+      "source_name": "хлорное выщелачивание",
+      "source_type": "Process",
+      "target_name": "электроэкстракция",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "part_of_process"
+      },
+      "evidence": "Схема хлорного выщелачивания - электроэкстракции никеля"
+    },
+    {
+      "relation_type": "replaced_by",
+      "source_name": "электрорафинирование",
+      "source_type": "Process",
+      "target_name": "хлорное выщелачивание",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "replaced_by"
+      },
+      "evidence": "изменение технологии производства товарного никеля с электрорафинирования никелевых анодов на хлорное растворение... электроэкстракцию"
+    },
+    {
+      "relation_type": "used_to_measure",
+      "source_name": "растровый электронный микроскоп",
+      "source_type": "Equipment",
+      "target_name": "морфология",
+      "target_type": "Property",
+      "attributes": {
+        "original_relation_type": "used_to_measure"
+      },
+      "evidence": "на растровом электронном микроскопе... морфологию"
+    },
+    {
+      "relation_type": "covers",
+      "source_name": "TRL",
+      "source_type": "technology_readiness_level",
+      "target_name": "НИР",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "covers"
+      },
+      "evidence": "НИР (Научно-исследовательские работы): TRL 1-6"
+    },
+    {
+      "relation_type": "covers",
+      "source_name": "TRL",
+      "source_type": "technology_readiness_level",
+      "target_name": "ОКР",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "covers"
+      },
+      "evidence": "ОКР и производство: TRL 7-9"
+    },
+    {
+      "relation_type": "has_high",
+      "source_name": "НИР",
+      "source_type": "Process",
+      "target_name": "уровень риска",
+      "target_type": "Property",
+      "attributes": {
+        "original_relation_type": "has_high"
+      },
+      "evidence": "на этапе НИР (TRL 1-6) уровень риска высок"
+    },
+    {
+      "relation_type": "has_low",
+      "source_name": "ОКР",
+      "source_type": "Process",
+      "target_name": "уровень риска",
+      "target_type": "Property",
+      "attributes": {
+        "original_relation_type": "has_low"
+      },
+      "evidence": "снижается по мере перехода к ОКР и производству"
+    }
+  ],
+  "other_entities": [
+    {
+      "entity_type": "technology_readiness_level",
+      "name": "TRL",
+      "attributes": {},
+      "evidence": "TRL 1-9 (Уровни готовности технологии)"
+    },
+    {
+      "entity_type": "project_phase",
+      "name": "Концептуальная стадия",
+      "attributes": {},
+      "evidence": "Концептуальная стадия проекта"
+    },
+    {
+      "entity_type": "project_phase",
+      "name": "Стадия технико-экономического обоснования",
+      "attributes": {},
+      "evidence": "Стадия технико-экономического обоснования"
+    },
+    {
+      "entity_type": "project_phase",
+      "name": "Стадия разработки",
+      "attributes": {},
+      "evidence": "Стадия разработки"
+    },
+    {
+      "entity_type": "project_phase",
+      "name": "Стадия ранней коммерциализации",
+      "attributes": {},
+      "evidence": "Стадия ранней коммерциализации"
+    },
+    {
+      "entity_type": "metric",
+      "name": "Сумма ДМ",
+      "attributes": {},
+      "evidence": "Сумма ДМ в 5-7 раз больше"
+    },
+    {
+      "entity_type": "metric",
+      "name": "ОХВ ПНТП",
+      "attributes": {},
+      "evidence": "ОХВ ПНТП (ЦЭН-2), %"
+    },
+    {
+      "entity_type": "metric",
+      "name": "Ni шлам",
+      "attributes": {},
+      "evidence": "Ni шлам (ЦЭН-1)"
+    },
+    {
+      "entity_type": "metric",
+      "name": "ЦЭН-2",
+      "attributes": {},
+      "evidence": "ЦЭН-2"
+    },
+    {
+      "entity_type": "metric",
+      "name": "ЦЭН-1",
+      "attributes": {},
+      "evidence": "ЦЭН-1"
+    },
+    {
+      "entity_type": "metric",
+      "name": "НЗП",
+      "attributes": {},
+      "evidence": "технологического НЗП"
+    },
+    {
+      "entity_type": "document_section",
+      "name": "СЦА",
+      "attributes": {},
+      "evidence": "Выполнены предварительные ТР, СЦА, компоновочные решения"
+    },
+    {
+      "entity_type": "document_section",
+      "name": "СМО",
+      "attributes": {},
+      "evidence": "выданы задания в СМО"
+    },
+    {
+      "entity_type": "document_section",
+      "name": "ТЭО",
+      "attributes": {},
+      "evidence": "и ТЭО для выполнения ТЭР"
+    }
+  ],
+  "clarification_questions": [],
+  "is_final_answer": true,
+  "chunks_processed": 1,
+  "prompt_source": "builtin"
+}

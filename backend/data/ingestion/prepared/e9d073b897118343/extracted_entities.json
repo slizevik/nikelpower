@@ -1,0 +1,341 @@
+{
+  "source_path": "/data/documents/uploads/2d7f9188254b_Доклад_Вязовой О.Н.pdf",
+  "document_category": "talk",
+  "document_title": "2d7f9188254b_Доклад_Вязовой О.Н.pdf",
+  "language_hint": "ru",
+  "entities": [
+    {
+      "entity_type": "Material",
+      "name": "драгоценные металлы",
+      "attributes": {},
+      "evidence": "производства драгоценных металлов"
+    },
+    {
+      "entity_type": "Material",
+      "name": "никель",
+      "attributes": {},
+      "evidence": "электроэкстракции никеля"
+    },
+    {
+      "entity_type": "Material",
+      "name": "селен",
+      "attributes": {},
+      "evidence": "продуктов, обогащенных селеном"
+    },
+    {
+      "entity_type": "Material",
+      "name": "тантал",
+      "attributes": {},
+      "evidence": "Восстановление Та (тантал)"
+    },
+    {
+      "entity_type": "Material",
+      "name": "платина",
+      "attributes": {},
+      "evidence": "извлечения платины и палладия"
+    },
+    {
+      "entity_type": "Material",
+      "name": "палладий",
+      "attributes": {},
+      "evidence": "извлечения платины и палладия"
+    },
+    {
+      "entity_type": "Material",
+      "name": "силикатная составляющая",
+      "attributes": {},
+      "evidence": "упорных примесей (силикатная составляющая"
+    },
+    {
+      "entity_type": "Material",
+      "name": "SO2",
+      "attributes": {},
+      "evidence": "высокие выбросы SO2"
+    },
+    {
+      "entity_type": "Process",
+      "name": "переработка материалов ДМ",
+      "attributes": {},
+      "evidence": "технологии переработки материалов ДМ с получением товарных концентратов"
+    },
+    {
+      "entity_type": "Process",
+      "name": "хлорное выщелачивание",
+      "attributes": {},
+      "evidence": "Схема хлорного выщелачивания"
+    },
+    {
+      "entity_type": "Process",
+      "name": "электрорафинирование",
+      "attributes": {},
+      "evidence": "Схема электрорафинирования анодов"
+    },
+    {
+      "entity_type": "Process",
+      "name": "хлорное растворение",
+      "attributes": {},
+      "evidence": "на хлорное растворение ПНТП-электроэкстракцию никеля"
+    },
+    {
+      "entity_type": "Process",
+      "name": "гидрохлорирование",
+      "attributes": {},
+      "evidence": "головным переделом гидрохлорирования пенного продукта"
+    },
+    {
+      "entity_type": "Process",
+      "name": "флотация",
+      "attributes": {},
+      "evidence": "Пенный продукт флотации"
+    },
+    {
+      "entity_type": "Process",
+      "name": "аффинаж",
+      "attributes": {},
+      "evidence": "плохая вскрываемость при аффинаже"
+    },
+    {
+      "entity_type": "Process",
+      "name": "гидропереработка",
+      "attributes": {},
+      "evidence": "Гидропереработка ФК ОХВ"
+    },
+    {
+      "entity_type": "Process",
+      "name": "фильтрация",
+      "attributes": {},
+      "evidence": "Фильтрация"
+    },
+    {
+      "entity_type": "Process",
+      "name": "гидролитическая очистка",
+      "attributes": {},
+      "evidence": "гидролитическая очистка"
+    },
+    {
+      "entity_type": "Process",
+      "name": "осаждение",
+      "attributes": {},
+      "evidence": "Осаждение Pt-Pd концентрата"
+    },
+    {
+      "entity_type": "Process",
+      "name": "обезвоживание",
+      "attributes": {},
+      "evidence": "Обезвоживание раствора"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "сканирующий электронный микроскоп",
+      "attributes": {},
+      "evidence": "в сканирующем электронном микроскопе"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "просвечивающая электронная микроскопия",
+      "attributes": {},
+      "evidence": "просвечивающая электронная микроскопия - ПЭМ/TEM"
+    },
+    {
+      "entity_type": "Property",
+      "name": "качество концентратов",
+      "attributes": {},
+      "evidence": "качество концентратов"
+    },
+    {
+      "entity_type": "Property",
+      "name": "селекция",
+      "attributes": {},
+      "evidence": "показателями селекции"
+    },
+    {
+      "entity_type": "Property",
+      "name": "прямое извлечение",
+      "attributes": {},
+      "evidence": "прямым извлечением"
+    },
+    {
+      "entity_type": "Property",
+      "name": "экологическая опасность",
+      "attributes": {},
+      "evidence": "экологическая опасность"
+    },
+    {
+      "entity_type": "Property",
+      "name": "автоматизация",
+      "attributes": {},
+      "evidence": "повысить уровень автоматизации"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "лабораторная стадия",
+      "attributes": {},
+      "evidence": "Проведение лабораторной стадии"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "ТЭР",
+      "attributes": {},
+      "evidence": "Выполнение ТЭР"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "НИОКР",
+      "attributes": {},
+      "evidence": "выполнения НИОКР"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "НСТ",
+      "attributes": {},
+      "evidence": "Прохождение НТС"
+    },
+    {
+      "entity_type": "Publication",
+      "name": "Доклад Вязовой О.Н.",
+      "attributes": {},
+      "evidence": "2d7f9188254b_Доклад_Вязовой О.Н.pdf"
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Вязова О.Н.",
+      "attributes": {},
+      "evidence": "Доклад_Вязовой О.Н"
+    },
+    {
+      "entity_type": "Facility",
+      "name": "Норникель",
+      "attributes": {},
+      "evidence": "компании «Норникель»"
+    },
+    {
+      "entity_type": "Facility",
+      "name": "Институт Гипроникель",
+      "attributes": {},
+      "evidence": "Института «Гипроникель»"
+    },
+    {
+      "entity_type": "Facility",
+      "name": "КГМК",
+      "attributes": {},
+      "evidence": "Сырья ХМЦ КГМК"
+    }
+  ],
+  "relations": [
+    {
+      "relation_type": "described_in",
+      "source_name": "Вязова О.Н.",
+      "source_type": "Expert",
+      "target_name": "Доклад Вязовой О.Н.",
+      "target_type": "Publication",
+      "attributes": {},
+      "evidence": "Доклад_Вязовой О.Н"
+    },
+    {
+      "relation_type": "related_to",
+      "source_name": "Норникель",
+      "source_type": "Facility",
+      "target_name": "Институт Гипроникель",
+      "target_type": "Facility",
+      "attributes": {
+        "original_relation_type": "related_to"
+      },
+      "evidence": "компании «Норникель» и Института «Гипроникель»"
+    },
+    {
+      "relation_type": "related_to",
+      "source_name": "Институт Гипроникель",
+      "source_type": "Facility",
+      "target_name": "КГМК",
+      "target_type": "Facility",
+      "attributes": {
+        "original_relation_type": "related_to"
+      },
+      "evidence": "Сырья ХМЦ КГМК"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "хлорное выщелачивание",
+      "source_type": "Process",
+      "target_name": "электроэкстракция никеля",
+      "target_type": "Entity",
+      "attributes": {},
+      "evidence": "Схема хлорного выщелачивания - электроэкстракции никеля"
+    },
+    {
+      "relation_type": "contradicts",
+      "source_name": "электрорафинирование",
+      "source_type": "Process",
+      "target_name": "хлорное растворение",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "Изменение технологии производства товарного никеля с электрорафинирования никелевых анодов на хлорное растворение"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "лабораторная стадия",
+      "source_type": "Experiment",
+      "target_name": "ТЭР",
+      "target_type": "Experiment",
+      "attributes": {},
+      "evidence": "Проведение лабораторной стадии и подготовка ИД для выполнения расчета ТЭР"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "ТЭР",
+      "source_type": "Experiment",
+      "target_name": "НИОКР",
+      "target_type": "Experiment",
+      "attributes": {},
+      "evidence": "выявить ключевые ограничения и скорректировать цели для выполнения НИОКР"
+    }
+  ],
+  "other_entities": [
+    {
+      "entity_type": "product",
+      "name": "концентраты КПП",
+      "attributes": {},
+      "evidence": "товарных концентратов КПП и КМСП"
+    },
+    {
+      "entity_type": "product",
+      "name": "концентраты КМСП",
+      "attributes": {},
+      "evidence": "товарных концентратов КПП и КМСП"
+    },
+    {
+      "entity_type": "product",
+      "name": "ПНТП",
+      "attributes": {},
+      "evidence": "ОХВ ПНТП"
+    },
+    {
+      "entity_type": "product",
+      "name": "Ni шлам",
+      "attributes": {},
+      "evidence": "Ni шлам (ЦЭН-1)"
+    },
+    {
+      "entity_type": "concept",
+      "name": "TRL",
+      "attributes": {},
+      "evidence": "уровней готовности технологии (TRL - Technology Readiness Levels)"
+    },
+    {
+      "entity_type": "concept",
+      "name": "ЦЭН-2",
+      "attributes": {},
+      "evidence": "ОХВ ПНТП (ЦЭН-2)"
+    },
+    {
+      "entity_type": "concept",
+      "name": "ЦЭН-1",
+      "attributes": {},
+      "evidence": "Ni шлам (ЦЭН-1)"
+    }
+  ],
+  "clarification_questions": [],
+  "is_final_answer": true,
+  "chunks_processed": 1,
+  "prompt_source": "builtin"
+}

@@ -1,0 +1,6 @@
+# Системный промпт задан в backend/app/ingestion/entity_extraction_prompt.py
+# (ENTITY_EXTRACTION_SYSTEM_PROMPT).
+#
+# Чтобы переопределить, заполните этот файл текстом промпта
+# или укажите другой путь в .env:
+# ENTITY_EXTRACTION_PROMPT_FILE=./data/prompts/entity_extraction.txt

@@ -1,0 +1,7 @@
+# Минимальные зависимости для тестового контейнера Graphiti
+neo4j==5.26.0
+python-dotenv==1.0.1
+openai>=1.50.0
+pydantic>=2.0.0
+tiktoken>=0.7.0
+graphiti-core>=0.12.0

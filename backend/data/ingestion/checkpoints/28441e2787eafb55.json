@@ -1,0 +1,15 @@
+{
+  "group_id": "28441e2787eafb55",
+  "source_path": "/data/documents/uploads/a169e46cb91f_Переработка рудных образований океана - Цымбулов Л.Б. Институт Гипроникель-16-06-2024.pptx",
+  "content_hash": "28441e2787eafb55",
+  "document_category": "talk",
+  "status": "processing",
+  "neo4j_completed": false,
+  "graphiti_completed": false,
+  "graphiti_episodes": [],
+  "graphiti_chunks_total": 0,
+  "graphiti_chunks_ingested": 0,
+  "clarification_questions": [],
+  "error": null,
+  "updated_at": "2026-07-04T23:55:03.853842+00:00"
+}

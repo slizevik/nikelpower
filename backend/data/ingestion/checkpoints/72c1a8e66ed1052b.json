@@ -1,0 +1,15 @@
+{
+  "group_id": "72c1a8e66ed1052b",
+  "source_path": "/data/documents/uploads/f4bed6956545_Доклад_Вязовой О.Н.pdf",
+  "content_hash": "72c1a8e66ed1052b",
+  "document_category": "talk",
+  "status": "completed",
+  "neo4j_completed": true,
+  "graphiti_completed": true,
+  "graphiti_episodes": [],
+  "graphiti_chunks_total": 12,
+  "graphiti_chunks_ingested": 0,
+  "clarification_questions": [],
+  "error": null,
+  "updated_at": "2026-07-04T23:22:03.723154+00:00"
+}

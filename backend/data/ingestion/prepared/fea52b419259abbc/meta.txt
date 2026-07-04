@@ -1,0 +1,6 @@
+source=/data/documents/uploads/d41a11a91e8e_Доклад_Луканина М.А.pdf
+pdf=/data/documents/uploads/d41a11a91e8e_Доклад_Луканина М.А.pdf
+doc_type=pdf
+language=ru
+pages=12
+images=46
