@@ -41,6 +41,15 @@ class Contradicts(BaseModel):
     reason: str | None = Field(default=None, description="Nature of contradiction")
 
 
+RELATION_TYPE_NAMES: tuple[str, ...] = (
+    "uses_material",
+    "operates_at_condition",
+    "produces_output",
+    "described_in",
+    "validated_by",
+    "contradicts",
+)
+
 EDGE_TYPES: dict[str, type[BaseModel]] = {
     "uses_material": UsesMaterial,
     "operates_at_condition": OperatesAtCondition,
@@ -50,14 +59,15 @@ EDGE_TYPES: dict[str, type[BaseModel]] = {
     "contradicts": Contradicts,
 }
 
-# Which relationships can exist between entity type pairs (source_label, target_label) -> [edge_names]
 EDGE_TYPE_MAP: dict[tuple[str, str], list[str]] = {
     ("Process", "Material"): ["uses_material", "produces_output"],
     ("Equipment", "Material"): ["uses_material"],
+    ("Equipment", "Process"): ["validated_by"],
     ("Process", "Property"): ["operates_at_condition"],
     ("Experiment", "Property"): ["operates_at_condition"],
     ("Experiment", "Material"): ["uses_material", "produces_output"],
     ("Experiment", "Process"): ["validated_by"],
+    ("Material", "Property"): ["operates_at_condition"],
     ("Material", "Publication"): ["described_in"],
     ("Process", "Publication"): ["described_in"],
     ("Equipment", "Publication"): ["described_in"],
@@ -65,6 +75,7 @@ EDGE_TYPE_MAP: dict[tuple[str, str], list[str]] = {
     ("Expert", "Publication"): ["described_in"],
     ("Expert", "Process"): ["validated_by"],
     ("Facility", "Experiment"): ["validated_by"],
+    ("Facility", "Publication"): ["described_in"],
     ("Property", "Property"): ["contradicts"],
     ("Process", "Process"): ["contradicts"],
 }

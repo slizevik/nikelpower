@@ -1,4 +1,4 @@
-"""Сборка Graphiti с Yandex Cloud AI (OpenAI-compatible API)."""
+"""Сборка Graphiti с Yandex Cloud AI (OpenAI-compatible API через AI Studio)."""
 
 from __future__ import annotations
 
@@ -25,7 +25,6 @@ def _require_yandex() -> None:
 
 
 def _yandex_async_client() -> AsyncOpenAI:
-    """Yandex требует folder: project + x-folder-id (см. AI Studio OpenAI API)."""
     folder = settings.yandex_cloud_folder
     return AsyncOpenAI(
         api_key=settings.yandex_cloud_api_key,
@@ -36,10 +35,6 @@ def _yandex_async_client() -> AsyncOpenAI:
 
 
 def create_graphiti() -> Graphiti:
-    """
-    Graphiti + OpenAIGenericClient для Yandex (sync chat/completions, json_object).
-    model и small_model должны совпадать — иначе fallback на gpt-4.1-nano.
-    """
     _require_yandex()
     base = settings.yandex_cloud_base_url
     key = settings.yandex_cloud_api_key

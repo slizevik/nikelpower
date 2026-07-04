@@ -1,9 +1,4 @@
-"""
-Резолвер динамического словаря: контекст для LLM и регистрация новых терминов.
-
-Вместо статического GLOSSARY_LINES для каждого чанка подбираются
-релевантные сущности из Neo4j по векторному сходству.
-"""
+"""Резолвер динамического словаря для контекста LLM и регистрации терминов."""
 
 from __future__ import annotations
 
@@ -18,9 +13,8 @@ from app.ontology.glossary import build_extraction_instructions
 
 logger = logging.getLogger(__name__)
 
-# Типы сущностей, которые попадают в живой словарь
 DICTIONARY_ENTITY_TYPES = frozenset(
-    {"Material", "Process", "Equipment", "Property", "Facility"}
+    {"Material", "Process", "Equipment", "Property", "Facility", "Publication", "Expert"}
 )
 
 
@@ -39,16 +33,9 @@ class EntityDictionaryResolver:
         self.store.ensure_schema()
 
     def get_context_for_text(self, text: str, top_k: int | None = None) -> str:
-        """
-        Векторизует фрагмент текста и возвращает блок известных сущностей
-        для подстановки в промпт извлечения Graphiti.
-        """
         k = top_k or settings.dictionary_context_top_k
         snippet = text[:4000].strip()
-        if not snippet:
-            return ""
-
-        if self.store.count() == 0:
+        if not snippet or self.store.count() == 0:
             return ""
 
         try:
@@ -62,11 +49,11 @@ class EntityDictionaryResolver:
             return ""
 
         lines = []
-        for m in matches:
-            alias_str = ", ".join(m.aliases) if m.aliases else "—"
+        for match in matches:
+            alias_str = ", ".join(match.aliases) if match.aliases else "—"
             lines.append(
-                f"- [{m.entity_type}] {m.canonical_name}"
-                f" (aliases: {alias_str}; score={m.score:.2f})"
+                f"- [{match.entity_type}] {match.canonical_name}"
+                f" (aliases: {alias_str}; score={match.score:.2f})"
             )
         return "\n".join(lines)
 
@@ -79,7 +66,6 @@ class EntityDictionaryResolver:
         terms: list[ExtractedTerm],
         source_document: str | None = None,
     ) -> list[DictEntityRecord]:
-        """Регистрирует извлечённые термины в словаре (merge или create)."""
         results: list[DictEntityRecord] = []
         for term in terms:
             if term.entity_type not in DICTIONARY_ENTITY_TYPES:
@@ -100,10 +86,6 @@ class EntityDictionaryResolver:
         nodes: list,
         source_document: str | None = None,
     ) -> list[DictEntityRecord]:
-        """
-        Синхронизирует узлы, возвращённые Graphiti после add_episode,
-        в динамический словарь DictEntity.
-        """
         terms: list[ExtractedTerm] = []
         for node in nodes:
             name = getattr(node, "name", None) or ""

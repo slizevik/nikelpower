@@ -24,8 +24,6 @@ HEADING_PATTERN = re.compile(
 
 @dataclass
 class ParagraphBlock:
-    """Семантическая единица текста (параграф) в lexical graph."""
-
     block_id: str
     page: int
     order_index: int
@@ -56,6 +54,5 @@ def detect_block_type(text: str) -> BlockType:
 
 
 def split_page_paragraphs(page_text: str) -> list[str]:
-    """Разбивает текст страницы на параграфы (двойной перевод строки)."""
     parts = re.split(r"\n\s*\n+", page_text.strip())
     return [p.strip() for p in parts if p.strip()]

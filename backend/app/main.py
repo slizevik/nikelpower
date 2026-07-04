@@ -1,130 +1,162 @@
 import asyncio
-import os
+import json
 
 import streamlit as st
-from neo4j import GraphDatabase
 
+from app.config import settings
+from app.core.neo4j import verify_neo4j_connection
 from app.llm.token_budget import TokenBudgetExceeded, get_token_budget
+from app.ontology import ENTITY_TYPE_NAMES
+from app.services.graph_query import GraphQueryService
 from app.ui.token_display import render_token_sidebar
+from app.ui.upload_tab import render_upload_tab
 
-
-def _show_yandex_api_hint(exc: Exception) -> None:
-    """Подсказки при ошибках Yandex API (400/403/404)."""
-    status = getattr(exc, "status_code", None)
-    body = getattr(exc, "body", None) or getattr(exc, "message", "")
-    if status:
-        st.caption(f"HTTP {status}: {body}")
-    if status == 400:
-        st.info(
-            "400 — неверный запрос. Проверьте в `.env`:\n"
-            "1. Без пробелов: `YANDEX_CLOUD_FOLDER=b1g...` (не `= \"...\"`)\n"
-            "2. `YANDEX_EMBEDDING_MODEL=emb://<ваш_folder>/text-search-doc/latest`\n"
-            "3. Не используйте chat-модель (qwen, aliceai) для эмбеддингов\n"
-            "4. folder в `emb://` должен совпадать с `YANDEX_CLOUD_FOLDER`"
-        )
-    elif status == 403:
-        st.info(
-            "403 — Permission denied. Код и `.env` загружены, но **ключ не имеет прав** "
-            "на Yandex AI в этом каталоге.\n\n"
-            "В [консоли Yandex Cloud](https://console.yandex.cloud):\n"
-            "1. Каталог → **Сервисные аккаунты** → аккаунт, для которого создан API-ключ\n"
-            "2. **Роли** → добавить `ai.languageModels.user` (и при необходимости "
-            "`ai.imageGeneration.user`)\n"
-            "3. Убедитесь, что ключ создан для **того же** `YANDEX_CLOUD_FOLDER`\n"
-            "4. Проверьте, что на каталоге включена **оплата** и AI Studio доступен\n"
-            "5. Если ключ старый — создайте новый и обновите `YANDEX_CLOUD_API_KEY` в `.env`, "
-            "затем `docker compose up -d backend`"
-        )
-
-
-st.set_page_config(
-    page_title="NikelPower",
-    page_icon="🔬",
-    layout="wide",
-)
+st.set_page_config(page_title="NikelPower", page_icon="🔬", layout="wide")
 
 render_token_sidebar()
 
 st.title("🔬 NikelPower")
-st.write("Карта знаний R&D — горно-металлургия")
+st.caption("Neo4j + Graphiti + Yandex AI Studio")
 
-neo4j_uri = os.getenv("NEO4J_URI", "bolt://localhost:7687")
-neo4j_user = os.getenv("NEO4J_USER", "neo4j")
-neo4j_password = os.getenv("NEO4J_PASSWORD", "nikelpower2026")
-
-budget = get_token_budget()
-
-col_main, col_tokens = st.columns([3, 1])
-with col_tokens:
-    snap = budget.snapshot()
-    st.metric("Токены за запрос", f"{snap.last_request_tokens:,}")
-    st.metric("Всего", f"{snap.total_tokens:,}")
-
-st.info(f"🔗 Neo4j: `{neo4j_uri}`")
-
-if st.button("Проверить подключение к Neo4j"):
-    budget.begin_request()
-    try:
-        driver = GraphDatabase.driver(neo4j_uri, auth=(neo4j_user, neo4j_password))
-        with driver.session() as session:
-            result = session.run("RETURN 'Neo4j работает!' AS message")
-            message = result.single()["message"]
-        driver.close()
-        st.success(f"✅ {message}")
-    except Exception as e:
-        st.error(f"❌ Ошибка подключения: {e}")
-        st.warning("Убедитесь, что Neo4j запущен: `docker compose up -d`")
-    finally:
-        budget.finish_request()
-        st.rerun()
-
-st.divider()
-st.subheader("Тест эмбеддингов (Yandex)")
-test_text = st.text_input(
-    "Текст для эмбеддинга",
-    value="никель электроэкстракция католит",
-    key="embed_test_text",
+tab_upload, tab_graph, tab_qa = st.tabs(
+    ["Загрузка документа", "Граф знаний", "Поиск и Q&A"]
 )
 
-if st.button("Выполнить эмбеддинг"):
-    budget.begin_request()
-    try:
-        from app.dictionary.embeddings import embed_text
+with tab_upload:
+    render_upload_tab()
 
-        vector = embed_text(test_text)
-        st.success(f"Эмбеддинг получен, размерность: {len(vector)}")
-    except TokenBudgetExceeded as exc:
-        st.error(str(exc))
-    except Exception as e:
-        st.error(f"Ошибка: {e}")
-        _show_yandex_api_hint(e)
-    finally:
-        budget.finish_request()
-        st.rerun()
+with tab_graph:
+    budget = get_token_budget()
+    snap = budget.snapshot()
+    col1, col2, col3 = st.columns(3)
+    col1.metric("Токены (всего)", f"{snap.total_tokens:,}")
+    col2.metric("Лимит", f"{snap.limit:,}")
+    col3.metric("Neo4j", settings.neo4j_uri)
 
-st.divider()
-st.subheader("Поиск в графе (Graphiti)")
-search_query = st.text_input("Запрос", value="методы обессоливания воды")
+    st.divider()
+    st.subheader("Состояние графа знаний")
 
-if st.button("Искать"):
-    budget.begin_request()
-    try:
-        from app.ingestion.graphiti_client import search_graph
+    if st.button("Обновить статистику", key="graph_stats"):
+        budget.begin_request()
+        try:
+            service = GraphQueryService()
+            stats = service.get_stats()
+            checks = service.verify_ontology_constraints()
 
-        results = asyncio.run(search_graph(search_query, num_results=5))
-        st.write(f"Найдено: {len(results)}")
-        for i, edge in enumerate(results, 1):
-            fact = getattr(edge, "fact", None) or str(edge)
-            st.write(f"{i}. {fact}")
-    except ImportError:
-        st.warning(
-            "Graphiti не установлен в этом контейнере (лёгкий образ backend). "
-            "Поиск доступен в worker или при локальной установке requirements-worker.txt."
-        )
-    except TokenBudgetExceeded as exc:
-        st.error(str(exc))
-    except Exception as e:
-        st.error(f"Ошибка поиска: {e}")
-    finally:
-        budget.finish_request()
-        st.rerun()
+            st.success(verify_neo4j_connection())
+            st.write("**Сущности (Graphiti):**")
+            st.json(stats.entity_counts)
+            st.write("**Связи:**")
+            st.json(stats.relation_counts)
+            st.write(f"DictEntity: {stats.dict_entity_count} | Episodic: {stats.episodic_count}")
+            st.write("**Проверки онтологии:**")
+            st.json(checks)
+        except Exception as exc:
+            st.error(str(exc))
+        finally:
+            budget.finish_request()
+
+    st.divider()
+    st.subheader("Cypher: поиск сущностей")
+    entity_pattern = st.text_input("Имя (фрагмент)", value="никель", key="entity_pattern")
+    entity_type = st.selectbox("Тип", ["", *ENTITY_TYPE_NAMES], key="entity_type")
+
+    if st.button("Найти сущности", key="find_entities"):
+        budget.begin_request()
+        try:
+            found = GraphQueryService().find_entities(
+                entity_pattern,
+                entity_type=entity_type or None,
+                limit=20,
+            )
+            if not found:
+                st.info("Сущности не найдены.")
+            for item in found:
+                st.write(f"- [{item.entity_type}] **{item.name}**")
+        except Exception as exc:
+            st.error(str(exc))
+        finally:
+            budget.finish_request()
+
+with tab_qa:
+    budget = get_token_budget()
+
+    st.subheader("Graphiti search")
+    search_query = st.text_input("Запрос", value="электроэкстракция никеля", key="search_query")
+
+    if st.button("Искать в графе", key="graph_search"):
+        budget.begin_request()
+        try:
+            from app.ingestion.graphiti_client import search_graph
+
+            results = asyncio.run(search_graph(search_query, num_results=5))
+            st.write(f"Найдено: {len(results)}")
+            for i, edge in enumerate(results, 1):
+                fact = getattr(edge, "fact", None) or str(edge)
+                st.write(f"{i}. {fact}")
+        except TokenBudgetExceeded as exc:
+            st.error(str(exc))
+        except Exception as exc:
+            st.error(str(exc))
+        finally:
+            budget.finish_request()
+
+    st.divider()
+    st.subheader("RAG-поиск по документам")
+    rag_query = st.text_input("Запрос RAG", value="электроэкстракция никеля", key="rag_query")
+
+    if st.button("RAG search", key="rag_search"):
+        budget.begin_request()
+        try:
+            from app.services.rag_search import RagSearchService
+
+            hits = RagSearchService().search(rag_query, top_k=5)
+            st.write(f"Найдено фрагментов: {len(hits)}")
+            for i, hit in enumerate(hits, 1):
+                title = hit.document_title or hit.source_path or "документ"
+                st.markdown(f"**{i}. {title}** (score={hit.score:.3f}, стр. {hit.page_start}-{hit.page_end})")
+                st.text(hit.text[:1500])
+        except TokenBudgetExceeded as exc:
+            st.error(str(exc))
+        except Exception as exc:
+            st.error(str(exc))
+        finally:
+            budget.finish_request()
+
+    st.divider()
+    st.subheader("Grounded Q&A (только данные из БД)")
+    user_query = st.text_input(
+        "Вопрос", value="Какая концентрация никеля упоминается?", key="user_query"
+    )
+
+    if st.button("Ответить", key="grounded_answer"):
+        budget.begin_request()
+        try:
+            from app.services.grounded_answer import GroundedAnswerService
+
+            answer = GroundedAnswerService().answer_sync(user_query)
+            st.json(json.loads(answer.model_dump_json(ensure_ascii=False)))
+        except TokenBudgetExceeded as exc:
+            st.error(str(exc))
+        except Exception as exc:
+            st.error(str(exc))
+        finally:
+            budget.finish_request()
+
+    st.divider()
+    st.subheader("Эмбеддинги (Yandex text-search-doc)")
+    test_text = st.text_input("Текст", value="никель электроэкстракция католит", key="embed_text")
+
+    if st.button("Эмбеддинг", key="run_embed"):
+        budget.begin_request()
+        try:
+            from app.dictionary.embeddings import embed_text
+
+            vector = embed_text(test_text)
+            st.success(f"Размерность: {len(vector)}")
+        except TokenBudgetExceeded as exc:
+            st.error(str(exc))
+        except Exception as exc:
+            st.error(str(exc))
+        finally:
+            budget.finish_request()

@@ -17,7 +17,6 @@ class Settings:
     neo4j_user: str = os.getenv("NEO4J_USER", "neo4j")
     neo4j_password: str = os.getenv("NEO4J_PASSWORD", "nikelpower2026")
 
-    # Yandex Cloud AI (OpenAI-совместимый API) — см. backend/sample.py
     yandex_cloud_folder: str = os.getenv("YANDEX_CLOUD_FOLDER", "").strip().strip('"')
     yandex_cloud_api_key: str = os.getenv("YANDEX_CLOUD_API_KEY", "").strip().strip('"')
     yandex_cloud_model: str = os.getenv("YANDEX_CLOUD_MODEL", "").strip().strip('"')
@@ -26,7 +25,6 @@ class Settings:
         "YANDEX_CLOUD_BASE_URL", "https://ai.api.cloud.yandex.net/v1"
     ).strip().strip('"')
 
-    # Размерность вектора эмбеддингов (Yandex text-search-doc: 256)
     embedding_dimensions: int = int(os.getenv("EMBEDDING_DIMENSIONS", "256"))
     embedding_similarity_threshold: float = float(
         os.getenv("EMBEDDING_SIMILARITY_THRESHOLD", "0.82")
@@ -38,12 +36,10 @@ class Settings:
     documents_dir: Path = _path_from_env("DOCUMENTS_DIR", "data/documents")
     ingestion_state_dir: Path = _path_from_env("INGESTION_STATE_DIR", "data/ingestion")
 
-    # Paragraph-aware chunking (MD §1: ~840–860 tokens per chunk)
     chunk_target_tokens: int = int(os.getenv("CHUNK_TARGET_TOKENS", "850"))
     chunk_max_tokens: int = int(os.getenv("CHUNK_MAX_TOKENS", "1000"))
     chunk_overlap_paragraphs: int = int(os.getenv("CHUNK_OVERLAP_PARAGRAPHS", "1"))
 
-    # Legacy char-based settings (fallback / reference only)
     chunk_size_chars: int = int(os.getenv("CHUNK_SIZE_CHARS", "6000"))
     chunk_overlap_percent: float = float(os.getenv("CHUNK_OVERLAP_PERCENT", "15"))
     chunk_overlap_chars: int = int(os.getenv("CHUNK_OVERLAP_CHARS", "0"))
@@ -51,7 +47,6 @@ class Settings:
 
     graphiti_group_id: str = os.getenv("GRAPHITI_GROUP_ID", "nikelpower")
 
-    # Парсинг: LibreOffice + Qwen-VL
     libreoffice_binary: str = os.getenv("LIBREOFFICE_BINARY", "libreoffice")
     libreoffice_timeout_sec: int = int(os.getenv("LIBREOFFICE_TIMEOUT_SEC", "180"))
     converted_pdf_dir: Path = _path_from_env("CONVERTED_PDF_DIR", "data/ingestion/converted")
@@ -64,9 +59,31 @@ class Settings:
         "yes",
     )
 
+    enable_graphiti_enrichment: bool = os.getenv(
+        "ENABLE_GRAPHITI_ENRICHMENT", "true"
+    ).lower() in ("1", "true", "yes")
+    force_reingest: bool = os.getenv("FORCE_REINGEST", "false").lower() in (
+        "1",
+        "true",
+        "yes",
+    )
+    max_clarification_rounds: int = int(os.getenv("MAX_CLARIFICATION_ROUNDS", "5"))
+
+    entity_extraction_max_chars: int = int(os.getenv("ENTITY_EXTRACTION_MAX_CHARS", "12000"))
+
+    @property
+    def entity_extraction_prompt_file(self) -> Path | None:
+        prompt_path = os.getenv("ENTITY_EXTRACTION_PROMPT_FILE", "").strip().strip('"')
+        if prompt_path:
+            return Path(prompt_path)
+        default = self.ingestion_state_dir.parent / "prompts" / "entity_extraction.txt"
+        if default.exists():
+            return default
+        fallback = Path("data/prompts/entity_extraction.txt")
+        return fallback if fallback.exists() else None
+
     @property
     def effective_chunk_overlap_chars(self) -> int:
-        """Перекрытие чанков: явное значение или процент от размера чанка."""
         if self.chunk_overlap_chars > 0:
             return self.chunk_overlap_chars
         return max(1, int(self.chunk_size_chars * self.chunk_overlap_percent / 100.0))

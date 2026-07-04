@@ -8,14 +8,10 @@ from app.ingestion.lexical import (
     make_block_id,
     split_page_paragraphs,
 )
-from app.ingestion.parser import ParsedDocument
+from app.ingestion.parser_types import ParsedDocument
 
 
 def document_to_blocks(doc: ParsedDocument) -> list[ParagraphBlock]:
-    """
-    Строит упорядоченный список параграфов из страниц документа.
-    Каждый параграф — узел lexical graph с типом body/caption/table/heading.
-    """
     blocks: list[ParagraphBlock] = []
     order = 0
     current_section: str | None = None

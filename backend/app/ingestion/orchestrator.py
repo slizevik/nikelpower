@@ -11,7 +11,10 @@ from app.ingestion.exceptions import SUPPORTED_DOCUMENT_EXTENSIONS, UnsupportedF
 from app.ingestion.figures_store import save_document_images
 from app.ingestion.models import ParseResult
 from app.ingestion.pdf_extract import extract_pdf_content
+from app.ingestion.prepared_document import save_prepared_document, save_parse_snapshot, save_raw_text
 from app.ingestion.parser_types import ParsedDocument
+from app.ingestion.steps import IngestionStep, ProgressCallback, report_progress
+from app.ingestion.validation import require_supported
 from app.ingestion.vision_client import analyze_images_sequential
 
 logger = logging.getLogger(__name__)
@@ -27,24 +30,43 @@ def parse_document_full(
     path: Path,
     *,
     analyze_images: bool | None = None,
+    on_progress: ProgressCallback | None = None,
 ) -> ParseResult:
     """
-    Алгоритм «Описание Архитектуры парсинга.md»:
-    DOCX/PPTX→PDF (LibreOffice) → извлечение текста/изображений → Qwen-VL.
+    Шаги 2–3 алгоритма загрузки:
+    DOCX/PPTX→PDF (LibreOffice) → извлечение текста/изображений → Qwen-VL → подготовленный документ.
     """
     path = path.resolve()
-    validate_document_path(path)
+    report_progress(on_progress, IngestionStep.VALIDATING, path.name)
+    require_supported(path)
+
     do_vlm = settings.analyze_document_images if analyze_images is None else analyze_images
     original_type = path.suffix.lower().lstrip(".")
 
+    if path.suffix.lower() != ".pdf":
+        report_progress(on_progress, IngestionStep.CONVERTING_PDF, path.name)
     pdf_path = ensure_pdf(path)
+
+    report_progress(on_progress, IngestionStep.EXTRACTING)
     pages, images, language_hint = extract_pdf_content(pdf_path, str(path))
     full_text = "\n\n".join(t for _, t in pages)
 
     descriptions: dict[str, str] = {}
     if do_vlm and images:
-        logger.info("VLM: анализ %s изображений", len(images))
-        descriptions = analyze_images_sequential(images)
+        report_progress(
+            on_progress,
+            IngestionStep.ANALYZING_IMAGES,
+            f"{len(images)} изображений",
+        )
+
+        def _on_image(current: int, total: int, image_id: str) -> None:
+            report_progress(
+                on_progress,
+                IngestionStep.ANALYZING_IMAGES,
+                f"{current}/{total} ({image_id})",
+            )
+
+        descriptions = analyze_images_sequential(images, on_image=_on_image)
 
     result = ParseResult(
         source_path=str(path),
@@ -56,13 +78,26 @@ def parse_document_full(
         images=images,
         image_descriptions=descriptions,
     )
+
+    report_progress(on_progress, IngestionStep.BUILDING_PREPARED)
+    save_raw_text(result)
+    prepared_path = save_prepared_document(result)
+    result.prepared_document_path = str(prepared_path)
+    save_parse_snapshot(result)
+
     if images:
         save_document_images(result)
+
+    logger.info(
+        "Parse complete: %s pages, %s images, prepared=%s",
+        len(pages),
+        len(images),
+        prepared_path,
+    )
     return result
 
 
 def to_legacy_parsed_document(result: ParseResult) -> ParsedDocument:
-    """ParseResult → ParsedDocument для chunker."""
     pages = _enrich_pages(result.pages, result.image_descriptions)
     return ParsedDocument(
         source_path=result.source_path,

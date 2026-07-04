@@ -41,6 +41,5 @@ def embed_texts(texts: list[str]) -> list[list[float]]:
 
 
 def embedding_input_for_entity(canonical_name: str, aliases: list[str]) -> str:
-    """Текст для эмбеддинга: каноническое имя + все известные алиасы."""
     parts = [canonical_name, *aliases]
     return " | ".join(dict.fromkeys(p.strip() for p in parts if p.strip()))

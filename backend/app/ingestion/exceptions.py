@@ -6,8 +6,6 @@ SUPPORTED_DOCUMENT_EXTENSIONS = frozenset({".pdf", ".docx", ".pptx"})
 
 
 class UnsupportedFormatError(ValueError):
-    """Формат файла не поддерживается."""
-
     def __init__(self, path: str, extension: str) -> None:
         self.path = path
         self.extension = extension

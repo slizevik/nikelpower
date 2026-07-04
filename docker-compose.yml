@@ -52,7 +52,7 @@ services:
       - DOCUMENTS_DIR=/data/documents
       - INGESTION_STATE_DIR=/data/ingestion
     volumes:
-      - ./data/documents:/data/documents:ro
+      - ./data/documents:/data/documents
       - ./data/ingestion:/data/ingestion
     depends_on:
       neo4j:
@@ -72,7 +72,7 @@ services:
       - DOCUMENTS_DIR=/data/documents
       - INGESTION_STATE_DIR=/data/ingestion
     volumes:
-      - ./data/documents:/data/documents:ro
+      - ./data/documents:/data/documents
       - ./data/ingestion:/data/ingestion
     depends_on:
       neo4j:

@@ -80,6 +80,17 @@ class Facility(BaseModel):
     geo: str | None = Field(default=None, description="Russia or foreign")
 
 
+ENTITY_TYPE_NAMES: tuple[str, ...] = (
+    "Material",
+    "Process",
+    "Equipment",
+    "Property",
+    "Experiment",
+    "Publication",
+    "Expert",
+    "Facility",
+)
+
 ENTITY_TYPES: dict[str, type[BaseModel]] = {
     "Material": Material,
     "Process": Process,

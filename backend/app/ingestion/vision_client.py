@@ -1,4 +1,4 @@
-"""Qwen-VL (Yandex OpenAI-compatible): описание изображений документа."""
+"""Qwen-VL (Yandex AI Studio): описание изображений документа."""
 
 from __future__ import annotations
 
@@ -6,6 +6,8 @@ import base64
 import json
 import logging
 import re
+
+from typing import Callable
 
 from app.config import settings
 from app.ingestion.models import DocumentImage
@@ -49,7 +51,6 @@ def _description_from_json(payload: dict) -> str:
 
 
 def analyze_image(image: DocumentImage) -> str:
-    """Последовательный вызов VLM для одного изображения. Возвращает текст описания."""
     b64 = base64.standard_b64encode(image.data).decode("ascii")
     mime = image.mime if image.mime.startswith("image/") else "image/png"
     data_url = f"data:{mime};base64,{b64}"
@@ -80,11 +81,16 @@ def analyze_image(image: DocumentImage) -> str:
         return raw.strip() or "не удалось описать изображение"
 
 
-def analyze_images_sequential(images: list[DocumentImage]) -> dict[str, str]:
-    """Анализ всех изображений по одному (ключ → описание)."""
+def analyze_images_sequential(
+    images: list[DocumentImage],
+    *,
+    on_image: Callable[[int, int, str], None] | None = None,
+) -> dict[str, str]:
     descriptions: dict[str, str] = {}
     for i, image in enumerate(images, 1):
         logger.info("VLM %s/%s: %s (стр. %s)", i, len(images), image.image_id, image.page)
+        if on_image:
+            on_image(i, len(images), image.image_id)
         try:
             descriptions[image.image_id] = analyze_image(image)
         except Exception as exc:

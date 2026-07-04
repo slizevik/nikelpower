@@ -6,21 +6,25 @@ import asyncio
 import logging
 from datetime import datetime, timezone
 
-from graphiti_core import Graphiti
-from graphiti_core.nodes import EpisodeType
-
 from app.config import settings
-from app.ingestion.graphiti_factory import create_graphiti
-from app.llm.token_budget import count_tokens, get_token_budget
 from app.dictionary.resolver import EntityDictionaryResolver
-from app.ingestion.chunker import TextChunk
+from app.llm.token_budget import count_tokens, get_token_budget
+from app.models.chunk import TextChunk
 from app.ontology import EDGE_TYPE_MAP, EDGE_TYPES, ENTITY_TYPES
 
 logger = logging.getLogger(__name__)
 
-_graphiti: Graphiti | None = None
+_graphiti = None
 _indices_built = False
 _resolver: EntityDictionaryResolver | None = None
+
+
+def is_graphiti_available() -> bool:
+    try:
+        import graphiti_core  # noqa: F401
+        return True
+    except ImportError:
+        return False
 
 
 def get_resolver() -> EntityDictionaryResolver:
@@ -30,9 +34,13 @@ def get_resolver() -> EntityDictionaryResolver:
     return _resolver
 
 
-def get_graphiti() -> Graphiti:
+def get_graphiti():
     global _graphiti
     if _graphiti is None:
+        if not is_graphiti_available():
+            raise RuntimeError("graphiti-core не установлен (нужен worker/graphiti образ)")
+        from app.ingestion.graphiti_factory import create_graphiti
+
         _graphiti = create_graphiti()
     return _graphiti
 
@@ -62,19 +70,20 @@ def _sync_dictionary(nodes: list, source_document: str | None) -> None:
 
 
 def _charge_graphiti_tokens(chunk_text: str, operation: str) -> None:
-    """Оценка токенов Graphiti (несколько LLM-вызовов на один чанк)."""
     instructions = _instructions_for_chunk(chunk_text)
     estimate = (count_tokens(chunk_text) + count_tokens(instructions)) * 4
     get_token_budget().record(estimate, operation)
 
 
 async def ingest_chunk(chunk: TextChunk, reference_time: datetime | None = None) -> None:
+    from graphiti_core.nodes import EpisodeType
+
     await ensure_indices()
     _charge_graphiti_tokens(chunk.text, "graphiti_ingest")
     graphiti = get_graphiti()
     ref = reference_time or datetime.now(timezone.utc)
 
-    episode_name = f"{chunk.source_path}#chunk{chunk.chunk_index}"
+    episode_name = f"{chunk.group_id}#chunk{chunk.chunk_index}"
     source_description = (
         f"file={chunk.source_path}; pages={chunk.page_start}-{chunk.page_end}; "
         f"type={chunk.doc_type}; lang={chunk.language_hint}"
@@ -98,15 +107,18 @@ async def ingest_chunk(chunk: TextChunk, reference_time: datetime | None = None)
 
 
 async def ingest_chunks_bulk(chunks: list[TextChunk]) -> None:
+    from graphiti_core.nodes import EpisodeType
+    from graphiti_core.utils.bulk_utils import RawEpisode
+
+    if not chunks:
+        return
+
     await ensure_indices()
     combined = "\n".join(c.text[:1500] for c in chunks[:3])
     _charge_graphiti_tokens(combined, "graphiti_ingest_bulk")
     graphiti = get_graphiti()
     ref = datetime.now(timezone.utc)
 
-    from graphiti_core.utils.bulk_utils import RawEpisode
-
-    # Для bulk используем объединённый контекст словаря по первому чанку батча
     combined_context = _instructions_for_chunk(
         "\n".join(c.text[:1500] for c in chunks[:3])
     )
@@ -115,7 +127,7 @@ async def ingest_chunks_bulk(chunks: list[TextChunk]) -> None:
     for chunk in chunks:
         raw_episodes.append(
             RawEpisode(
-                name=f"{chunk.source_path}#chunk{chunk.chunk_index}",
+                name=f"{chunk.group_id}#chunk{chunk.chunk_index}",
                 content=chunk.text,
                 source_description=(
                     f"file={chunk.source_path}; pages={chunk.page_start}-{chunk.page_end}; "
@@ -155,6 +167,4 @@ async def close_graphiti() -> None:
         await _graphiti.close()
         _graphiti = None
         _indices_built = False
-    if _resolver is not None:
-        _resolver.store.close()
-        _resolver = None
+    _resolver = None

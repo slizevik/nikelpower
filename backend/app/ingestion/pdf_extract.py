@@ -6,8 +6,8 @@ import hashlib
 import logging
 from pathlib import Path
 
-from app.ingestion.models import DocumentImage
 from app.ingestion.language import detect_language_hint
+from app.ingestion.models import DocumentImage
 
 logger = logging.getLogger(__name__)
 
@@ -19,11 +19,9 @@ def _image_id(source_path: str, page: int, index: int) -> str:
     return hashlib.sha256(key.encode()).hexdigest()[:12]
 
 
-def extract_pdf_content(pdf_path: Path, source_path: str) -> tuple[list[tuple[int, str]], list[DocumentImage], str]:
-    """
-    Извлекает текст по страницам и все изображения.
-    На каждой странице с рисунками добавляет плейсхолдеры [IMG:id].
-    """
+def extract_pdf_content(
+    pdf_path: Path, source_path: str
+) -> tuple[list[tuple[int, str]], list[DocumentImage], str]:
     import fitz
 
     pages: list[tuple[int, str]] = []

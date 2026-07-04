@@ -1,7 +1,8 @@
-"""Track ingestion progress with JSON checkpoint store."""
+"""Checkpoint загрузки документов: идемпотентность Neo4j + Graphiti."""
 
 from __future__ import annotations
 
+import hashlib
 import json
 from dataclasses import asdict, dataclass, field
 from datetime import datetime, timezone
@@ -10,68 +11,152 @@ from typing import Literal
 
 from app.config import settings
 
-Status = Literal["pending", "processing", "completed", "failed", "skipped"]
+CheckpointStatus = Literal[
+    "pending",
+    "processing",
+    "completed",
+    "failed",
+    "awaiting_clarification",
+    "skipped",
+]
 
 
 @dataclass
-class FileRecord:
-    path: str
-    status: Status = "pending"
-    chunks_total: int = 0
-    chunks_ingested: int = 0
+class DocumentCheckpoint:
+    group_id: str
+    source_path: str
+    content_hash: str
+    document_category: str
+    status: CheckpointStatus = "pending"
+    neo4j_completed: bool = False
+    graphiti_completed: bool = False
+    graphiti_episodes: list[str] = field(default_factory=list)
+    graphiti_chunks_total: int = 0
+    graphiti_chunks_ingested: int = 0
+    clarification_questions: list[str] = field(default_factory=list)
     error: str | None = None
     updated_at: str = field(default_factory=lambda: datetime.now(timezone.utc).isoformat())
 
 
-@dataclass
-class IngestionState:
-    files: dict[str, FileRecord] = field(default_factory=dict)
+def compute_file_content_hash(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()[:16]
 
-    def to_dict(self) -> dict:
-        return {"files": {k: asdict(v) for k, v in self.files.items()}}
 
-    @classmethod
-    def from_dict(cls, data: dict) -> IngestionState:
-        state = cls()
-        for path, rec in data.get("files", {}).items():
-            state.files[path] = FileRecord(**rec)
-        return state
+def document_group_id(content_hash: str) -> str:
+    return content_hash[:16]
 
 
 class CheckpointStore:
-    def __init__(self, state_dir: Path | None = None) -> None:
-        self.state_dir = state_dir or settings.ingestion_state_dir
-        self.state_dir.mkdir(parents=True, exist_ok=True)
-        self.state_file = self.state_dir / "ingestion_state.json"
+    def __init__(self, checkpoints_dir: Path | None = None) -> None:
+        self.checkpoints_dir = checkpoints_dir or (settings.ingestion_state_dir / "checkpoints")
+        self.checkpoints_dir.mkdir(parents=True, exist_ok=True)
 
-    def load(self) -> IngestionState:
-        if not self.state_file.exists():
-            return IngestionState()
-        return IngestionState.from_dict(json.loads(self.state_file.read_text(encoding="utf-8")))
+    def _path(self, group_id: str) -> Path:
+        return self.checkpoints_dir / f"{group_id}.json"
 
-    def save(self, state: IngestionState) -> None:
-        self.state_file.write_text(
-            json.dumps(state.to_dict(), ensure_ascii=False, indent=2),
+    def load(self, group_id: str) -> DocumentCheckpoint | None:
+        path = self._path(group_id)
+        if not path.exists():
+            return None
+        data = json.loads(path.read_text(encoding="utf-8"))
+        return DocumentCheckpoint(**data)
+
+    def save(self, checkpoint: DocumentCheckpoint) -> None:
+        checkpoint.updated_at = datetime.now(timezone.utc).isoformat()
+        self._path(checkpoint.group_id).write_text(
+            json.dumps(asdict(checkpoint), ensure_ascii=False, indent=2),
             encoding="utf-8",
         )
 
-    def get_or_create(self, path: str) -> FileRecord:
-        state = self.load()
-        if path not in state.files:
-            state.files[path] = FileRecord(path=path)
-            self.save(state)
-        return state.files[path]
+    def get_or_create(
+        self,
+        *,
+        group_id: str,
+        source_path: str,
+        content_hash: str,
+        document_category: str,
+    ) -> DocumentCheckpoint:
+        existing = self.load(group_id)
+        if existing:
+            return existing
+        checkpoint = DocumentCheckpoint(
+            group_id=group_id,
+            source_path=source_path,
+            content_hash=content_hash,
+            document_category=document_category,
+        )
+        self.save(checkpoint)
+        return checkpoint
 
-    def update(self, record: FileRecord) -> None:
-        state = self.load()
-        record.updated_at = datetime.now(timezone.utc).isoformat()
-        state.files[record.path] = record
-        self.save(state)
+    def is_completed(self, group_id: str, content_hash: str) -> bool:
+        checkpoint = self.load(group_id)
+        if checkpoint is None:
+            return False
+        return (
+            checkpoint.status == "completed"
+            and checkpoint.content_hash == content_hash
+            and checkpoint.neo4j_completed
+        )
 
-    def summary(self) -> dict[str, int]:
-        state = self.load()
-        counts = {"pending": 0, "processing": 0, "completed": 0, "failed": 0, "skipped": 0}
-        for rec in state.files.values():
-            counts[rec.status] = counts.get(rec.status, 0) + 1
-        counts["total"] = len(state.files)
-        return counts
+    def mark_processing(self, group_id: str) -> None:
+        checkpoint = self.load(group_id)
+        if not checkpoint:
+            return
+        checkpoint.status = "processing"
+        self.save(checkpoint)
+
+    def mark_neo4j_complete(self, group_id: str, *, chunks_total: int = 0) -> None:
+        checkpoint = self.load(group_id)
+        if not checkpoint:
+            return
+        checkpoint.neo4j_completed = True
+        checkpoint.graphiti_chunks_total = chunks_total
+        self.save(checkpoint)
+
+    def mark_graphiti_episodes(self, group_id: str, episode_names: list[str]) -> None:
+        checkpoint = self.load(group_id)
+        if not checkpoint:
+            return
+        for name in episode_names:
+            if name not in checkpoint.graphiti_episodes:
+                checkpoint.graphiti_episodes.append(name)
+        checkpoint.graphiti_chunks_ingested = len(checkpoint.graphiti_episodes)
+        self.save(checkpoint)
+
+    def mark_graphiti_complete(self, group_id: str) -> None:
+        checkpoint = self.load(group_id)
+        if not checkpoint:
+            return
+        checkpoint.graphiti_completed = True
+        self.save(checkpoint)
+
+    def mark_completed(self, group_id: str) -> None:
+        checkpoint = self.load(group_id)
+        if not checkpoint:
+            return
+        checkpoint.status = "completed"
+        checkpoint.clarification_questions = []
+        self.save(checkpoint)
+
+    def mark_failed(self, group_id: str, error: str) -> None:
+        checkpoint = self.load(group_id)
+        if not checkpoint:
+            return
+        checkpoint.status = "failed"
+        checkpoint.error = error
+        self.save(checkpoint)
+
+    def mark_awaiting_clarification(self, group_id: str, questions: list[str]) -> None:
+        checkpoint = self.load(group_id)
+        if not checkpoint:
+            return
+        checkpoint.status = "awaiting_clarification"
+        checkpoint.clarification_questions = questions
+        self.save(checkpoint)
+
+    def mark_skipped(self, group_id: str) -> None:
+        checkpoint = self.load(group_id)
+        if not checkpoint:
+            return
+        checkpoint.status = "skipped"
+        self.save(checkpoint)

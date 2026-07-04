@@ -5,9 +5,9 @@ from __future__ import annotations
 import logging
 from datetime import datetime, timezone
 
-from neo4j import Driver, GraphDatabase
+from neo4j import Driver
 
-from app.config import settings
+from app.core.neo4j import get_neo4j_driver
 from app.ingestion.lexical import ParagraphBlock
 
 logger = logging.getLogger(__name__)
@@ -20,16 +20,8 @@ class LexicalNodeStore:
     @property
     def driver(self) -> Driver:
         if self._driver is None:
-            self._driver = GraphDatabase.driver(
-                settings.neo4j_uri,
-                auth=(settings.neo4j_user, settings.neo4j_password),
-            )
+            self._driver = get_neo4j_driver()
         return self._driver
-
-    def close(self) -> None:
-        if self._driver is not None:
-            self._driver.close()
-            self._driver = None
 
     def ensure_schema(self) -> None:
         with self.driver.session() as session:
@@ -37,7 +29,6 @@ class LexicalNodeStore:
                 "CREATE CONSTRAINT lexical_node_id IF NOT EXISTS "
                 "FOR (n:LexicalNode) REQUIRE n.node_id IS UNIQUE"
             )
-        logger.info("LexicalNode schema ensured")
 
     def upsert_blocks(self, group_id: str, blocks: list[ParagraphBlock]) -> None:
         if not blocks:

@@ -1,8 +1,7 @@
 """
 Инструкции для LLM-извлечения сущностей.
 
-Статический GLOSSARY_LINES убран: синонимы марок и сплавов
-подставляются динамически из Neo4j DictEntity (см. dictionary/resolver.py).
+Синонимы подставляются динамически из Neo4j DictEntity (dictionary/resolver.py).
 """
 
 BASE_EXTRACTION_RULES = """
@@ -17,14 +16,11 @@ Rules:
 - Distinguish Russian vs foreign practice in Publication.geo or Facility.geo when stated.
 - Do not invent numbers; only extract values explicitly present in the text.
 - Use confidence levels (high/medium/low) in validated_by when evidence is partial.
+- Do not create Publication nodes without evidence in the source text.
 """
 
 
 def build_extraction_instructions(dynamic_context: str = "") -> str:
-    """
-    Собирает промпт для Graphiti: базовые правила + релевантные сущности из графа.
-    dynamic_context — результат EntityDictionaryResolver.get_context_for_text().
-    """
     parts = [BASE_EXTRACTION_RULES.strip()]
 
     if dynamic_context.strip():
@@ -41,5 +37,4 @@ def build_extraction_instructions(dynamic_context: str = "") -> str:
     return "\n".join(parts)
 
 
-# Обратная совместимость для модулей, импортирующих константу
 EXTRACTION_INSTRUCTIONS = build_extraction_instructions()

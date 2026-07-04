@@ -2,7 +2,6 @@
 Хранилище динамического словаря сущностей в Neo4j.
 
 Узлы :DictEntity — живой словарь марок, сплавов, процессов и т.д.
-Векторный индекс по полю embedding для поиска по сходству имён и алиасов.
 """
 
 from __future__ import annotations
@@ -12,9 +11,10 @@ import uuid
 from dataclasses import dataclass
 from datetime import datetime, timezone
 
-from neo4j import GraphDatabase, Driver
+from neo4j import Driver
 
 from app.config import settings
+from app.core.neo4j import get_neo4j_driver
 from app.dictionary.embeddings import embed_text, embedding_input_for_entity
 
 logger = logging.getLogger(__name__)
@@ -40,19 +40,13 @@ class EntityDictionaryStore:
     @property
     def driver(self) -> Driver:
         if self._driver is None:
-            self._driver = GraphDatabase.driver(
-                settings.neo4j_uri,
-                auth=(settings.neo4j_user, settings.neo4j_password),
-            )
+            self._driver = get_neo4j_driver()
         return self._driver
 
     def close(self) -> None:
-        if self._driver is not None:
-            self._driver.close()
-            self._driver = None
+        pass
 
     def ensure_schema(self) -> None:
-        """Создаёт ограничения уникальности и векторный индекс."""
         with self.driver.session() as session:
             session.run(
                 "CREATE CONSTRAINT dict_entity_id IF NOT EXISTS "
@@ -62,7 +56,6 @@ class EntityDictionaryStore:
                 "CREATE CONSTRAINT dict_entity_canonical IF NOT EXISTS "
                 "FOR (n:DictEntity) REQUIRE n.canonical_name IS UNIQUE"
             )
-            # Пересоздаём индекс при смене размерности (идемпотентно через IF NOT EXISTS)
             session.run(
                 f"""
                 CREATE VECTOR INDEX {VECTOR_INDEX_NAME} IF NOT EXISTS
@@ -119,29 +112,6 @@ class EntityDictionaryStore:
                 )
             return records
 
-    def get_by_canonical_name(self, name: str) -> DictEntityRecord | None:
-        with self.driver.session() as session:
-            row = session.run(
-                """
-                MATCH (n:DictEntity {canonical_name: $name})
-                RETURN n.id AS id, n.canonical_name AS canonical_name,
-                       n.entity_type AS entity_type, n.aliases AS aliases,
-                       n.mention_count AS mention_count,
-                       n.source_documents AS source_documents
-                """,
-                name=name,
-            ).single()
-            if not row:
-                return None
-            return DictEntityRecord(
-                id=row["id"],
-                canonical_name=row["canonical_name"],
-                entity_type=row["entity_type"] or "Material",
-                aliases=list(row["aliases"] or []),
-                mention_count=row["mention_count"] or 1,
-                source_documents=list(row["source_documents"] or []),
-            )
-
     def upsert_entity(
         self,
         canonical_name: str,
@@ -150,10 +120,6 @@ class EntityDictionaryStore:
         source_document: str | None = None,
         embedding: list[float] | None = None,
     ) -> DictEntityRecord:
-        """
-        Добавляет сущность или дополняет алиасы существующей.
-        Перед созданием ищет похожую запись по вектору.
-        """
         aliases = [a.strip() for a in (aliases or []) if a.strip()]
         text_for_embed = embedding_input_for_entity(canonical_name, aliases)
         vector = embedding or embed_text(text_for_embed)
@@ -209,11 +175,6 @@ class EntityDictionaryStore:
                 embedding=vector,
                 now=now,
             )
-        logger.info(
-            "Merged '%s' into existing DictEntity '%s'",
-            new_name,
-            existing.canonical_name,
-        )
         return DictEntityRecord(
             id=existing.id,
             canonical_name=existing.canonical_name,
@@ -258,7 +219,6 @@ class EntityDictionaryStore:
                 source_documents=docs,
                 now=now,
             )
-        logger.info("Created DictEntity '%s' (%s)", canonical_name, entity_type)
         return DictEntityRecord(
             id=entity_id,
             canonical_name=canonical_name,
@@ -267,35 +227,6 @@ class EntityDictionaryStore:
             mention_count=1,
             source_documents=docs,
         )
-
-    def list_entities(self, limit: int = 100, entity_type: str | None = None) -> list[DictEntityRecord]:
-        type_filter = "WHERE n.entity_type = $entity_type" if entity_type else ""
-        with self.driver.session() as session:
-            result = session.run(
-                f"""
-                MATCH (n:DictEntity)
-                {type_filter}
-                RETURN n.id AS id, n.canonical_name AS canonical_name,
-                       n.entity_type AS entity_type, n.aliases AS aliases,
-                       n.mention_count AS mention_count,
-                       n.source_documents AS source_documents
-                ORDER BY n.mention_count DESC, n.canonical_name
-                LIMIT $limit
-                """,
-                limit=limit,
-                entity_type=entity_type,
-            )
-            return [
-                DictEntityRecord(
-                    id=row["id"],
-                    canonical_name=row["canonical_name"],
-                    entity_type=row["entity_type"] or "Material",
-                    aliases=list(row["aliases"] or []),
-                    mention_count=row["mention_count"] or 1,
-                    source_documents=list(row["source_documents"] or []),
-                )
-                for row in result
-            ]
 
     def count(self) -> int:
         with self.driver.session() as session:

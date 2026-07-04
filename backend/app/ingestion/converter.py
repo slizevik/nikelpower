@@ -16,10 +16,6 @@ CONVERTIBLE_EXTENSIONS = frozenset({".docx", ".pptx", ".doc", ".ppt"})
 
 
 def ensure_pdf(source: Path) -> Path:
-    """
-    Возвращает путь к PDF. Если source уже PDF — без конвертации.
-    DOCX/PPTX конвертируются через LibreOffice во временный каталог.
-    """
     source = source.resolve()
     suffix = source.suffix.lower()
     if suffix == ".pdf":

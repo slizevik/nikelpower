@@ -1,32 +1,15 @@
-"""Paragraph-aware chunking: ~850 tokens, caption/table — отдельные чанки."""
+"""Paragraph-aware chunking для RAG (~850 tokens)."""
 
 from __future__ import annotations
 
 import hashlib
-from dataclasses import dataclass, field
 
 from app.config import settings
 from app.ingestion.lexical import BlockType, ParagraphBlock
 from app.ingestion.paragraphs import document_to_blocks
-from app.ingestion.parser import ParsedDocument
+from app.ingestion.parser_types import ParsedDocument
 from app.llm.token_budget import count_tokens
-
-
-@dataclass
-class TextChunk:
-    chunk_id: str
-    source_path: str
-    doc_type: str
-    language_hint: str
-    page_start: int
-    page_end: int
-    chunk_index: int
-    text: str
-    group_id: str
-    chunk_role: BlockType = "body"
-    block_ids: list[str] = field(default_factory=list)
-    token_count: int = 0
-    section_hint: str | None = None
+from app.models.chunk import TextChunk
 
 
 def file_group_id(source_path: str) -> str:
@@ -34,12 +17,12 @@ def file_group_id(source_path: str) -> str:
     return hashlib.sha256(normalized.encode()).hexdigest()[:16]
 
 
-def chunk_document(doc: ParsedDocument) -> list[TextChunk]:
+def chunk_document(doc: ParsedDocument, *, group_id: str | None = None) -> list[TextChunk]:
     blocks = document_to_blocks(doc)
     if not blocks:
         return []
 
-    group_id = file_group_id(doc.source_path)
+    group_id = group_id or file_group_id(doc.source_path)
     target = settings.chunk_target_tokens
     max_tokens = settings.chunk_max_tokens
     overlap_n = settings.chunk_overlap_paragraphs
@@ -80,7 +63,6 @@ def chunk_document(doc: ParsedDocument) -> list[TextChunk]:
         chunk_index += 1
 
     def flush_body() -> list[ParagraphBlock]:
-        """Сохраняет body-чанк и возвращает параграфы для overlap."""
         nonlocal buffer
         if not buffer:
             return []

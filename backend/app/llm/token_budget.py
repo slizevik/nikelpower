@@ -1,13 +1,13 @@
 """
 Учёт токенов и лимит использования.
 
-ЛИМИТ: TOKEN_LIMIT (по умолчанию 10 000) задаётся в этом файле.
-Переопределение через переменную окружения TOKEN_LIMIT в .env.
+TOKEN_LIMIT задаётся в .env (по умолчанию 10 000).
 """
 
 from __future__ import annotations
 
 import json
+import os
 import threading
 from dataclasses import dataclass
 from datetime import datetime, timezone
@@ -17,8 +17,7 @@ import tiktoken
 
 from app.config import settings
 
-# --- Автоматический лимит токенов (основная настройка) ---
-TOKEN_LIMIT: int = int(__import__("os").getenv("TOKEN_LIMIT", "10000"))
+TOKEN_LIMIT: int = int(os.getenv("TOKEN_LIMIT", "10000"))
 
 _STATE_FILE = "token_usage.json"
 _lock = threading.Lock()
@@ -26,8 +25,6 @@ _encoder: tiktoken.Encoding | None = None
 
 
 class TokenBudgetExceeded(Exception):
-    """Превышен лимит TOKEN_LIMIT."""
-
     def __init__(self, used: int, requested: int, limit: int) -> None:
         self.used = used
         self.requested = requested
@@ -54,7 +51,6 @@ class TokenUsageSnapshot:
 
 
 def count_tokens(text: str) -> int:
-    """Подсчёт токенов (tiktoken cl100k_base, оценка для Yandex/OpenAI-совместимых API)."""
     global _encoder
     if _encoder is None:
         _encoder = tiktoken.get_encoding("cl100k_base")
@@ -66,7 +62,6 @@ def count_tokens_many(texts: list[str]) -> int:
 
 
 def usage_from_api_response(response: object) -> int | None:
-    """Извлекает total_tokens из ответа API, если поле usage присутствует."""
     usage = getattr(response, "usage", None)
     if usage is None:
         return None
@@ -159,7 +154,6 @@ class TokenBudget:
         *,
         response: object | None = None,
     ) -> int:
-        """Списывает токены: из ответа API или оценка по тексту."""
         from_api = usage_from_api_response(response) if response is not None else None
         tokens = from_api if from_api is not None else count_tokens(text)
         self.record(tokens, operation)

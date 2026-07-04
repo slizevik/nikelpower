@@ -2,12 +2,8 @@
 """
 Smoke-тест Graphiti + Yandex + Neo4j.
 
-Запуск в контейнере graphiti:
-    docker compose --profile graphiti up -d graphiti
-    docker compose exec graphiti python scripts/test_graphiti.py
-
-С ingest одного тестового эпизода:
-    docker compose exec graphiti python scripts/test_graphiti.py --ingest
+Запуск:
+    docker compose --profile graphiti exec graphiti python scripts/test_graphiti.py --ingest
 """
 
 from __future__ import annotations
@@ -17,16 +13,14 @@ import asyncio
 import logging
 import sys
 
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s [%(levelname)s] %(message)s",
-)
+logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger("test_graphiti")
 
 SAMPLE_EPISODE = (
     "Электроэкстракция никеля из сульфатного католита проводится "
     "на установке с титановыми катодами. Концентрация никеля в растворе "
-    "составляет 45 мг/л при температуре 60 °C."
+    "составляет 45 мг/л при температуре 60 °C. Процесс описан в отчёте "
+    "пилотной установки Nikelpower 2024."
 )
 
 SEARCH_QUERY = "электроэкстракция никеля"
@@ -41,18 +35,17 @@ async def run_test(do_ingest: bool) -> int:
         ingest_chunk,
         search_graph,
     )
-    from app.ingestion.chunker import TextChunk
+    from app.models.chunk import TextChunk
+    from app.services.graph_query import GraphQueryService
 
     logger.info("Neo4j: %s", settings.neo4j_uri)
     logger.info("LLM: %s", settings.yandex_cloud_model)
-    logger.info("Embed: %s", settings.yandex_embedding_model)
 
     try:
         gt = get_graphiti()
         logger.info("Graphiti client OK: %s", type(gt).__name__)
 
         await ensure_indices()
-        logger.info("Индексы Graphiti и DictEntity созданы")
 
         if do_ingest:
             chunk = TextChunk(
@@ -64,22 +57,20 @@ async def run_test(do_ingest: bool) -> int:
                 page_end=1,
                 chunk_index=0,
                 text=SAMPLE_EPISODE,
-                group_id="graphiti_smoke_test",
-                chunk_role="body",
-                block_ids=[],
-                token_count=0,
+                group_id=settings.graphiti_group_id,
             )
-            logger.info("add_episode (ingest_chunk)...")
             await ingest_chunk(chunk)
-            logger.info("Эпизод загружен")
+            logger.info("Test episode ingested")
 
-        logger.info("search: %r", SEARCH_QUERY)
         results = await search_graph(SEARCH_QUERY, num_results=5)
-        logger.info("Найдено результатов: %s", len(results))
+        logger.info("Search results: %s", len(results))
         for i, edge in enumerate(results, 1):
             fact = getattr(edge, "fact", None) or str(edge)
             print(f"  {i}. {fact[:200]}")
 
+        stats = GraphQueryService().get_stats()
+        print(f"\nEntity nodes in graph: {sum(stats.entity_counts.values())}")
+        print(f"Relations in graph: {sum(stats.relation_counts.values())}")
         print("\n=== Graphiti smoke test OK ===")
         return 0
     except Exception as exc:
@@ -91,11 +82,7 @@ async def run_test(do_ingest: bool) -> int:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Graphiti smoke test")
-    parser.add_argument(
-        "--ingest",
-        action="store_true",
-        help="Загрузить тестовый эпизод перед поиском (расходует токены Yandex)",
-    )
+    parser.add_argument("--ingest", action="store_true", help="Ingest sample episode")
     args = parser.parse_args()
     return asyncio.run(run_test(args.ingest))
 
