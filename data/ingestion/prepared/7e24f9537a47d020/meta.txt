@@ -1,0 +1,6 @@
+source=/data/documents/uploads/5880bca7a158_Тяпкина ПА_Пермь_Зимняя школа.pdf
+pdf=/data/documents/uploads/5880bca7a158_Тяпкина ПА_Пермь_Зимняя школа.pdf
+doc_type=pdf
+language=ru
+pages=2
+images=0

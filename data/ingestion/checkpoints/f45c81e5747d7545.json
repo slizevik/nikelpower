@@ -1,0 +1,15 @@
+{
+  "group_id": "f45c81e5747d7545",
+  "source_path": "/data/documents/uploads/5880bca7a158_Тяпкина ПА_Пермь_Зимняя школа.pdf",
+  "content_hash": "f45c81e5747d7545",
+  "document_category": "talk",
+  "status": "completed",
+  "neo4j_completed": true,
+  "graphiti_completed": true,
+  "graphiti_episodes": [],
+  "graphiti_chunks_total": 7,
+  "graphiti_chunks_ingested": 0,
+  "clarification_questions": [],
+  "error": null,
+  "updated_at": "2026-07-05T00:48:43.751673+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "group_id": "56e1917f65d62067",
+  "source_path": "/data/documents/uploads/40607a01677d_Доклад_Новожилова О.С.pdf",
+  "content_hash": "56e1917f65d62067",
+  "document_category": "talk",
+  "status": "completed",
+  "neo4j_completed": true,
+  "graphiti_completed": true,
+  "graphiti_episodes": [],
+  "graphiti_chunks_total": 11,
+  "graphiti_chunks_ingested": 0,
+  "clarification_questions": [],
+  "error": null,
+  "updated_at": "2026-07-05T00:22:59.426188+00:00"
+}

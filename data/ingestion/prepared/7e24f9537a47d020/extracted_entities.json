@@ -1,0 +1,563 @@
+{
+  "source_path": "/data/documents/uploads/5880bca7a158_Тяпкина ПА_Пермь_Зимняя школа.pdf",
+  "document_category": "talk",
+  "document_title": "5880bca7a158_Тяпкина ПА_Пермь_Зимняя школа.pdf",
+  "language_hint": "ru",
+  "entities": [
+    {
+      "entity_type": "Process",
+      "name": "получение сейсмограмм кинематических воздействий массовых взрывов",
+      "attributes": {},
+      "evidence": "ПОЛУЧЕНИЕ СЕЙСМОГРАММ КИНЕМАТИЧЕСКИХ ВОЗДЕЙСТВИЙ МАССОВЫХ ВЗРЫВОВ ПО РЕЗУЛЬТАТАМ ОБРАБОТКИ ИНСТРУМЕНТАЛЬНЫХ ЗАПИСЕЙ КОЛЕБАНИЙ"
+    },
+    {
+      "entity_type": "Process",
+      "name": "обработка инструментальных записей колебаний",
+      "attributes": {},
+      "evidence": "апробация методики по обработке инструментальных записей колебаний от взрывных работ"
+    },
+    {
+      "entity_type": "Process",
+      "name": "быстрое прямое преобразование Фурье",
+      "attributes": {},
+      "evidence": "выполняется быстрое прямое преобразование Фурье"
+    },
+    {
+      "entity_type": "Process",
+      "name": "фильтрация записи полосовым фильтром",
+      "attributes": {},
+      "evidence": "проводится фильтрация записи полосовым фильтром в частотной области"
+    },
+    {
+      "entity_type": "Process",
+      "name": "обратное преобразование Фурье",
+      "attributes": {},
+      "evidence": "обратное преобразование Фурье"
+    },
+    {
+      "entity_type": "Process",
+      "name": "выделение трендов",
+      "attributes": {},
+      "evidence": "выполняется выделение трендов, описанных функциями 0-го, 1-го, 2-го, 3-го порядков"
+    },
+    {
+      "entity_type": "Process",
+      "name": "исключение трендов",
+      "attributes": {},
+      "evidence": "последовательная процедура исключения трендов"
+    },
+    {
+      "entity_type": "Process",
+      "name": "численное интегрирование",
+      "attributes": {},
+      "evidence": "численного интегрирования"
+    },
+    {
+      "entity_type": "Process",
+      "name": "прямой динамический расчет",
+      "attributes": {},
+      "evidence": "прямой динамический метод расчета"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "велосиметры",
+      "attributes": {},
+      "evidence": "велосиметры"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "акселерометры",
+      "attributes": {},
+      "evidence": "акселерометры"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "сейсмозаписывающее оборудование",
+      "attributes": {},
+      "evidence": "сейсмозаписывающего оборудования"
+    },
+    {
+      "entity_type": "Property",
+      "name": "амплитуда сигнала",
+      "attributes": {},
+      "evidence": "Амплитуда получаемого сигнала равняется нулю в начальный и конечный моменты времени"
+    },
+    {
+      "entity_type": "Property",
+      "name": "продолжительность действия",
+      "attributes": {},
+      "evidence": "относительно малой продолжительностью действия"
+    },
+    {
+      "entity_type": "Property",
+      "name": "высокочастотные колебания",
+      "attributes": {},
+      "evidence": "генерацией, в том числе, высокочастотных колебаний конструкций"
+    },
+    {
+      "entity_type": "Property",
+      "name": "шумовая компонента",
+      "attributes": {},
+      "evidence": "присутствие шумовой компоненты в записях"
+    },
+    {
+      "entity_type": "Property",
+      "name": "амплитудно-частотная характеристика",
+      "attributes": {},
+      "evidence": "построение амплитудно-частотной характеристики воздействия"
+    },
+    {
+      "entity_type": "Property",
+      "name": "качество обработки сигналов",
+      "attributes": {},
+      "evidence": "повысить качество обработки сигналов"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "апробация методики",
+      "attributes": {},
+      "evidence": "В докладе представлена апробация методики по обработке инструментальных записей колебаний от взрывных работ"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "мониторинг состояния зданий",
+      "attributes": {},
+      "evidence": "Сейсмический мониторинг состояния зданий и сооружений"
+    },
+    {
+      "entity_type": "Publication",
+      "name": "XXIV Зимняя школа по механике сплошных сред",
+      "attributes": {},
+      "evidence": "XXIV Зимняя школа по механике сплошных сред 24-28 февраля 2025г., Пермь"
+    },
+    {
+      "entity_type": "Publication",
+      "name": "Геофизика и физика взрыва. Избранные труды",
+      "attributes": {},
+      "evidence": "Садовский М. А. Геофизика и физика взрыва. Избранные труды. / М. А. Садовский. М: Наука, 1999. 440 с."
+    },
+    {
+      "entity_type": "Publication",
+      "name": "Критерии оценки сейсмического воздействия взрывных работ на здания и сооружения в мировой практике и нормативных документах",
+      "attributes": {},
+      "evidence": "Дарбинян Т.П., Федосеев А.В., Яваров А.В., Тяпкина П.А. Критерии оценки сейсмического воздействия взрывных работ на здания и сооружения в мировой практике и нормативных документах // Горный журнал. 2024. №3. С.17-24."
+    },
+    {
+      "entity_type": "Publication",
+      "name": "Уточнение методов оценки динамических нагрузок на фундаменты каркасных зданий в условиях техногенных сейсмических воздействий",
+      "attributes": {},
+      "evidence": "Нуждин Л.В., Михайлов В.С., Коновалова С.В. Уточнение методов оценки динамических нагрузок на фундаменты каркасных зданий в условиях техногенных сейсмических воздействий // Природные и техногенные риски. Безопасность сооружений. 2019. № 3 (40). C. 53-60."
+    },
+    {
+      "entity_type": "Publication",
+      "name": "Первичная обработка инструментальных записей колебаний сооружений, вызванных проведением буровзрывных работ",
+      "attributes": {},
+      "evidence": "Тяпкина П.А., Яваров Федосеев А.В., А.В. Первичная обработка инструментальных записей колебаний сооружений, вызванных проведением буровзрывных работ // Инженерные исследования. №2 (17), 2024. С. 3-12."
+    },
+    {
+      "entity_type": "Publication",
+      "name": "Расчетные модели сооружений и возможность их анализа",
+      "attributes": {},
+      "evidence": "Перельмутер А.В., Сливкер В.И. Расчетные модели сооружений и возможность их анализа. - Москва : ДМК, 2008. - 595 с."
+    },
+    {
+      "entity_type": "Publication",
+      "name": "Методы конечных элементов",
+      "attributes": {},
+      "evidence": "Бате К.Ю. Методы конечных элементов / К.-Ю. Бате; пер. с англ. В. П. Шидловского ; под ред. Л. И. Турчака. - Москва : Физматлит, 2010. - 1022 с."
+    },
+    {
+      "entity_type": "Publication",
+      "name": "Программный комплекс ЛИРА 10.12. Руководство пользователя",
+      "attributes": {},
+      "evidence": "Гераймович Ю.Д., Евзеров И.Д., Киричок В.В. Колесников А.В. и другие Программный комплекс ЛИРА 10.12. Руководство пользователя. 2021. – 857 с."
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Яваров А.В.",
+      "attributes": {},
+      "evidence": "Яваров А.В. 1"
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Тяпкина П.А.",
+      "attributes": {},
+      "evidence": "Тяпкина П.А. 1,2"
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Федосеев А.В.",
+      "attributes": {},
+      "evidence": "Федосеев А.В. 2"
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Лалин В.В.",
+      "attributes": {},
+      "evidence": "Лалин В.В. 1,3"
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Садовский М. А.",
+      "attributes": {},
+      "evidence": "Садовский М. А. Геофизика и физика взрыва"
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Дарбинян Т.П.",
+      "attributes": {},
+      "evidence": "Дарбинян Т.П., Федосеев А.В., Яваров А.В., Тяпкина П.А."
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Нуждин Л.В.",
+      "attributes": {},
+      "evidence": "Нуждин Л.В., Михайлов В.С., Коновалова С.В."
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Михайлов В.С.",
+      "attributes": {},
+      "evidence": "Нуждин Л.В., Михайлов В.С., Коновалова С.В."
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Коновалова С.В.",
+      "attributes": {},
+      "evidence": "Нуждин Л.В., Михайлов В.С., Коновалова С.В."
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Перельмутер А.В.",
+      "attributes": {},
+      "evidence": "Перельмутер А.В., Сливкер В.И."
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Сливкер В.И.",
+      "attributes": {},
+      "evidence": "Перельмутер А.В., Сливкер В.И."
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Бате К.Ю.",
+      "attributes": {},
+      "evidence": "Бате К.Ю. Методы конечных элементов"
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Шидловский В. П.",
+      "attributes": {},
+      "evidence": "пер. с англ. В. П. Шидловского"
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Турчак Л. И.",
+      "attributes": {},
+      "evidence": "под ред. Л. И. Турчака"
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Гераймович Ю.Д.",
+      "attributes": {},
+      "evidence": "Гераймович Ю.Д., Евзеров И.Д., Киричок В.В. Колесников А.В."
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Евзеров И.Д.",
+      "attributes": {},
+      "evidence": "Гераймович Ю.Д., Евзеров И.Д., Киричок В.В. Колесников А.В."
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Киричок В.В.",
+      "attributes": {},
+      "evidence": "Гераймович Ю.Д., Евзеров И.Д., Киричок В.В. Колесников А.В."
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Колесников А.В.",
+      "attributes": {},
+      "evidence": "Гераймович Ю.Д., Евзеров И.Д., Киричок В.В. Колесников А.В."
+    },
+    {
+      "entity_type": "Facility",
+      "name": "Санкт-Петербургский политехнический университет Петра Великого",
+      "attributes": {},
+      "evidence": "Санкт-Петербургский политехнический университет Петра Великого, Санкт-Петербург"
+    },
+    {
+      "entity_type": "Facility",
+      "name": "ООО «Институт Гипроникель»",
+      "attributes": {},
+      "evidence": "ООО «Институт Гипроникель», Санкт-Петербург"
+    },
+    {
+      "entity_type": "Facility",
+      "name": "Российский университет дружбы народов",
+      "attributes": {},
+      "evidence": "Российский университет дружбы народов, Москва"
+    }
+  ],
+  "relations": [
+    {
+      "relation_type": "affiliated_with",
+      "source_name": "Яваров А.В.",
+      "source_type": "Expert",
+      "target_name": "Санкт-Петербургский политехнический университет Петра Великого",
+      "target_type": "Facility",
+      "attributes": {
+        "original_relation_type": "affiliated_with"
+      },
+      "evidence": "Яваров А.В. 1,Санкт-Петербургский политехнический университет Петра Великого, Санкт-Петербург"
+    },
+    {
+      "relation_type": "affiliated_with",
+      "source_name": "Тяпкина П.А.",
+      "source_type": "Expert",
+      "target_name": "Санкт-Петербургский политехнический университет Петра Великого",
+      "target_type": "Facility",
+      "attributes": {
+        "original_relation_type": "affiliated_with"
+      },
+      "evidence": "Тяпкина П.А. 1,2,Санкт-Петербургский политехнический университет Петра Великого, Санкт-Петербург"
+    },
+    {
+      "relation_type": "affiliated_with",
+      "source_name": "Тяпкина П.А.",
+      "source_type": "Expert",
+      "target_name": "ООО «Институт Гипроникель»",
+      "target_type": "Facility",
+      "attributes": {
+        "original_relation_type": "affiliated_with"
+      },
+      "evidence": "Тяпкина П.А. 1,2,ООО «Институт Гипроникель», Санкт-Петербург"
+    },
+    {
+      "relation_type": "affiliated_with",
+      "source_name": "Федосеев А.В.",
+      "source_type": "Expert",
+      "target_name": "ООО «Институт Гипроникель»",
+      "target_type": "Facility",
+      "attributes": {
+        "original_relation_type": "affiliated_with"
+      },
+      "evidence": "Федосеев А.В. 2,ООО «Институт Гипроникель», Санкт-Петербург"
+    },
+    {
+      "relation_type": "affiliated_with",
+      "source_name": "Лалин В.В.",
+      "source_type": "Expert",
+      "target_name": "Санкт-Петербургский политехнический университет Петра Великого",
+      "target_type": "Facility",
+      "attributes": {
+        "original_relation_type": "affiliated_with"
+      },
+      "evidence": "Лалин В.В. 1,3,Санкт-Петербургский политехнический университет Петра Великого, Санкт-Петербург"
+    },
+    {
+      "relation_type": "affiliated_with",
+      "source_name": "Лалин В.В.",
+      "source_type": "Expert",
+      "target_name": "Российский университет дружбы народов",
+      "target_type": "Facility",
+      "attributes": {
+        "original_relation_type": "affiliated_with"
+      },
+      "evidence": "Лалин В.В. 1,3,Российский университет дружбы народов, Москва"
+    },
+    {
+      "relation_type": "described_in",
+      "source_name": "апробация методики",
+      "source_type": "Experiment",
+      "target_name": "обработка инструментальных записей колебаний",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "апробация методики по обработке инструментальных записей колебаний от взрывных работ"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "быстрое прямое преобразование Фурье",
+      "source_type": "Process",
+      "target_name": "амплитудно-частотная характеристика",
+      "target_type": "Property",
+      "attributes": {},
+      "evidence": "выполняется быстрое прямое преобразование Фурье и осуществляется построение амплитудно-частотной характеристики"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "фильтрация записи полосовым фильтром",
+      "source_type": "Process",
+      "target_name": "сейсмозаписывающее оборудование",
+      "target_type": "Equipment",
+      "attributes": {},
+      "evidence": "фильтрация записи полосовым фильтром в частотной области с учетом рабочего диапазона сейсмозаписывающего оборудования"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "исключение трендов",
+      "source_type": "Process",
+      "target_name": "сейсмограммы",
+      "target_type": "concept",
+      "attributes": {},
+      "evidence": "при исключении каких трендов из акселерограммы, велосиграммы и сейсмограммы может быть получена пригодная для прямого динамического расчета сейсмограмма"
+    },
+    {
+      "relation_type": "validated_by",
+      "source_name": "исключение трендов",
+      "source_type": "Process",
+      "target_name": "прямой динамический расчет",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "исключение тренда из велосиграмм позволило повысить качество обработки сигналов и получить сейсмограммы, подходящие для корректного проведения прямого динамического расчета"
+    },
+    {
+      "relation_type": "similar_to",
+      "source_name": "SCAD Office",
+      "source_type": "software",
+      "target_name": "ЛИРА 10",
+      "target_type": "software",
+      "attributes": {
+        "original_relation_type": "similar_to"
+      },
+      "evidence": "стандартные модули для обработки записей землетрясений в ПК SCAD Office и ЛИРА 10"
+    },
+    {
+      "relation_type": "similar_to",
+      "source_name": "велосиметры",
+      "source_type": "Equipment",
+      "target_name": "акселерометры",
+      "target_type": "Equipment",
+      "attributes": {
+        "original_relation_type": "similar_to"
+      },
+      "evidence": "велосиметры и акселерометры"
+    }
+  ],
+  "other_entities": [
+    {
+      "entity_type": "software",
+      "name": "SCAD Office",
+      "attributes": {},
+      "evidence": "ПК SCAD Office"
+    },
+    {
+      "entity_type": "software",
+      "name": "ЛИРА 10",
+      "attributes": {},
+      "evidence": "ЛИРА 10"
+    },
+    {
+      "entity_type": "location",
+      "name": "Пермь",
+      "attributes": {},
+      "evidence": "Пермь"
+    },
+    {
+      "entity_type": "location",
+      "name": "Санкт-Петербург",
+      "attributes": {},
+      "evidence": "Санкт-Петербург"
+    },
+    {
+      "entity_type": "location",
+      "name": "Москва",
+      "attributes": {},
+      "evidence": "Москва"
+    },
+    {
+      "entity_type": "event",
+      "name": "XXIV Зимняя школа по механике сплошных сред",
+      "attributes": {},
+      "evidence": "XXIV Зимняя школа по механике сплошных сред 24-28 февраля 2025г."
+    },
+    {
+      "entity_type": "concept",
+      "name": "сейсмический мониторинг",
+      "attributes": {},
+      "evidence": "Сейсмический мониторинг состояния зданий и сооружений"
+    },
+    {
+      "entity_type": "concept",
+      "name": "буровзрывные работы",
+      "attributes": {},
+      "evidence": "буровзрывных работ"
+    },
+    {
+      "entity_type": "concept",
+      "name": "землетрясения",
+      "attributes": {},
+      "evidence": "землетрясения"
+    },
+    {
+      "entity_type": "concept",
+      "name": "массовые взрывы",
+      "attributes": {},
+      "evidence": "массовые взрывы"
+    },
+    {
+      "entity_type": "concept",
+      "name": "зона упругих деформаций",
+      "attributes": {},
+      "evidence": "зоне упругих деформаций"
+    },
+    {
+      "entity_type": "concept",
+      "name": "велосиграммы",
+      "attributes": {},
+      "evidence": "велосиграммы"
+    },
+    {
+      "entity_type": "concept",
+      "name": "сейсмограммы",
+      "attributes": {},
+      "evidence": "сейсмограммы"
+    },
+    {
+      "entity_type": "concept",
+      "name": "акселерограммы",
+      "attributes": {},
+      "evidence": "инструментальных акселерограмм"
+    },
+    {
+      "entity_type": "concept",
+      "name": "конечно-элементные программные комплексы",
+      "attributes": {},
+      "evidence": "программных комплексах (далее – ПК), как правило, конечно-элементных"
+    },
+    {
+      "entity_type": "concept",
+      "name": "кинематическое воздействие",
+      "attributes": {},
+      "evidence": "кинематического воздействия"
+    },
+    {
+      "entity_type": "concept",
+      "name": "преобладающие частоты",
+      "attributes": {},
+      "evidence": "анализа преобладающих частот"
+    },
+    {
+      "entity_type": "concept",
+      "name": "рабочий диапазон",
+      "attributes": {},
+      "evidence": "рабочего диапазона"
+    },
+    {
+      "entity_type": "concept",
+      "name": "тренды",
+      "attributes": {},
+      "evidence": "выделение трендов"
+    },
+    {
+      "entity_type": "concept",
+      "name": "функции 0-го, 1-го, 2-го, 3-го порядков",
+      "attributes": {},
+      "evidence": "функциями 0-го, 1-го, 2-го, 3-го порядков"
+    }
+  ],
+  "clarification_questions": [],
+  "is_final_answer": true,
+  "chunks_processed": 1,
+  "prompt_source": "builtin"
+}

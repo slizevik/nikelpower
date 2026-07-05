@@ -1,0 +1,434 @@
+{
+  "source_path": "/data/documents/uploads/40607a01677d_Доклад_Новожилова О.С.pdf",
+  "document_category": "talk",
+  "document_title": "40607a01677d_Доклад_Новожилова О.С.pdf",
+  "language_hint": "ru",
+  "entities": [
+    {
+      "entity_type": "Material",
+      "name": "огнеупор",
+      "attributes": {},
+      "evidence": "разрушение массы огнеупора"
+    },
+    {
+      "entity_type": "Material",
+      "name": "шлак",
+      "attributes": {},
+      "evidence": "определение форм потерь цветных металлов в шлаках"
+    },
+    {
+      "entity_type": "Material",
+      "name": "цветные металлы",
+      "attributes": {},
+      "evidence": "определение форм потерь цветных металлов в шлаках"
+    },
+    {
+      "entity_type": "Material",
+      "name": "силикатная основа шлака",
+      "attributes": {},
+      "evidence": "1 – силикатная основа шлака"
+    },
+    {
+      "entity_type": "Material",
+      "name": "шлаковый расплав",
+      "attributes": {},
+      "evidence": "пропитка массы огнеупора шлаковым расплавом"
+    },
+    {
+      "entity_type": "Material",
+      "name": "гранулы пыли",
+      "attributes": {},
+      "evidence": "Вещественный состав и морфология гранул пыли"
+    },
+    {
+      "entity_type": "Process",
+      "name": "локальное ионное травление",
+      "attributes": {},
+      "evidence": "ЛОКАЛЬНОЕ ИОННОЕ ТРАВЛЕНИЕ"
+    },
+    {
+      "entity_type": "Process",
+      "name": "химическое взаимодействие компонентов огнеупора в расплаве",
+      "attributes": {},
+      "evidence": "Механизм 1: химическое взаимодействие компонентов огнеупора в расплаве"
+    },
+    {
+      "entity_type": "Process",
+      "name": "пропитка массы огнеупора шлаковым расплавом",
+      "attributes": {},
+      "evidence": "Механизм 2: пропитка массы огнеупора шлаковым расплавом"
+    },
+    {
+      "entity_type": "Process",
+      "name": "энергодисперсионная спектроскопия",
+      "attributes": {},
+      "evidence": "ЭДС (энергодисперсионная спектроскопия)"
+    },
+    {
+      "entity_type": "Process",
+      "name": "химический анализ",
+      "attributes": {},
+      "evidence": "ср состав шлака (хим. анализ)"
+    },
+    {
+      "entity_type": "Process",
+      "name": "электронная микроскопия",
+      "attributes": {},
+      "evidence": "РОЛЬ ЭЛЕКТРОННОЙ МИКРОСКОПИИ В МЕТАЛЛУРГИЧЕСКОЙ ПРОМЫШЛЕННОСТИ"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "TESCAN LYRA3",
+      "attributes": {},
+      "evidence": "1 – LYRA3 с детекторами WDS и EDS"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "TESCAN VEGA",
+      "attributes": {},
+      "evidence": "2 – VEGA с детектором с EDS"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "TESCAN MIRA",
+      "attributes": {},
+      "evidence": "3 – MIRA с детекторами EBSD и EDS"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "СЭМ",
+      "attributes": {},
+      "evidence": "аналитическими комплексами на базе СЭМ TESCAN"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "WDS",
+      "attributes": {},
+      "evidence": "детекторами WDS"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "EDS",
+      "attributes": {},
+      "evidence": "детекторами EDS"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "EBSD",
+      "attributes": {},
+      "evidence": "детекторами EBSD"
+    },
+    {
+      "entity_type": "Property",
+      "name": "гранулометрические данные",
+      "attributes": {},
+      "evidence": "Гранулометрические, топографические и морфологические данные"
+    },
+    {
+      "entity_type": "Property",
+      "name": "топографические данные",
+      "attributes": {},
+      "evidence": "Гранулометрические, топографические и морфологические данные"
+    },
+    {
+      "entity_type": "Property",
+      "name": "морфологические данные",
+      "attributes": {},
+      "evidence": "Гранулометрические, топографические и морфологические данные"
+    },
+    {
+      "entity_type": "Property",
+      "name": "элементный анализ",
+      "attributes": {},
+      "evidence": "элементный анализ"
+    },
+    {
+      "entity_type": "Property",
+      "name": "состав, % масс.",
+      "attributes": {},
+      "evidence": "Состав, % масс."
+    },
+    {
+      "entity_type": "Property",
+      "name": "кристаллографическая ориентация",
+      "attributes": {},
+      "evidence": "оттенки зеленого цвета кодируют кристаллографическую ориентацию кристаллитов"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "сравнение состава центра и периферии",
+      "attributes": {},
+      "evidence": "СРАВНЕНИЕ СОСТАВА ЦЕНТРА И ПЕРИФЕРИИ"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "определение форм потерь цветных металлов в шлаках",
+      "attributes": {},
+      "evidence": "Пример: определение форм потерь цветных металлов в шлаках"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "сравнение результатов WDS и EDS",
+      "attributes": {},
+      "evidence": "СРАВНЕНИЕ РЕЗУЛЬТАТОВ"
+    },
+    {
+      "entity_type": "Publication",
+      "name": "Доклад Новожилова О.С",
+      "attributes": {},
+      "evidence": "40607a01677d_Доклад_Новожилова О.С.pdf"
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Новожилова О.С",
+      "attributes": {},
+      "evidence": "Доклад_Новожилова О.С"
+    },
+    {
+      "entity_type": "Facility",
+      "name": "Институт Гипроникель",
+      "attributes": {},
+      "evidence": "Оборудование Института Гипроникель"
+    },
+    {
+      "entity_type": "Facility",
+      "name": "Лаборатория пирометаллургии",
+      "attributes": {},
+      "evidence": "Лаборатория пирометаллургии оборудована"
+    }
+  ],
+  "relations": [
+    {
+      "relation_type": "located_in",
+      "source_name": "Лаборатория пирометаллургии",
+      "source_type": "Facility",
+      "target_name": "Институт Гипроникель",
+      "target_type": "Facility",
+      "attributes": {
+        "original_relation_type": "located_in"
+      },
+      "evidence": "Лаборатория пирометаллургии оборудована... Оборудование Института Гипроникель"
+    },
+    {
+      "relation_type": "uses_equipment",
+      "source_name": "Лаборатория пирометаллургии",
+      "source_type": "Facility",
+      "target_name": "TESCAN LYRA3",
+      "target_type": "Equipment",
+      "attributes": {
+        "original_relation_type": "uses_equipment"
+      },
+      "evidence": "Лаборатория пирометаллургии оборудована тремя аналитическими комплексами на базе СЭМ TESCAN: 1 – LYRA3"
+    },
+    {
+      "relation_type": "uses_equipment",
+      "source_name": "Лаборатория пирометаллургии",
+      "source_type": "Facility",
+      "target_name": "TESCAN VEGA",
+      "target_type": "Equipment",
+      "attributes": {
+        "original_relation_type": "uses_equipment"
+      },
+      "evidence": "Лаборатория пирометаллургии оборудована тремя аналитическими комплексами на базе СЭМ TESCAN: 2 – VEGA"
+    },
+    {
+      "relation_type": "uses_equipment",
+      "source_name": "Лаборатория пирометаллургии",
+      "source_type": "Facility",
+      "target_name": "TESCAN MIRA",
+      "target_type": "Equipment",
+      "attributes": {
+        "original_relation_type": "uses_equipment"
+      },
+      "evidence": "Лаборатория пирометаллургии оборудована тремя аналитическими комплексами на базе СЭМ TESCAN: 3 – MIRA"
+    },
+    {
+      "relation_type": "uses_equipment",
+      "source_name": "TESCAN LYRA3",
+      "source_type": "Equipment",
+      "target_name": "WDS",
+      "target_type": "Equipment",
+      "attributes": {
+        "original_relation_type": "uses_equipment"
+      },
+      "evidence": "LYRA3 с детекторами WDS"
+    },
+    {
+      "relation_type": "uses_equipment",
+      "source_name": "TESCAN LYRA3",
+      "source_type": "Equipment",
+      "target_name": "EDS",
+      "target_type": "Equipment",
+      "attributes": {
+        "original_relation_type": "uses_equipment"
+      },
+      "evidence": "LYRA3 с детекторами ... EDS"
+    },
+    {
+      "relation_type": "uses_equipment",
+      "source_name": "TESCAN VEGA",
+      "source_type": "Equipment",
+      "target_name": "EDS",
+      "target_type": "Equipment",
+      "attributes": {
+        "original_relation_type": "uses_equipment"
+      },
+      "evidence": "VEGA с детектором с EDS"
+    },
+    {
+      "relation_type": "uses_equipment",
+      "source_name": "TESCAN MIRA",
+      "source_type": "Equipment",
+      "target_name": "EBSD",
+      "target_type": "Equipment",
+      "attributes": {
+        "original_relation_type": "uses_equipment"
+      },
+      "evidence": "MIRA с детекторами EBSD"
+    },
+    {
+      "relation_type": "uses_equipment",
+      "source_name": "TESCAN MIRA",
+      "source_type": "Equipment",
+      "target_name": "EDS",
+      "target_type": "Equipment",
+      "attributes": {
+        "original_relation_type": "uses_equipment"
+      },
+      "evidence": "MIRA с детекторами ... EDS"
+    },
+    {
+      "relation_type": "authored_by",
+      "source_name": "Доклад Новожилова О.С",
+      "source_type": "Publication",
+      "target_name": "Новожилова О.С",
+      "target_type": "Expert",
+      "attributes": {
+        "original_relation_type": "authored_by"
+      },
+      "evidence": "Доклад_Новожилова О.С"
+    },
+    {
+      "relation_type": "uses_equipment",
+      "source_name": "сравнение результатов WDS и EDS",
+      "source_type": "Experiment",
+      "target_name": "WDS",
+      "target_type": "Equipment",
+      "attributes": {
+        "original_relation_type": "uses_equipment"
+      },
+      "evidence": "СРАВНЕНИЕ РЕЗУЛЬТАТОВ ... WDS"
+    },
+    {
+      "relation_type": "uses_equipment",
+      "source_name": "сравнение результатов WDS и EDS",
+      "source_type": "Experiment",
+      "target_name": "EDS",
+      "target_type": "Equipment",
+      "attributes": {
+        "original_relation_type": "uses_equipment"
+      },
+      "evidence": "СРАВНЕНИЕ РЕЗУЛЬТАТОВ ... EDS"
+    },
+    {
+      "relation_type": "analyzes_material",
+      "source_name": "определение форм потерь цветных металлов в шлаках",
+      "source_type": "Experiment",
+      "target_name": "цветные металлы",
+      "target_type": "Material",
+      "attributes": {
+        "original_relation_type": "analyzes_material"
+      },
+      "evidence": "определение форм потерь цветных металлов в шлаках"
+    },
+    {
+      "relation_type": "analyzes_material",
+      "source_name": "определение форм потерь цветных металлов в шлаках",
+      "source_type": "Experiment",
+      "target_name": "шлак",
+      "target_type": "Material",
+      "attributes": {
+        "original_relation_type": "analyzes_material"
+      },
+      "evidence": "определение форм потерь цветных металлов в шлаках"
+    }
+  ],
+  "other_entities": [
+    {
+      "entity_type": "metal",
+      "name": "Fe",
+      "attributes": {},
+      "evidence": "Fe"
+    },
+    {
+      "entity_type": "metal",
+      "name": "Co",
+      "attributes": {},
+      "evidence": "Co"
+    },
+    {
+      "entity_type": "metal",
+      "name": "Ni",
+      "attributes": {},
+      "evidence": "Ni"
+    },
+    {
+      "entity_type": "metal",
+      "name": "Cu",
+      "attributes": {},
+      "evidence": "Cu"
+    },
+    {
+      "entity_type": "element",
+      "name": "Mg",
+      "attributes": {},
+      "evidence": "Mgkα"
+    },
+    {
+      "entity_type": "element",
+      "name": "Cr",
+      "attributes": {},
+      "evidence": "Crkα"
+    },
+    {
+      "entity_type": "element",
+      "name": "Si",
+      "attributes": {},
+      "evidence": "Sikα"
+    },
+    {
+      "entity_type": "element",
+      "name": "Fe",
+      "attributes": {},
+      "evidence": "Fekα"
+    },
+    {
+      "entity_type": "element",
+      "name": "Al",
+      "attributes": {},
+      "evidence": "Alkα"
+    },
+    {
+      "entity_type": "material_phase",
+      "name": "закаленные области",
+      "attributes": {},
+      "evidence": "А – закаленные области"
+    },
+    {
+      "entity_type": "material_phase",
+      "name": "раскристализованные",
+      "attributes": {},
+      "evidence": "Б – раскристализованные"
+    },
+    {
+      "entity_type": "material_phase",
+      "name": "корольки",
+      "attributes": {},
+      "evidence": "2 – корольки"
+    }
+  ],
+  "clarification_questions": [],
+  "is_final_answer": true,
+  "chunks_processed": 1,
+  "prompt_source": "builtin"
+}

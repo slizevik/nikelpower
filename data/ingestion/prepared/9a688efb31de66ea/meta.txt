@@ -1,0 +1,6 @@
+source=/data/documents/uploads/40607a01677d_Доклад_Новожилова О.С.pdf
+pdf=/data/documents/uploads/40607a01677d_Доклад_Новожилова О.С.pdf
+doc_type=pdf
+language=ru
+pages=8
+images=40

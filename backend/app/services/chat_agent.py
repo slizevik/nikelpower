@@ -18,16 +18,23 @@ from app.llm.yandex_client import get_yandex_client
 from app.models.chat import ChatAgentResponse, ChatDocumentResult, ChatSearchFilters
 from app.services.query_augmentation import augment_query
 from app.services.rag_search import RagHit, RagSearchService
+from app.services.text_cleanup import sanitize_rag_text, sanitize_summary
 
 logger = logging.getLogger(__name__)
 
-SYSTEM_PROMPT = """You are a materials-science document retrieval assistant for Nikelpower.
+SUMMARY_MAX_WORDS = 150
+
+SYSTEM_PROMPT = f"""You are a materials-science document retrieval assistant for Nikelpower.
 You receive user query and retrieved document fragments from a vector database (cosine similarity).
 
 Rules:
 - Answer ONLY based on provided fragments. Do NOT invent documents or authors.
 - For each distinct source document, produce one entry in "documents".
-- summary must reflect how the document relates to the user query (2–4 sentences).
+- summary: explain how the document relates to the user query in clear Russian prose.
+  HARD LIMIT: at most {SUMMARY_MAX_WORDS} words per summary.
+  Write 2–4 complete sentences. No bullet lists, no markdown, no code blocks.
+  NEVER copy or paraphrase ingestion artifacts: [FIGURE ...], [IMG:...], UUIDs, ```json blocks, raw JSON keys like "image_type", truncated VLM output.
+  If fragments only contain figure captions or garbage, summarize only the readable scientific content you can infer from other fragments.
 - author_or_source: authors, organization, or publication name from fragments; null if unknown.
 - updated_at: use provided updated_at from metadata; null if unknown.
 - reliability: high (score>=0.82), medium (0.70–0.82), low (<0.70) based on relevance score.
@@ -153,7 +160,12 @@ class ChatAgentService:
             authors = self.entity_store.get_authors_for_document(group_id) if group_id else []
             author_str = ", ".join(authors) if authors else None
             pages = f"{meta.page_start}–{meta.page_end}" if meta.page_start else None
-            fragments = "\n\n".join(h.text[:1200] for h in doc_hits[:3])
+            clean_parts: list[str] = []
+            for h in doc_hits[:3]:
+                cleaned = sanitize_rag_text(h.text)[:1200]
+                if cleaned:
+                    clean_parts.append(cleaned)
+            fragments = "\n\n".join(clean_parts)
             doc_blocks.append(
                 {
                     "group_id": group_id,
@@ -174,10 +186,14 @@ class ChatAgentService:
         for i, block in enumerate(doc_blocks):
             llm_item = llm_docs[i] if i < len(llm_docs) else {}
             score = float(block.get("max_score", 0))
+            raw_summary = llm_item.get("summary") or block["fragments"][:400]
+            summary = sanitize_summary(raw_summary, max_words=SUMMARY_MAX_WORDS) or sanitize_summary(
+                block["fragments"], max_words=SUMMARY_MAX_WORDS
+            )
             documents.append(
                 ChatDocumentResult(
                     title=llm_item.get("title") or block["title"],
-                    summary=llm_item.get("summary") or block["fragments"][:400],
+                    summary=summary,
                     author_or_source=llm_item.get("author_or_source") or block.get("author_or_source"),
                     updated_at=llm_item.get("updated_at") or block.get("updated_at"),
                     download_path=block.get("download_path"),
@@ -202,7 +218,13 @@ class ChatAgentService:
 
     def _summarize_with_llm(self, user_query: str, doc_blocks: list[dict]) -> list[dict]:
         if not settings.yandex_cloud_model:
-            return [{"title": b["title"], "summary": b["fragments"][:500]} for b in doc_blocks]
+            return [
+                {
+                    "title": b["title"],
+                    "summary": sanitize_summary(b["fragments"], max_words=SUMMARY_MAX_WORDS),
+                }
+                for b in doc_blocks
+            ]
 
         context = json.dumps(doc_blocks, ensure_ascii=False, indent=2)
         user_prompt = f"""User query: {user_query}
@@ -215,7 +237,7 @@ Return JSON:
   "documents": [
     {{
       "title": "string",
-      "summary": "string — relevance to user query",
+      "summary": "string — relevance to user query, Russian, max 150 words, no figure/json artifacts",
       "author_or_source": "string or null",
       "updated_at": "string or null"
     }}
@@ -239,10 +261,23 @@ Return JSON:
             )
             raw = response.choices[0].message.content or "{}"
             parsed = json.loads(raw)
-            return parsed.get("documents") or []
+            docs = parsed.get("documents") or []
+            for item in docs:
+                if isinstance(item, dict) and item.get("summary"):
+                    item["summary"] = sanitize_summary(
+                        str(item["summary"]),
+                        max_words=SUMMARY_MAX_WORDS,
+                    )
+            return docs
         except Exception as exc:
             logger.warning("LLM summarization failed: %s", exc)
-            return [{"title": b["title"], "summary": b["fragments"][:500]} for b in doc_blocks]
+            return [
+                {
+                    "title": b["title"],
+                    "summary": sanitize_summary(b["fragments"], max_words=SUMMARY_MAX_WORDS),
+                }
+                for b in doc_blocks
+            ]
 
     @staticmethod
     def _is_comparative(query: str) -> bool:
