@@ -20,6 +20,14 @@ from app.ingestion.vision_client import analyze_images_sequential
 logger = logging.getLogger(__name__)
 
 
+def _select_images_for_vlm(images: list) -> list:
+    """Оставляет крупнейшие изображения, если их больше лимита VLM."""
+    limit = settings.max_vlm_images
+    if limit <= 0 or len(images) <= limit:
+        return images
+    return sorted(images, key=lambda img: img.width * img.height, reverse=True)[:limit]
+
+
 def validate_document_path(path: Path) -> None:
     ext = path.suffix.lower()
     if ext not in SUPPORTED_DOCUMENT_EXTENSIONS:
@@ -53,11 +61,19 @@ def parse_document_full(
 
     descriptions: dict[str, str] = {}
     if do_vlm and images:
-        report_progress(
-            on_progress,
-            IngestionStep.ANALYZING_IMAGES,
-            f"{len(images)} изображений",
-        )
+        vlm_targets = _select_images_for_vlm(images)
+        if len(vlm_targets) < len(images):
+            report_progress(
+                on_progress,
+                IngestionStep.ANALYZING_IMAGES,
+                f"{len(vlm_targets)} из {len(images)} крупных изображений",
+            )
+        else:
+            report_progress(
+                on_progress,
+                IngestionStep.ANALYZING_IMAGES,
+                f"{len(vlm_targets)} изображений",
+            )
 
         def _on_image(current: int, total: int, image_id: str) -> None:
             report_progress(
@@ -66,7 +82,10 @@ def parse_document_full(
                 f"{current}/{total} ({image_id})",
             )
 
-        descriptions = analyze_images_sequential(images, on_image=_on_image)
+        descriptions = analyze_images_sequential(vlm_targets, on_image=_on_image)
+        skipped = {img.image_id for img in images} - set(descriptions)
+        for image_id in skipped:
+            descriptions[image_id] = "изображение не анализировалось (фильтр размера или лимит VLM)"
 
     result = ParseResult(
         source_path=str(path),

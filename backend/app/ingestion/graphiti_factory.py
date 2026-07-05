@@ -8,7 +8,7 @@ from graphiti_core import Graphiti
 from graphiti_core.cross_encoder.openai_reranker_client import OpenAIRerankerClient
 from graphiti_core.embedder.openai import OpenAIEmbedder, OpenAIEmbedderConfig
 from graphiti_core.llm_client.config import LLMConfig
-from graphiti_core.llm_client.openai_generic_client import OpenAIGenericClient
+from app.ingestion.yandex_graphiti_llm import YandexGraphitiLLMClient
 
 from app.config import settings
 
@@ -47,7 +47,7 @@ def create_graphiti() -> Graphiti:
         small_model=llm_model,
         base_url=base,
     )
-    llm_client = OpenAIGenericClient(
+    llm_client = YandexGraphitiLLMClient(
         config=llm_config,
         client=async_client,
         structured_output_mode="json_object",

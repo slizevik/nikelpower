@@ -33,12 +33,29 @@ class Settings:
 
     redis_url: str = os.getenv("REDIS_URL", "redis://localhost:6379/0")
 
+    postgres_user: str = os.getenv("POSTGRES_USER", "nikelpower")
+    postgres_password: str = os.getenv("POSTGRES_PASSWORD", "nikelpower2026")
+    postgres_db: str = os.getenv("POSTGRES_DB", "nikelpower")
+    postgres_host: str = os.getenv("POSTGRES_HOST", "localhost")
+    postgres_port: int = int(os.getenv("POSTGRES_PORT", "5432"))
+
+    @property
+    def database_url(self) -> str:
+        explicit = os.getenv("DATABASE_URL", "").strip()
+        if explicit:
+            return explicit
+        return (
+            f"postgresql://{self.postgres_user}:{self.postgres_password}"
+            f"@{self.postgres_host}:{self.postgres_port}/{self.postgres_db}"
+        )
+
     documents_dir: Path = _path_from_env("DOCUMENTS_DIR", "data/documents")
     ingestion_state_dir: Path = _path_from_env("INGESTION_STATE_DIR", "data/ingestion")
 
-    chunk_target_tokens: int = int(os.getenv("CHUNK_TARGET_TOKENS", "850"))
-    chunk_max_tokens: int = int(os.getenv("CHUNK_MAX_TOKENS", "1000"))
+    chunk_target_tokens: int = int(os.getenv("CHUNK_TARGET_TOKENS", "650"))
+    chunk_max_tokens: int = int(os.getenv("CHUNK_MAX_TOKENS", "800"))
     chunk_overlap_paragraphs: int = int(os.getenv("CHUNK_OVERLAP_PARAGRAPHS", "1"))
+    embedding_max_input_tokens: int = int(os.getenv("EMBEDDING_MAX_INPUT_TOKENS", "1800"))
 
     chunk_size_chars: int = int(os.getenv("CHUNK_SIZE_CHARS", "6000"))
     chunk_overlap_percent: float = float(os.getenv("CHUNK_OVERLAP_PERCENT", "15"))
@@ -58,6 +75,10 @@ class Settings:
         "true",
         "yes",
     )
+    min_image_bytes: int = int(os.getenv("MIN_IMAGE_BYTES", "2048"))
+    min_image_width: int = int(os.getenv("MIN_IMAGE_WIDTH", "100"))
+    min_image_height: int = int(os.getenv("MIN_IMAGE_HEIGHT", "100"))
+    max_vlm_images: int = int(os.getenv("MAX_VLM_IMAGES", "40"))
 
     enable_graphiti_enrichment: bool = os.getenv(
         "ENABLE_GRAPHITI_ENRICHMENT", "true"

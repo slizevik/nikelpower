@@ -1,0 +1,15 @@
+{
+  "group_id": "09f1e82cf5243c54",
+  "source_path": "/data/documents/uploads/17eee97cccca_59 ТНК МЕДНОГО НИКЕЛЬСОДЕРЖАЩЕГО СЫРЬЯ.docx",
+  "content_hash": "09f1e82cf5243c54",
+  "document_category": "talk",
+  "status": "completed",
+  "neo4j_completed": true,
+  "graphiti_completed": true,
+  "graphiti_episodes": [],
+  "graphiti_chunks_total": 24,
+  "graphiti_chunks_ingested": 0,
+  "clarification_questions": [],
+  "error": null,
+  "updated_at": "2026-07-04T23:44:27.468146+00:00"
+}

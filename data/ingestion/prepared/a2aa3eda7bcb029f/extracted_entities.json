@@ -1,0 +1,551 @@
+{
+  "source_path": "/data/documents/uploads/d25b90856041_Прогнозирование_участков_концентрации_напряжений_в_массиве_горных.pptx",
+  "document_category": "talk",
+  "document_title": "d25b90856041_Прогнозирование_участков_концентрации_напряжений_в_массиве_горных.pptx",
+  "language_hint": "ru",
+  "entities": [
+    {
+      "entity_type": "Material",
+      "name": "закладочный материал",
+      "attributes": {},
+      "evidence": "ключевым материалом является закладочный материал (серая штриховка), используемый для крепления выработок"
+    },
+    {
+      "entity_type": "Material",
+      "name": "горные породы",
+      "attributes": {},
+      "evidence": "массив горных пород"
+    },
+    {
+      "entity_type": "Process",
+      "name": "региональный прогноз удароопасности микросейсмическим методом",
+      "attributes": {},
+      "evidence": "регионального прогноза удароопасности микросейсмическим методом"
+    },
+    {
+      "entity_type": "Process",
+      "name": "взрывные работы",
+      "attributes": {},
+      "evidence": "внешних факторов, таких как взрывные работы"
+    },
+    {
+      "entity_type": "Process",
+      "name": "бурение",
+      "attributes": {},
+      "evidence": "бурение и другие технологические процессы"
+    },
+    {
+      "entity_type": "Process",
+      "name": "отработка рудника",
+      "attributes": {},
+      "evidence": "во время отработки рудника"
+    },
+    {
+      "entity_type": "Process",
+      "name": "крепление выработок",
+      "attributes": {},
+      "evidence": "используемый для крепления выработок"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "сейсмопавильоны",
+      "attributes": {},
+      "evidence": "СП1-СП17, СП24 (сейсмопавильоны)"
+    },
+    {
+      "entity_type": "Property",
+      "name": "скорость продольных волн",
+      "attributes": {},
+      "evidence": "скоростей распространения продольных волн"
+    },
+    {
+      "entity_type": "Property",
+      "name": "плотность горного массива",
+      "attributes": {},
+      "evidence": "скорости продольных волн от плотности горного массива"
+    },
+    {
+      "entity_type": "Property",
+      "name": "напряженно-деформированное состояние",
+      "attributes": {},
+      "evidence": "напряженно-деформированного состояния массива"
+    },
+    {
+      "entity_type": "Property",
+      "name": "энергия сейсмособытий",
+      "attributes": {},
+      "evidence": "Энергия сейсмособытий: 3 - 3746 Дж"
+    },
+    {
+      "entity_type": "Property",
+      "name": "модули упругости",
+      "attributes": {},
+      "evidence": "модулей упругости породы"
+    },
+    {
+      "entity_type": "Property",
+      "name": "прочность горных пород",
+      "attributes": {},
+      "evidence": "когда прочность горных пород была превышена"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "взрыв, произошедший 7 апреля 2023 года",
+      "attributes": {},
+      "evidence": "взрыву, произошедшему 7 апреля 2023 года"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "сейсмособытия от 6 до 8 апреля 2023 года",
+      "attributes": {},
+      "evidence": "произошедшие сейсмособытия от 6 до 8 апреля 2023 года"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "техногенные взрывы во 2 квартале 2024 года",
+      "attributes": {},
+      "evidence": "Техногенные взрывы, произведённые во 2 квартале 2024 года"
+    },
+    {
+      "entity_type": "Publication",
+      "name": "d25b90856041_Прогнозирование_участков_концентрации_напряжений_в_массиве_горных.pptx",
+      "attributes": {},
+      "evidence": "Document Title: d25b90856041_Прогнозирование_участков_концентрации_напряжений_в_массиве_горных.pptx"
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Уразбаев Т.Р.",
+      "attributes": {
+        "organization": "ООО «ИНГОРТЕХ»"
+      },
+      "evidence": "Уразбаев Т.Р. Ведущий инженер-геофизик"
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Трофимов А.В.",
+      "attributes": {
+        "organization": "ООО «Институт Гипроникель»"
+      },
+      "evidence": "Трофимов А.В. к.т.н., Заместитель директора департамента по исследованиям и разработкам"
+    },
+    {
+      "entity_type": "Facility",
+      "name": "ООО «ИНГОРТЕХ»",
+      "attributes": {},
+      "evidence": "ООО «ИНГОРТЕХ»"
+    },
+    {
+      "entity_type": "Facility",
+      "name": "ООО «Институт Гипроникель»",
+      "attributes": {},
+      "evidence": "ООО «Институт Гипроникель»"
+    },
+    {
+      "entity_type": "Process",
+      "name": "отработка массива",
+      "attributes": {},
+      "evidence": "отработка массива, другие факторы), что привело к перераспределению горного напряжения"
+    },
+    {
+      "entity_type": "Process",
+      "name": "прогнозирование участков концентрации напряжений",
+      "attributes": {},
+      "evidence": "методики прогнозирования участков концентрации напряжений в массиве горных пород"
+    },
+    {
+      "entity_type": "Property",
+      "name": "плотность",
+      "attributes": {},
+      "evidence": "Скорость волн служит индикатором плотности и модулей упругости породы"
+    },
+    {
+      "entity_type": "Property",
+      "name": "удароопасность",
+      "attributes": {},
+      "evidence": "прогнозной зоны удароопасности по критерию F"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "оценка практической пользы методики",
+      "attributes": {},
+      "evidence": "Для того, чтобы оценить практическую пользу методики прогнозирования участков концентрации напряжений в массиве горных пород, были отобраны 11 наиболее крупных сейсмособытий, произошедших за 2024 год на руднике"
+    },
+    {
+      "entity_type": "Facility",
+      "name": "рудник",
+      "attributes": {},
+      "evidence": "произошедших за 2024 год на руднике"
+    },
+    {
+      "entity_type": "Material",
+      "name": "порода",
+      "attributes": {},
+      "evidence": "модулей упругости породы"
+    },
+    {
+      "entity_type": "Process",
+      "name": "сейсмический мониторинг",
+      "attributes": {},
+      "evidence": "сеть сейсмического мониторинга, предназначенную для оценки состояния горного массива"
+    },
+    {
+      "entity_type": "Process",
+      "name": "взрывы",
+      "attributes": {},
+      "evidence": "сейсмические события, вероятно, взрывы или обрушения"
+    },
+    {
+      "entity_type": "Process",
+      "name": "обрушения",
+      "attributes": {},
+      "evidence": "сейсмические события, вероятно, взрывы или обрушения"
+    },
+    {
+      "entity_type": "Process",
+      "name": "отработка камер",
+      "attributes": {},
+      "evidence": "Черные прямоугольники обозначают пустоты (камеры), которые будут отработаны"
+    },
+    {
+      "entity_type": "Property",
+      "name": "энергия высвобождения",
+      "attributes": {},
+      "evidence": "энергии высвобождения (сейсмические события"
+    },
+    {
+      "entity_type": "Property",
+      "name": "упругие свойства",
+      "attributes": {},
+      "evidence": "упругими свойствами горного массива"
+    },
+    {
+      "entity_type": "Property",
+      "name": "максимальная зафиксированная энергия",
+      "attributes": {},
+      "evidence": "Максимальная зафиксированная энергия: 3746 Дж"
+    },
+    {
+      "entity_type": "Property",
+      "name": "максимальная скорость волн",
+      "attributes": {},
+      "evidence": "Максимальная скорость волн: 6688 м/с"
+    },
+    {
+      "entity_type": "Facility",
+      "name": "горное предприятие",
+      "attributes": {},
+      "evidence": "план горного предприятия"
+    }
+  ],
+  "relations": [
+    {
+      "relation_type": "employed_by",
+      "source_name": "Уразбаев Т.Р.",
+      "source_type": "Expert",
+      "target_name": "ООО «ИНГОРТЕХ»",
+      "target_type": "Facility",
+      "attributes": {
+        "original_relation_type": "employed_by"
+      },
+      "evidence": "Уразбаев Т.Р. Ведущий инженер-геофизик, ООО «ИНГОРТЕХ»"
+    },
+    {
+      "relation_type": "employed_by",
+      "source_name": "Трофимов А.В.",
+      "source_type": "Expert",
+      "target_name": "ООО «Институт Гипроникель»",
+      "target_type": "Facility",
+      "attributes": {
+        "original_relation_type": "employed_by"
+      },
+      "evidence": "Трофимов А.В. ... ООО «Институт Гипроникель»"
+    },
+    {
+      "relation_type": "uses_property",
+      "source_name": "региональный прогноз удароопасности микросейсмическим методом",
+      "source_type": "Process",
+      "target_name": "скорость продольных волн",
+      "target_type": "Property",
+      "attributes": {
+        "original_relation_type": "uses_property"
+      },
+      "evidence": "Прогнозирование ... по данным скоростей распространения продольных волн"
+    },
+    {
+      "relation_type": "indicates",
+      "source_name": "скорость продольных волн",
+      "source_type": "Property",
+      "target_name": "плотность горного массива",
+      "target_type": "Property",
+      "attributes": {
+        "original_relation_type": "indicates"
+      },
+      "evidence": "зависимость распространения в массиве скорости продольных волн от плотности горного массива"
+    },
+    {
+      "relation_type": "indicates",
+      "source_name": "скорость продольных волн",
+      "source_type": "Property",
+      "target_name": "напряженно-деформированное состояние",
+      "target_type": "Property",
+      "attributes": {
+        "original_relation_type": "indicates"
+      },
+      "evidence": "скорости продольных волн от ... его напряженно-деформированного состояния"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "взрывные работы",
+      "source_type": "Process",
+      "target_name": "сейсмические события",
+      "target_type": "geodynamic_phenomenon",
+      "attributes": {},
+      "evidence": "В качестве инициатора продольных волн предлагается использовать техногенные промышленные взрывы и крупные сейсмособытия"
+    },
+    {
+      "relation_type": "measures",
+      "source_name": "сейсмопавильоны",
+      "source_type": "Equipment",
+      "target_name": "скорость продольных волн",
+      "target_type": "Property",
+      "attributes": {
+        "original_relation_type": "measures"
+      },
+      "evidence": "отслеживание скоростей продольных волн между сейсмопавильонами"
+    },
+    {
+      "relation_type": "used_for",
+      "source_name": "закладочный материал",
+      "source_type": "Material",
+      "target_name": "крепление выработок",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "used_for"
+      },
+      "evidence": "закладочный материал ... используемый для крепления выработок"
+    },
+    {
+      "relation_type": "affiliated_with",
+      "source_name": "Уразбаев Т.Р.",
+      "source_type": "Expert",
+      "target_name": "ООО «ИНГОРТЕХ»",
+      "target_type": "Facility",
+      "attributes": {
+        "original_relation_type": "affiliated_with"
+      },
+      "evidence": "Уразбаев Т.Р. Ведущий инженер-геофизик, ООО «ИНГОРТЕХ»"
+    },
+    {
+      "relation_type": "affiliated_with",
+      "source_name": "Трофимов А.В.",
+      "source_type": "Expert",
+      "target_name": "Nornik",
+      "target_type": "Entity",
+      "attributes": {
+        "original_relation_type": "affiliated_with"
+      },
+      "evidence": "TrofimovAV@nornik.ru"
+    },
+    {
+      "relation_type": "used_in",
+      "source_name": "закладочный материал",
+      "source_type": "Material",
+      "target_name": "горные породы",
+      "target_type": "Material",
+      "attributes": {
+        "original_relation_type": "used_in"
+      },
+      "evidence": "закладочный материал ... используемый для крепления выработок"
+    },
+    {
+      "relation_type": "indicates",
+      "source_name": "скорость продольных волн",
+      "source_type": "Property",
+      "target_name": "плотность",
+      "target_type": "Property",
+      "attributes": {
+        "original_relation_type": "indicates"
+      },
+      "evidence": "Скорость волн служит индикатором плотности"
+    },
+    {
+      "relation_type": "indicates",
+      "source_name": "скорость продольных волн",
+      "source_type": "Property",
+      "target_name": "модули упругости",
+      "target_type": "Property",
+      "attributes": {
+        "original_relation_type": "indicates"
+      },
+      "evidence": "Скорость волн служит индикатором ... модулей упругости породы"
+    },
+    {
+      "relation_type": "conducted_at",
+      "source_name": "оценка практической пользы методики",
+      "source_type": "Experiment",
+      "target_name": "рудник",
+      "target_type": "Facility",
+      "attributes": {
+        "original_relation_type": "conducted_at"
+      },
+      "evidence": "оценить практическую пользу методики ... произошедших за 2024 год на руднике"
+    },
+    {
+      "relation_type": "employed_by",
+      "source_name": "Трофимов А.В.",
+      "source_type": "Expert",
+      "target_name": "nornik.ru",
+      "target_type": "Entity",
+      "attributes": {
+        "original_relation_type": "employed_by"
+      },
+      "evidence": "Трофимов А.В. ... TrofimovAV@nornik.ru"
+    },
+    {
+      "relation_type": "monitors",
+      "source_name": "сейсмопавильоны",
+      "source_type": "Equipment",
+      "target_name": "горный массив",
+      "target_type": "geological_structure",
+      "attributes": {
+        "original_relation_type": "monitors"
+      },
+      "evidence": "сеть сейсмического мониторинга, предназначенную для оценки состояния горного массива"
+    },
+    {
+      "relation_type": "used_in",
+      "source_name": "закладочный материал",
+      "source_type": "Material",
+      "target_name": "выработки",
+      "target_type": "geological_structure",
+      "attributes": {
+        "original_relation_type": "used_in"
+      },
+      "evidence": "закладочный материал ... используемый для крепления выработок"
+    },
+    {
+      "relation_type": "indicates_property_of",
+      "source_name": "скорость продольных волн",
+      "source_type": "Property",
+      "target_name": "порода",
+      "target_type": "Material",
+      "attributes": {
+        "original_relation_type": "indicates_property_of"
+      },
+      "evidence": "Скорость волн служит индикатором плотности и модулей упругости породы"
+    },
+    {
+      "relation_type": "measured_by",
+      "source_name": "энергия высвобождения",
+      "source_type": "Property",
+      "target_name": "сейсмические события",
+      "target_type": "event",
+      "attributes": {
+        "original_relation_type": "measured_by"
+      },
+      "evidence": "энергии высвобождения (сейсмические события"
+    }
+  ],
+  "other_entities": [
+    {
+      "entity_type": "geodynamic_phenomenon",
+      "name": "горные удары",
+      "attributes": {},
+      "evidence": "динамических процессов, таких как горные удары"
+    },
+    {
+      "entity_type": "geodynamic_phenomenon",
+      "name": "землетрясения",
+      "attributes": {},
+      "evidence": "землетрясения и другие сейсмические явления"
+    },
+    {
+      "entity_type": "geodynamic_phenomenon",
+      "name": "сейсмические события",
+      "attributes": {},
+      "evidence": "сейсмические события, вероятно, взрывы или обрушения"
+    },
+    {
+      "entity_type": "location",
+      "name": "рудник",
+      "attributes": {},
+      "evidence": "на руднике"
+    },
+    {
+      "entity_type": "location",
+      "name": "камеры",
+      "attributes": {},
+      "evidence": "Отрабатываемые во 2 квартале камеры"
+    },
+    {
+      "entity_type": "location",
+      "name": "Екатеринбург",
+      "attributes": {},
+      "evidence": "г. Екатеринбург"
+    },
+    {
+      "entity_type": "location",
+      "name": "Санкт-Петербург",
+      "attributes": {},
+      "evidence": "г. Санкт-Петербург"
+    },
+    {
+      "entity_type": "metric",
+      "name": "максимальная зафиксированная энергия",
+      "attributes": {},
+      "evidence": "Максимальная зафиксированная энергия: 3746 Дж"
+    },
+    {
+      "entity_type": "metric",
+      "name": "максимальная скорость волн",
+      "attributes": {},
+      "evidence": "Максимальная скорость волн: 6688 м/с"
+    },
+    {
+      "entity_type": "concept",
+      "name": "сейсмические события",
+      "attributes": {},
+      "evidence": "сейсмические события, вероятно, взрывы или обрушения"
+    },
+    {
+      "entity_type": "concept",
+      "name": "тектоническое нарушение",
+      "attributes": {},
+      "evidence": "близость тектонического нарушения"
+    },
+    {
+      "entity_type": "time_period",
+      "name": "2 квартал",
+      "attributes": {},
+      "evidence": "Отрабатываемые во 2 квартале камеры"
+    },
+    {
+      "entity_type": "geological_structure",
+      "name": "горный массив",
+      "attributes": {},
+      "evidence": "горного массива"
+    },
+    {
+      "entity_type": "geological_structure",
+      "name": "камеры",
+      "attributes": {},
+      "evidence": "пустоты (камеры)"
+    },
+    {
+      "entity_type": "geological_structure",
+      "name": "выработки",
+      "attributes": {},
+      "evidence": "крепления выработок"
+    },
+    {
+      "entity_type": "event",
+      "name": "сейсмические события",
+      "attributes": {},
+      "evidence": "сейсмические события"
+    }
+  ],
+  "clarification_questions": [],
+  "is_final_answer": true,
+  "chunks_processed": 3,
+  "prompt_source": "builtin"
+}

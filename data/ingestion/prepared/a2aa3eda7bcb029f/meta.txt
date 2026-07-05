@@ -1,0 +1,6 @@
+source=/data/documents/uploads/d25b90856041_Прогнозирование_участков_концентрации_напряжений_в_массиве_горных.pptx
+pdf=data/ingestion/converted/d25b90856041_Прогнозирование_участков_концентрации_напряжений_в_массиве_горных_3e44ef0b.pdf
+doc_type=pptx
+language=ru
+pages=9
+images=11

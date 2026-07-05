@@ -6,7 +6,6 @@ from openai import OpenAI
 
 from app.llm.token_budget import (
     count_tokens,
-    count_tokens_many,
     get_token_budget,
     usage_from_api_response,
 )
@@ -16,13 +15,10 @@ def embeddings_create(
     client: OpenAI,
     *,
     model: str,
-    input: str | list[str],
+    input: str,
 ) -> object:
     budget = get_token_budget()
-    if isinstance(input, str):
-        estimate = count_tokens(input)
-    else:
-        estimate = count_tokens_many(input)
+    estimate = count_tokens(input)
 
     budget.check_available(estimate)
     response = client.embeddings.create(
@@ -31,12 +27,7 @@ def embeddings_create(
         encoding_format="float",
     )
 
-    if isinstance(input, str):
-        budget.record_text_as_tokens(input, "embeddings", response=response)
-    else:
-        total_estimate = count_tokens_many(input)
-        tokens = usage_from_api_response(response) or total_estimate
-        budget.record(tokens, "embeddings")
+    budget.record_text_as_tokens(input, "embeddings", response=response)
 
     return response
 

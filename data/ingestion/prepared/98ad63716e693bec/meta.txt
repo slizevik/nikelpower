@@ -1,0 +1,6 @@
+source=/data/documents/uploads/a169e46cb91f_Переработка рудных образований океана - Цымбулов Л.Б. Институт Гипроникель-16-06-2024.pptx
+pdf=data/ingestion/converted/a169e46cb91f_Переработка рудных образований океана - Цымбулов Л.Б. Институт Гипроникель-16-06-2024_f2e550a8.pdf
+doc_type=pptx
+language=mixed
+pages=27
+images=26

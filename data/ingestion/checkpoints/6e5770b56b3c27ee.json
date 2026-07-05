@@ -1,0 +1,15 @@
+{
+  "group_id": "6e5770b56b3c27ee",
+  "source_path": "/data/documents/uploads/d25b90856041_Прогнозирование_участков_концентрации_напряжений_в_массиве_горных.pptx",
+  "content_hash": "6e5770b56b3c27ee",
+  "document_category": "talk",
+  "status": "completed",
+  "neo4j_completed": true,
+  "graphiti_completed": true,
+  "graphiti_episodes": [],
+  "graphiti_chunks_total": 26,
+  "graphiti_chunks_ingested": 0,
+  "clarification_questions": [],
+  "error": null,
+  "updated_at": "2026-07-05T00:03:54.993797+00:00"
+}

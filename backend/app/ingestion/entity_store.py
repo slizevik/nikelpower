@@ -153,3 +153,80 @@ class IngestedEntityStore:
         if entity.evidence:
             parts.append(entity.evidence)
         return " | ".join(parts)
+
+    def search_by_embedding(self, query: str, top_k: int = 10) -> list[dict]:
+        from app.dictionary.embeddings import embed_text
+
+        vector = embed_text(query)
+        with self.driver.session() as session:
+            result = session.run(
+                """
+                CALL db.index.vector.queryNodes($index_name, $top_k, $embedding)
+                YIELD node, score
+                RETURN node.id AS id,
+                       node.name AS name,
+                       node.entity_type AS entity_type,
+                       score
+                ORDER BY score DESC
+                """,
+                index_name=INGESTED_ENTITY_INDEX,
+                top_k=top_k,
+                embedding=vector,
+            )
+            return [dict(row) for row in result]
+
+    def find_group_ids_by_geo(self, geo: str) -> list[str] | None:
+        """geo: all → None (без фильтра), russia | foreign → список group_id."""
+        if geo in ("", "all"):
+            return None
+
+        with self.driver.session() as session:
+            if geo == "russia":
+                result = session.run(
+                    """
+                    MATCH (d:SourceDocument)-[:HAS_INGESTED_ENTITY]->(e:IngestedEntity)
+                    WHERE e.entity_type IN ['Expert', 'Publication', 'Facility']
+                      AND (
+                        toLower(coalesce(e.attributes_json, '')) CONTAINS '"is_russian": true'
+                        OR toLower(coalesce(e.attributes_json, '')) CONTAINS '"is_russian":true'
+                        OR toLower(coalesce(e.attributes_json, '')) CONTAINS 'росси'
+                        OR toLower(coalesce(e.evidence, '')) CONTAINS 'росси'
+                        OR toLower(e.name) CONTAINS 'росси'
+                      )
+                    RETURN DISTINCT d.group_id AS group_id
+                    """
+                )
+            else:
+                result = session.run(
+                    """
+                    MATCH (d:SourceDocument)-[:HAS_INGESTED_ENTITY]->(e:IngestedEntity)
+                    WHERE e.entity_type IN ['Expert', 'Publication', 'Facility']
+                      AND (
+                        toLower(coalesce(e.attributes_json, '')) CONTAINS 'foreign'
+                        OR toLower(coalesce(e.attributes_json, '')) CONTAINS 'зарубеж'
+                        OR toLower(coalesce(e.evidence, '')) CONTAINS 'international'
+                      )
+                    RETURN DISTINCT d.group_id AS group_id
+                    """
+                )
+            return [row["group_id"] for row in result if row.get("group_id")]
+
+    def get_authors_for_document(self, group_id: str) -> list[str]:
+        with self.driver.session() as session:
+            result = session.run(
+                """
+                MATCH (d:SourceDocument {group_id: $group_id})-[:HAS_INGESTED_ENTITY]->(e:IngestedEntity)
+                WHERE e.entity_type IN ['Expert', 'Publication']
+                RETURN e.name AS name, e.entity_type AS entity_type,
+                       e.attributes_json AS attributes_json
+                ORDER BY e.entity_type, e.name
+                LIMIT 10
+                """,
+                group_id=group_id,
+            )
+            authors: list[str] = []
+            for row in result:
+                name = (row.get("name") or "").strip()
+                if name and name not in authors:
+                    authors.append(name)
+            return authors

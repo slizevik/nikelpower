@@ -1,0 +1,6077 @@
+{
+  "source_path": "/data/documents/uploads/a169e46cb91f_Переработка рудных образований океана - Цымбулов Л.Б. Институт Гипроникель-16-06-2024.pptx",
+  "document_category": "talk",
+  "document_title": "a169e46cb91f_Переработка рудных образований океана - Цымбулов Л.Б. Институт Гипроникель-16-06-2024.pptx",
+  "language_hint": "mixed",
+  "entities": [
+    {
+      "entity_type": "Material",
+      "name": "H2SO4",
+      "attributes": {},
+      "evidence": "H2SO4"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Na2S",
+      "attributes": {},
+      "evidence": "Na2S (сероводород натрия)"
+    },
+    {
+      "entity_type": "Material",
+      "name": "NH4OH",
+      "attributes": {},
+      "evidence": "NH4OH (аммиак)"
+    },
+    {
+      "entity_type": "Material",
+      "name": "FeS2",
+      "attributes": {},
+      "evidence": "пирита (FeS2)"
+    },
+    {
+      "entity_type": "Material",
+      "name": "SO2",
+      "attributes": {},
+      "evidence": "SO2 (газ)"
+    },
+    {
+      "entity_type": "Material",
+      "name": "MnSO4·7H2O",
+      "attributes": {},
+      "evidence": "MnSO4·7H2O"
+    },
+    {
+      "entity_type": "Material",
+      "name": "SiMn",
+      "attributes": {},
+      "evidence": "SiMn (ферросилициймарганец)"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Fe",
+      "attributes": {},
+      "evidence": "Fe"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Ni",
+      "attributes": {},
+      "evidence": "Ni"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Co",
+      "attributes": {},
+      "evidence": "Co"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Cu",
+      "attributes": {},
+      "evidence": "Cu"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Mn",
+      "attributes": {},
+      "evidence": "Mn"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Zn",
+      "attributes": {},
+      "evidence": "Zn"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Pb",
+      "attributes": {},
+      "evidence": "Pb"
+    },
+    {
+      "entity_type": "Material",
+      "name": "S",
+      "attributes": {},
+      "evidence": "S"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Si",
+      "attributes": {},
+      "evidence": "Si"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Ag",
+      "attributes": {},
+      "evidence": "Ag"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Au",
+      "attributes": {},
+      "evidence": "Au"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Al",
+      "attributes": {},
+      "evidence": "Al"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Mo",
+      "attributes": {},
+      "evidence": "Mo"
+    },
+    {
+      "entity_type": "Material",
+      "name": "РЭЭ",
+      "attributes": {},
+      "evidence": "РЭЭ"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Na2CO3",
+      "attributes": {},
+      "evidence": "Na2CO3"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Zn пыль",
+      "attributes": {},
+      "evidence": "Zn пыль"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Сплав Доре",
+      "attributes": {},
+      "evidence": "Сплав Доре"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Известь",
+      "attributes": {},
+      "evidence": "Известь"
+    },
+    {
+      "entity_type": "Material",
+      "name": "коксик",
+      "attributes": {},
+      "evidence": "коксик"
+    },
+    {
+      "entity_type": "Material",
+      "name": "H2O",
+      "attributes": {},
+      "evidence": "H2O"
+    },
+    {
+      "entity_type": "Material",
+      "name": "ПAA",
+      "attributes": {},
+      "evidence": "ПAA"
+    },
+    {
+      "entity_type": "Material",
+      "name": "ЖМК пирит",
+      "attributes": {},
+      "evidence": "ЖМК пирит"
+    },
+    {
+      "entity_type": "Material",
+      "name": "воздух",
+      "attributes": {},
+      "evidence": "воздух"
+    },
+    {
+      "entity_type": "Material",
+      "name": "огарок",
+      "attributes": {},
+      "evidence": "огарок"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Cu концентрат",
+      "attributes": {},
+      "evidence": "Cu концентрат"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Ni-Co концентрат",
+      "attributes": {},
+      "evidence": "Ni-Co концентрат"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Mn концентрат",
+      "attributes": {},
+      "evidence": "Mn концентрат"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Кек",
+      "attributes": {},
+      "evidence": "Кек"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Шлак",
+      "attributes": {},
+      "evidence": "Шлак"
+    },
+    {
+      "entity_type": "Material",
+      "name": "оксид марганца",
+      "attributes": {},
+      "evidence": "оксида марганца"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Cu мет.",
+      "attributes": {},
+      "evidence": "Cu мет."
+    },
+    {
+      "entity_type": "Material",
+      "name": "Ni мет.",
+      "attributes": {},
+      "evidence": "Ni мет."
+    },
+    {
+      "entity_type": "Material",
+      "name": "Руда",
+      "attributes": {},
+      "evidence": "Руда"
+    },
+    {
+      "entity_type": "Material",
+      "name": "полиметаллическая руда",
+      "attributes": {},
+      "evidence": "полиметаллической руды"
+    },
+    {
+      "entity_type": "Material",
+      "name": "пиритный концентрат",
+      "attributes": {},
+      "evidence": "пиритного концентрата"
+    },
+    {
+      "entity_type": "Material",
+      "name": "КМК",
+      "attributes": {},
+      "evidence": "КМК"
+    },
+    {
+      "entity_type": "Material",
+      "name": "кобальт-медистых концентратов",
+      "attributes": {},
+      "evidence": "кобальт-медистых концентратов (КМК)"
+    },
+    {
+      "entity_type": "Material",
+      "name": "окисленных медных руд",
+      "attributes": {},
+      "evidence": "окисленных медных руд"
+    },
+    {
+      "entity_type": "Material",
+      "name": "малахит",
+      "attributes": {},
+      "evidence": "малахит"
+    },
+    {
+      "entity_type": "Material",
+      "name": "азурит",
+      "attributes": {},
+      "evidence": "азурит"
+    },
+    {
+      "entity_type": "Material",
+      "name": "оксидов железа",
+      "attributes": {},
+      "evidence": "оксидов железа"
+    },
+    {
+      "entity_type": "Material",
+      "name": "оксидов меди",
+      "attributes": {},
+      "evidence": "оксидов меди"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Hydrothermal Sulfides",
+      "attributes": {},
+      "evidence": "Hydrothermal Sulfides"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Ferromanganese crusts",
+      "attributes": {},
+      "evidence": "Ferromanganese crusts"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Polymetallic Nodules",
+      "attributes": {},
+      "evidence": "Polymetallic Nodules"
+    },
+    {
+      "entity_type": "Process",
+      "name": "переработка рудных образований океана",
+      "attributes": {},
+      "evidence": "ПЕРЕРАБОТКА РУДНЫХ ОБРАЗОВАНИЙ ОКЕАНА"
+    },
+    {
+      "entity_type": "Process",
+      "name": "гидрометаллургическая обработка",
+      "attributes": {},
+      "evidence": "гидрометаллургической обработке"
+    },
+    {
+      "entity_type": "Process",
+      "name": "обжиг",
+      "attributes": {},
+      "evidence": "обжиг сырья"
+    },
+    {
+      "entity_type": "Process",
+      "name": "выщелачивание",
+      "attributes": {},
+      "evidence": "выщелачивание"
+    },
+    {
+      "entity_type": "Process",
+      "name": "осаждение меди",
+      "attributes": {},
+      "evidence": "осаждение меди"
+    },
+    {
+      "entity_type": "Process",
+      "name": "осаждение никеля и кобальта",
+      "attributes": {},
+      "evidence": "осаждение никеля и кобальта"
+    },
+    {
+      "entity_type": "Process",
+      "name": "осаждение марганца",
+      "attributes": {},
+      "evidence": "осаждение марганца"
+    },
+    {
+      "entity_type": "Process",
+      "name": "окисление воздухом",
+      "attributes": {},
+      "evidence": "с окислением воздухом"
+    },
+    {
+      "entity_type": "Process",
+      "name": "глубоководная добыча",
+      "attributes": {},
+      "evidence": "глубоководной добычи"
+    },
+    {
+      "entity_type": "Process",
+      "name": "сбор конкреций",
+      "attributes": {},
+      "evidence": "процесс сбора конкреций"
+    },
+    {
+      "entity_type": "Process",
+      "name": "транспортировка",
+      "attributes": {},
+      "evidence": "транспортировки их на поверхность"
+    },
+    {
+      "entity_type": "Process",
+      "name": "измельчение",
+      "attributes": {},
+      "evidence": "измельчения"
+    },
+    {
+      "entity_type": "Process",
+      "name": "термическая обработка",
+      "attributes": {},
+      "evidence": "термическую обработку"
+    },
+    {
+      "entity_type": "Process",
+      "name": "двухстадийное выщелачивание",
+      "attributes": {},
+      "evidence": "двухстадийное выщелачивание"
+    },
+    {
+      "entity_type": "Process",
+      "name": "электроэкстракция",
+      "attributes": {},
+      "evidence": "Электроэкстракция"
+    },
+    {
+      "entity_type": "Process",
+      "name": "SX Cu",
+      "attributes": {},
+      "evidence": "SX Cu"
+    },
+    {
+      "entity_type": "Process",
+      "name": "SX Ni",
+      "attributes": {},
+      "evidence": "SX Ni"
+    },
+    {
+      "entity_type": "Process",
+      "name": "промывка",
+      "attributes": {},
+      "evidence": "Промывка (вода)"
+    },
+    {
+      "entity_type": "Process",
+      "name": "термохимическое разложение",
+      "attributes": {},
+      "evidence": "термохимическому разложению"
+    },
+    {
+      "entity_type": "Process",
+      "name": "электроплавка",
+      "attributes": {},
+      "evidence": "электроплавки"
+    },
+    {
+      "entity_type": "Process",
+      "name": "дробление",
+      "attributes": {},
+      "evidence": "дробление"
+    },
+    {
+      "entity_type": "Process",
+      "name": "извлечение металлов",
+      "attributes": {},
+      "evidence": "извлечения металлов"
+    },
+    {
+      "entity_type": "Process",
+      "name": "пирометаллургический процесс",
+      "attributes": {},
+      "evidence": "пирометаллургический процесс"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "горные машины",
+      "attributes": {},
+      "evidence": "горные машины"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "судна",
+      "attributes": {},
+      "evidence": "судами"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "трубы",
+      "attributes": {},
+      "evidence": "по трубам"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "системы мониторинга",
+      "attributes": {},
+      "evidence": "системы мониторинга"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "подводные системы подъема руды",
+      "attributes": {},
+      "evidence": "подводные системы подъема руды"
+    },
+    {
+      "entity_type": "Property",
+      "name": "коррозионностойкость",
+      "attributes": {},
+      "evidence": "коррозионностойких"
+    },
+    {
+      "entity_type": "Property",
+      "name": "износостойкость",
+      "attributes": {},
+      "evidence": "износостойких"
+    },
+    {
+      "entity_type": "Property",
+      "name": "агрессивная морская среда",
+      "attributes": {},
+      "evidence": "агрессивной морской среде"
+    },
+    {
+      "entity_type": "Property",
+      "name": "высокое давление",
+      "attributes": {},
+      "evidence": "под высоким давлением"
+    },
+    {
+      "entity_type": "Property",
+      "name": "химический состав",
+      "attributes": {},
+      "evidence": "Химический состав, %"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "Технологическая схема переработки пиритного концентрата",
+      "attributes": {},
+      "evidence": "Технологическая схема переработки пиритного концентрата"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "Схема процесса глубоководной добычи полиметаллических конкреций",
+      "attributes": {},
+      "evidence": "Схема процесса глубоководной добычи полиметаллических конкреций"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "Технологическая схема комплексной переработки руды",
+      "attributes": {},
+      "evidence": "Технологическая схема комплексной переработки руды"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "Технологическая схема переработки КМК",
+      "attributes": {},
+      "evidence": "Технологическая схема переработки КМК"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "Схема процесса извлечения металлов из руды",
+      "attributes": {},
+      "evidence": "Схема описывает комплексный гидрометаллургический и пирометаллургический процесс извлечения металлов из руды"
+    },
+    {
+      "entity_type": "Publication",
+      "name": "a169e46cb91f_Переработка рудных образований океана - Цымбулов Л.Б. Институт Гипроникель-16-06-2024.pptx",
+      "attributes": {},
+      "evidence": "a169e46cb91f_Переработка рудных образований океана - Цымбулов Л.Б. Институт Гипроникель-16-06-2024.pptx"
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Цымбулов Л.Б.",
+      "attributes": {
+        "canonical_name": "Цымбулов Л.Б.",
+        "organization": "Институт Гипроникель",
+        "is_russian": true
+      },
+      "evidence": "Цымбулов Л.Б."
+    },
+    {
+      "entity_type": "Facility",
+      "name": "Институт Гипроникель",
+      "attributes": {},
+      "evidence": "ГИПРОНИКЕЛЬ"
+    },
+    {
+      "entity_type": "Facility",
+      "name": "NORI",
+      "attributes": {},
+      "evidence": "NORI (Nauru Ocean Resources Inc.)"
+    },
+    {
+      "entity_type": "Facility",
+      "name": "Nauru Ocean Resources Inc.",
+      "attributes": {},
+      "evidence": "Nauru Ocean Resources Inc."
+    },
+    {
+      "entity_type": "Material",
+      "name": "никель",
+      "attributes": {},
+      "evidence": "переработки руды на никель"
+    },
+    {
+      "entity_type": "Material",
+      "name": "кобальт-медистые концентраты",
+      "attributes": {},
+      "evidence": "переработки кобальт-медистых концентратов (КМК)"
+    },
+    {
+      "entity_type": "Material",
+      "name": "серная кислота",
+      "attributes": {},
+      "evidence": "двухстадийное выщелачивание серной кислотой"
+    },
+    {
+      "entity_type": "Material",
+      "name": "оксиды железа",
+      "attributes": {},
+      "evidence": "присутствии оксидов железа или меди"
+    },
+    {
+      "entity_type": "Material",
+      "name": "оксиды меди",
+      "attributes": {},
+      "evidence": "присутствии оксидов железа или меди"
+    },
+    {
+      "entity_type": "Material",
+      "name": "SX Cu",
+      "attributes": {},
+      "evidence": "SX Cu"
+    },
+    {
+      "entity_type": "Material",
+      "name": "SX Ni",
+      "attributes": {},
+      "evidence": "SX Ni"
+    },
+    {
+      "entity_type": "Material",
+      "name": "вода",
+      "attributes": {},
+      "evidence": "Промывка (вода)"
+    },
+    {
+      "entity_type": "Material",
+      "name": "сульфат",
+      "attributes": {},
+      "evidence": "Растворимый сульфат и аммиак"
+    },
+    {
+      "entity_type": "Material",
+      "name": "аммиак",
+      "attributes": {},
+      "evidence": "Растворимый сульфат и аммиак"
+    },
+    {
+      "entity_type": "Material",
+      "name": "пирит",
+      "attributes": {},
+      "evidence": "Входное сырье: ЖМК пирит, воздух"
+    },
+    {
+      "entity_type": "Material",
+      "name": "диоксид серы",
+      "attributes": {},
+      "evidence": "получения диоксида серы (SO2)"
+    },
+    {
+      "entity_type": "Material",
+      "name": "железный огарок",
+      "attributes": {},
+      "evidence": "железного огарка"
+    },
+    {
+      "entity_type": "Material",
+      "name": "сероводород натрия",
+      "attributes": {},
+      "evidence": "осаждения меди сероводородом натрия (Na2S)"
+    },
+    {
+      "entity_type": "Material",
+      "name": "полиметаллических конкреций",
+      "attributes": {},
+      "evidence": "добычи полиметаллических конкреций"
+    },
+    {
+      "entity_type": "Material",
+      "name": "коррозионностойкие материалы",
+      "attributes": {},
+      "evidence": "использования коррозионностойких и износостойких материалов"
+    },
+    {
+      "entity_type": "Material",
+      "name": "износостойкие материалы",
+      "attributes": {},
+      "evidence": "использования коррозионностойких и износостойких материалов"
+    },
+    {
+      "entity_type": "Material",
+      "name": "p-p Ni",
+      "attributes": {},
+      "evidence": "p-p Ni, Co, Cu, Mn, Fe (растворы)"
+    },
+    {
+      "entity_type": "Material",
+      "name": "p-p Co",
+      "attributes": {},
+      "evidence": "p-p Ni, Co, Cu, Mn, Fe (растворы)"
+    },
+    {
+      "entity_type": "Material",
+      "name": "p-p Cu",
+      "attributes": {},
+      "evidence": "p-p Ni, Co, Cu, Mn, Fe (растворы)"
+    },
+    {
+      "entity_type": "Material",
+      "name": "p-p Mn",
+      "attributes": {},
+      "evidence": "p-p Ni, Co, Cu, Mn, Fe (растворы)"
+    },
+    {
+      "entity_type": "Material",
+      "name": "p-p Fe",
+      "attributes": {},
+      "evidence": "p-p Ni, Co, Cu, Mn, Fe (растворы)"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Fe kek",
+      "attributes": {},
+      "evidence": "Fe kek (осадок)"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Ni, Co kek",
+      "attributes": {},
+      "evidence": "Ni, Co kek"
+    },
+    {
+      "entity_type": "Material",
+      "name": "ферросилициймарганец",
+      "attributes": {},
+      "evidence": "SiMn (ферросилициймарганец)"
+    },
+    {
+      "entity_type": "Material",
+      "name": "никелевые комбинаты",
+      "attributes": {},
+      "evidence": "отправки на никелевые комбинаты"
+    },
+    {
+      "entity_type": "Process",
+      "name": "комплексная переработка руды",
+      "attributes": {},
+      "evidence": "Технологическая схема комплексной переработки руды на никель"
+    },
+    {
+      "entity_type": "Process",
+      "name": "гидрометаллургическая переработка",
+      "attributes": {},
+      "evidence": "процесс гидрометаллургической переработки кобальт-медистых концентратов"
+    },
+    {
+      "entity_type": "Process",
+      "name": "термическая подготовка",
+      "attributes": {},
+      "evidence": "стадии измельчения, термической подготовки (250°C, 1 ч)"
+    },
+    {
+      "entity_type": "Process",
+      "name": "сернокислое выщелачивание",
+      "attributes": {},
+      "evidence": "двухстадийного сернокислого выщелачивания"
+    },
+    {
+      "entity_type": "Process",
+      "name": "многоступенчатая гидрометаллургическая обработка",
+      "attributes": {},
+      "evidence": "огарок подвергается многоступенчатой гидрометаллургической обработке"
+    },
+    {
+      "entity_type": "Process",
+      "name": "подъем руды",
+      "attributes": {},
+      "evidence": "системы подъема руды по трубам"
+    },
+    {
+      "entity_type": "Process",
+      "name": "очистка от железа",
+      "attributes": {},
+      "evidence": "очистку от железа"
+    },
+    {
+      "entity_type": "Process",
+      "name": "выделение никеля и кобальта",
+      "attributes": {},
+      "evidence": "выделение никеля и кобальта"
+    },
+    {
+      "entity_type": "Process",
+      "name": "получение сульфата марганца",
+      "attributes": {},
+      "evidence": "получение сульфата марганца"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "системы подъема руды",
+      "attributes": {},
+      "evidence": "системы подъема руды по трубам"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "судами",
+      "attributes": {},
+      "evidence": "с судами, подводные системы подъема руды"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "переработка КМК",
+      "attributes": {},
+      "evidence": "Технологическая схема переработки КМК"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "переработка пиритного концентрата",
+      "attributes": {},
+      "evidence": "Технологическая схема переработки пиритного концентрата"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "добыча полиметаллических конкреций от компании NORI",
+      "attributes": {},
+      "evidence": "Схема процесса глубоководной добычи полиметаллических конкреций от компании NORI"
+    },
+    {
+      "entity_type": "Material",
+      "name": "полиметаллические конкреции",
+      "attributes": {},
+      "evidence": "полиметаллических конкреций"
+    },
+    {
+      "entity_type": "Material",
+      "name": "кокс",
+      "attributes": {},
+      "evidence": "кокс"
+    },
+    {
+      "entity_type": "Process",
+      "name": "глубоководная добыча полиметаллических конкреций",
+      "attributes": {},
+      "evidence": "Схема иллюстрирует технологический процесс глубоководной добычи полиметаллических конкреций"
+    },
+    {
+      "entity_type": "Process",
+      "name": "гидрометаллургический процесс переработки полиметаллической руды",
+      "attributes": {},
+      "evidence": "Схема описывает комплексный гидрометаллургический и металлургический процесс переработки полиметаллической руды"
+    },
+    {
+      "entity_type": "Process",
+      "name": "выщелачивание серной кислотой",
+      "attributes": {},
+      "evidence": "выщелачивания серной кислотой"
+    },
+    {
+      "entity_type": "Process",
+      "name": "электроплавка ферросилициймарганца",
+      "attributes": {},
+      "evidence": "электроплавки ферросилициймарганца (SiMn)"
+    },
+    {
+      "entity_type": "Process",
+      "name": "гидрометаллургическая переработка кобальт-медистых концентратов",
+      "attributes": {},
+      "evidence": "Схема описывает процесс гидрометаллургической переработки кобальт-медистых концентратов (КМК)"
+    },
+    {
+      "entity_type": "Process",
+      "name": "двухстадийное сернокислое выщелачивание",
+      "attributes": {},
+      "evidence": "двухстадийного сернокислого выщелачивания"
+    },
+    {
+      "entity_type": "Process",
+      "name": "извлечение молибдена и редкоземельных элементов",
+      "attributes": {},
+      "evidence": "предназначена для извлечения молибдена (Mo) и редкоземельных элементов (РЭЭ)"
+    },
+    {
+      "entity_type": "Process",
+      "name": "гидрометаллургический и пирометаллургический процесс извлечения металлов",
+      "attributes": {},
+      "evidence": "Схема описывает комплексный гидрометаллургический и пирометаллургический процесс извлечения металлов из руды"
+    },
+    {
+      "entity_type": "Process",
+      "name": "обжиг сырья",
+      "attributes": {},
+      "evidence": "Процесс включает обжиг сырья"
+    },
+    {
+      "entity_type": "Process",
+      "name": "осаждение меди сероводородом натрия",
+      "attributes": {},
+      "evidence": "осаждение меди сероводородом натрия (Na2S)"
+    },
+    {
+      "entity_type": "Process",
+      "name": "осаждение марганца аммиаком",
+      "attributes": {},
+      "evidence": "финальное осаждение марганца аммиаком (NH4OH)"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "суда",
+      "attributes": {},
+      "evidence": "судами"
+    },
+    {
+      "entity_type": "Facility",
+      "name": "Vale",
+      "attributes": {},
+      "evidence": "Процесс Vale"
+    },
+    {
+      "entity_type": "Facility",
+      "name": "Inco",
+      "attributes": {},
+      "evidence": "(Inco)"
+    },
+    {
+      "entity_type": "Facility",
+      "name": "IOM",
+      "attributes": {},
+      "evidence": "Процесс компании IOM"
+    },
+    {
+      "entity_type": "Facility",
+      "name": "Интерокеанметалл",
+      "attributes": {},
+      "evidence": "(Интерокеанметалл)"
+    },
+    {
+      "entity_type": "Process",
+      "name": "аммиачное выщелачивание",
+      "attributes": {},
+      "evidence": "аммиачном выщелачивании"
+    },
+    {
+      "entity_type": "Process",
+      "name": "восстановление",
+      "attributes": {},
+      "evidence": "восстановлении Mn ионами Cu"
+    },
+    {
+      "entity_type": "Process",
+      "name": "окисление",
+      "attributes": {},
+      "evidence": "с окислением воздухом"
+    },
+    {
+      "entity_type": "Process",
+      "name": "мониторинг",
+      "attributes": {},
+      "evidence": "системы мониторинга"
+    },
+    {
+      "entity_type": "Process",
+      "name": "извлечение молибдена",
+      "attributes": {},
+      "evidence": "извлечения молибдена (Mo)"
+    },
+    {
+      "entity_type": "Process",
+      "name": "извлечение редкоземельных элементов",
+      "attributes": {},
+      "evidence": "извлечения ... редкоземельных элементов (РЭЭ)"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "оборудование",
+      "attributes": {},
+      "evidence": "оборудования, работающего в агрессивной морской среде"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "Процесс Kennecott Copper Corporation",
+      "attributes": {},
+      "evidence": "Процесс Kennecott Copper Corporation"
+    },
+    {
+      "entity_type": "Facility",
+      "name": "Kennecott Copper Corporation",
+      "attributes": {},
+      "evidence": "Kennecott Copper Corporation"
+    },
+    {
+      "entity_type": "Material",
+      "name": "H2S",
+      "attributes": {},
+      "evidence": "H2S"
+    },
+    {
+      "entity_type": "Process",
+      "name": "двухстадийного сернокислого выщелачивания",
+      "attributes": {},
+      "evidence": "двухстадийного сернокислого выщелачивания"
+    },
+    {
+      "entity_type": "Process",
+      "name": "извлечение основных металлов",
+      "attributes": {},
+      "evidence": "извлечение основных металлов (Co, Ni, Cu, Mn)"
+    },
+    {
+      "entity_type": "Process",
+      "name": "Процесс Hoboken Overpelt",
+      "attributes": {},
+      "evidence": "Процесс Hoboken Overpelt"
+    },
+    {
+      "entity_type": "Process",
+      "name": "соляноислом выщелачивании",
+      "attributes": {},
+      "evidence": "соляноислом выщелачивании"
+    },
+    {
+      "entity_type": "Process",
+      "name": "экстракцией железа Fe",
+      "attributes": {},
+      "evidence": "экстракцией железа Fe"
+    },
+    {
+      "entity_type": "Process",
+      "name": "восстановлением раствора H2S",
+      "attributes": {},
+      "evidence": "восстановлением раствора H2S"
+    },
+    {
+      "entity_type": "Process",
+      "name": "осаждением сульфидов",
+      "attributes": {},
+      "evidence": "осаждением сульфидов Cu,, Ni, Co/"
+    },
+    {
+      "entity_type": "Process",
+      "name": "гидрометаллургической обработке",
+      "attributes": {},
+      "evidence": "гидрометаллургической обработке с использованием Na2S и NH4OH"
+    },
+    {
+      "entity_type": "Process",
+      "name": "глубоководной добычи",
+      "attributes": {},
+      "evidence": "глубоководной добычи полиметаллических конкреций"
+    },
+    {
+      "entity_type": "Process",
+      "name": "измельчения",
+      "attributes": {},
+      "evidence": "измельчения"
+    },
+    {
+      "entity_type": "Process",
+      "name": "выщелачивания серной кислотой",
+      "attributes": {},
+      "evidence": "выщелачивания серной кислотой"
+    },
+    {
+      "entity_type": "Process",
+      "name": "очистку от железа",
+      "attributes": {},
+      "evidence": "очистку от железа"
+    },
+    {
+      "entity_type": "Process",
+      "name": "термохимическому разложению",
+      "attributes": {},
+      "evidence": "термохимическому разложению"
+    },
+    {
+      "entity_type": "Process",
+      "name": "электроплавки",
+      "attributes": {},
+      "evidence": "электроплавки ферросилициймарганца (SiMn)"
+    },
+    {
+      "entity_type": "Process",
+      "name": "Процесс CSIR-IMMT",
+      "attributes": {},
+      "evidence": "Процесс CSIR-IMMT"
+    },
+    {
+      "entity_type": "Process",
+      "name": "автоклавному аммиачному выщелачивании",
+      "attributes": {},
+      "evidence": "автоклавному аммиачному выщелачивании"
+    },
+    {
+      "entity_type": "Process",
+      "name": "пирометаллургической переработкой осадка Fe-Mn",
+      "attributes": {},
+      "evidence": "пирометаллургической переработкой осадка Fe-Mn"
+    },
+    {
+      "entity_type": "Process",
+      "name": "экстракций кобальта",
+      "attributes": {},
+      "evidence": "экстракций кобальта"
+    },
+    {
+      "entity_type": "Process",
+      "name": "осаждением H2S меди и никеля",
+      "attributes": {},
+      "evidence": "осаждением H2S меди и никеля"
+    },
+    {
+      "entity_type": "Process",
+      "name": "финальное осаждение марганца аммиаком",
+      "attributes": {},
+      "evidence": "финальное осаждение марганца аммиаком (NH4OH)"
+    },
+    {
+      "entity_type": "Process",
+      "name": "окислением воздухом",
+      "attributes": {},
+      "evidence": "окислением воздухом"
+    },
+    {
+      "entity_type": "Process",
+      "name": "термическую обработку",
+      "attributes": {},
+      "evidence": "термическую обработку при 250°C"
+    },
+    {
+      "entity_type": "Property",
+      "name": "коррозионностойких",
+      "attributes": {},
+      "evidence": "коррозионностойких"
+    },
+    {
+      "entity_type": "Property",
+      "name": "износостойких",
+      "attributes": {},
+      "evidence": "износостойких"
+    },
+    {
+      "entity_type": "Property",
+      "name": "агрессивной морской среде",
+      "attributes": {},
+      "evidence": "агрессивной морской среде"
+    },
+    {
+      "entity_type": "Property",
+      "name": "высоким давлением",
+      "attributes": {},
+      "evidence": "высоким давлением"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "Процесс Hoboken Overpelt",
+      "attributes": {},
+      "evidence": "Процесс Hoboken Overpelt"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "Процесс CSIR-IMMT",
+      "attributes": {},
+      "evidence": "Процесс CSIR-IMMT"
+    },
+    {
+      "entity_type": "Process",
+      "name": "переработка полиметаллической руды",
+      "attributes": {},
+      "evidence": "комплексный гидрометаллургический и металлургический процесс переработки полиметаллической руды"
+    },
+    {
+      "entity_type": "Process",
+      "name": "экстракция",
+      "attributes": {},
+      "evidence": "разделяют экстракцией"
+    },
+    {
+      "entity_type": "Process",
+      "name": "восстановительный обжиг",
+      "attributes": {},
+      "evidence": "восстановительном обжиге"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "суды",
+      "attributes": {},
+      "evidence": "судам"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "процесс компании HZL",
+      "attributes": {},
+      "evidence": "Процесс компании HZL"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "процесс CSIR-NML",
+      "attributes": {},
+      "evidence": "Процесс CSIR-NML"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "схема процесса глубоководной добычи NORI",
+      "attributes": {},
+      "evidence": "Схема процесса глубоководной добычи полиметаллических конкреций от компании NORI"
+    },
+    {
+      "entity_type": "Facility",
+      "name": "HZL",
+      "attributes": {},
+      "evidence": "компании HZL"
+    },
+    {
+      "entity_type": "Facility",
+      "name": "CSIR-NML",
+      "attributes": {},
+      "evidence": "Процесс CSIR-NML"
+    },
+    {
+      "entity_type": "Material",
+      "name": "SO4",
+      "attributes": {},
+      "evidence": "\"SO4\""
+    },
+    {
+      "entity_type": "Material",
+      "name": "Cu-Ni-Co-Fe-Mn",
+      "attributes": {},
+      "evidence": "\"сплава Cu-Ni-Co-Fe-Mn\""
+    },
+    {
+      "entity_type": "Material",
+      "name": "окисленные медные руды",
+      "attributes": {},
+      "evidence": "\"окисленных медных руд\""
+    },
+    {
+      "entity_type": "Material",
+      "name": "металлургических шлаков",
+      "attributes": {},
+      "evidence": "\"металлургических шлаков\""
+    },
+    {
+      "entity_type": "Process",
+      "name": "Гидромет",
+      "attributes": {},
+      "evidence": "\"Гидромет\""
+    },
+    {
+      "entity_type": "Process",
+      "name": "плавка",
+      "attributes": {},
+      "evidence": "\"Основан на плавке\""
+    },
+    {
+      "entity_type": "Process",
+      "name": "сульфидирование",
+      "attributes": {},
+      "evidence": "\"сульфидированием\""
+    },
+    {
+      "entity_type": "Process",
+      "name": "сернокислотное выщелачивание",
+      "attributes": {},
+      "evidence": "\"сернокислотным выщелачиванием\""
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "CSIR-NML процесс",
+      "attributes": {},
+      "evidence": "\"Альтернативный процесс CSIR-NML\""
+    },
+    {
+      "entity_type": "Material",
+      "name": "сереводород натрия",
+      "attributes": {},
+      "evidence": "осаждение меди сероводородом натрия (Na2S)"
+    },
+    {
+      "entity_type": "Material",
+      "name": "восстановитель",
+      "attributes": {},
+      "evidence": "с восстановителем"
+    },
+    {
+      "entity_type": "Material",
+      "name": "5% раствор H2SO4",
+      "attributes": {},
+      "evidence": "5% раствор H2SO4"
+    },
+    {
+      "entity_type": "Process",
+      "name": "гидрометаллургический процесс",
+      "attributes": {},
+      "evidence": "комплексный гидрометаллургический и пирометаллургический процесс извлечения металлов из руды"
+    },
+    {
+      "entity_type": "Process",
+      "name": "осушение",
+      "attributes": {},
+      "evidence": "не удалось описать изображение"
+    },
+    {
+      "entity_type": "Process",
+      "name": "металлургический процесс",
+      "attributes": {},
+      "evidence": "комплексный гидрометаллургический и металлургический процесс переработки полиметаллической руды"
+    },
+    {
+      "entity_type": "Process",
+      "name": "извлечение Co, Ni, Cu и Mn",
+      "attributes": {},
+      "evidence": "обеспечивает извлечение Co, Ni, Cu и Mn"
+    },
+    {
+      "entity_type": "Process",
+      "name": "извлечение Mo и РЭЭ",
+      "attributes": {},
+      "evidence": "направлена на извлечение Mo и РЭЭ"
+    },
+    {
+      "entity_type": "Process",
+      "name": "добавление восстановителя",
+      "attributes": {},
+      "evidence": "с добавлением восстановителя предназначена для извлечения молибдена"
+    },
+    {
+      "entity_type": "Process",
+      "name": "аммиачно-сульфатное выщелачивание",
+      "attributes": {},
+      "evidence": "с последующим аммиачно-сульфатным выщелачиванием сульфидного сплава"
+    },
+    {
+      "entity_type": "Property",
+      "name": "зеленоватый оттенок",
+      "attributes": {},
+      "evidence": "Преобладает зеленоватый оттенок"
+    },
+    {
+      "entity_type": "Property",
+      "name": "красно-коричневая окраска",
+      "attributes": {},
+      "evidence": "участками красно-коричневой окраски"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "первая стадия выщелачивания",
+      "attributes": {},
+      "evidence": "Первая стадия (5% H2SO4) обеспечивает извлечение Co, Ni, Cu и Mn"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "вторая стадия выщелачивания",
+      "attributes": {},
+      "evidence": "вторая стадия с восстановителем направлена на извлечение Mo и РЭЭ"
+    },
+    {
+      "entity_type": "Facility",
+      "name": "TMC",
+      "attributes": {},
+      "evidence": "Процесс компаний TMC и SGS"
+    },
+    {
+      "entity_type": "Facility",
+      "name": "SGS",
+      "attributes": {},
+      "evidence": "Процесс компаний TMC и SGS"
+    },
+    {
+      "entity_type": "Process",
+      "name": "переработка пиритного концентрата",
+      "attributes": {},
+      "evidence": "Технологическая схема переработки пиритного концентрата"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "Процесс ЦНИГРИ",
+      "attributes": {},
+      "evidence": "Процесс ЦНИГРИ"
+    },
+    {
+      "entity_type": "Facility",
+      "name": "ЦНИГРИ",
+      "attributes": {},
+      "evidence": "Процесс ЦНИГРИ"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Rift Valley",
+      "attributes": {},
+      "evidence": "Rift Valley"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Seamount",
+      "attributes": {},
+      "evidence": "Seamount"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Abyssal Plain",
+      "attributes": {},
+      "evidence": "Abyssal Plain"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Continental Slope",
+      "attributes": {},
+      "evidence": "Continental Slope"
+    },
+    {
+      "entity_type": "Process",
+      "name": "аммиачно-карбонатное выщелачивание",
+      "attributes": {},
+      "evidence": "Основан на аммиачно-карбонатном или аммиачно-сульфатном выщелачивании"
+    },
+    {
+      "entity_type": "Process",
+      "name": "осаждение кобальта",
+      "attributes": {},
+      "evidence": "осаждении марганца, кобальта"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "Процесс ФГУП ВИМС",
+      "attributes": {},
+      "evidence": "Процесс ФГУП ВИМС"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "Процесс Cuprion",
+      "attributes": {},
+      "evidence": "Процесс Cuprion"
+    },
+    {
+      "entity_type": "Facility",
+      "name": "ФГУП ВИМС",
+      "attributes": {},
+      "evidence": "Процесс ФГУП ВИМС"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Zn концентрат",
+      "attributes": {},
+      "evidence": "с получением цинковых и медных концентратов"
+    },
+    {
+      "entity_type": "Material",
+      "name": "медных концентратов",
+      "attributes": {},
+      "evidence": "с получением цинковых и медных концентратов"
+    },
+    {
+      "entity_type": "Process",
+      "name": "гидрометаллургической переработки",
+      "attributes": {},
+      "evidence": "Схема описывает процесс гидрометаллургической переработки кобальт-медистых концентратов (КМК)"
+    },
+    {
+      "entity_type": "Process",
+      "name": "термической подготовки",
+      "attributes": {},
+      "evidence": "Включает стадии измельчения, термической подготовки (250°C, 1 ч) и двухстадийного сернокислого выщелачивания"
+    },
+    {
+      "entity_type": "Process",
+      "name": "сернокислого выщелачивания",
+      "attributes": {},
+      "evidence": "Включает стадии измельчения, термической подготовки (250°C, 1 ч) и двухстадийного сернокислого выщелачивания"
+    },
+    {
+      "entity_type": "Process",
+      "name": "гидрометаллургический и пирометаллургический процесс",
+      "attributes": {},
+      "evidence": "Схема описывает комплексный гидрометаллургический и пирометаллургический процесс извлечения металлов из руды"
+    },
+    {
+      "entity_type": "Process",
+      "name": "флотационном обогащении",
+      "attributes": {},
+      "evidence": "Основан на предварительном флотационном обогащении"
+    },
+    {
+      "entity_type": "Process",
+      "name": "сбора конкреций",
+      "attributes": {},
+      "evidence": "Визуализирован процесс сбора конкреций и транспортировки их на поверхность"
+    },
+    {
+      "entity_type": "Process",
+      "name": "транспортировки",
+      "attributes": {},
+      "evidence": "Визуализирован процесс сбора конкреций и транспортировки их на поверхность"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "трубами",
+      "attributes": {},
+      "evidence": "системы подъема руды по трубам к судам"
+    },
+    {
+      "entity_type": "Property",
+      "name": "красно-коричневой окраски",
+      "attributes": {},
+      "evidence": "с участками красно-коричневой окраски"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "Переработка рудных образований океана",
+      "attributes": {},
+      "evidence": "a169e46cb91f_Переработка рудных образований океана - Цымбулов Л.Б. Институт Гипроникель-16-06-2024.pptx"
+    },
+    {
+      "entity_type": "Material",
+      "name": "ЖМК",
+      "attributes": {},
+      "evidence": "ЖМК"
+    },
+    {
+      "entity_type": "Material",
+      "name": "ГПС",
+      "attributes": {},
+      "evidence": "ГПС"
+    },
+    {
+      "entity_type": "Process",
+      "name": "переработка КМК",
+      "attributes": {},
+      "evidence": "Технологическая схема переработки КМК"
+    },
+    {
+      "entity_type": "Process",
+      "name": "переработка глубоководных полиметаллических сульфидов",
+      "attributes": {},
+      "evidence": "Технологии переработки глубоководных полиметаллических сульфидов"
+    },
+    {
+      "entity_type": "Process",
+      "name": "обжиг в печах кипящего слоя",
+      "attributes": {},
+      "evidence": "обжиге в печах кипящего слоя"
+    },
+    {
+      "entity_type": "Process",
+      "name": "сорбционное выщелачивание",
+      "attributes": {},
+      "evidence": "сорбционному выщелачиванию"
+    },
+    {
+      "entity_type": "Process",
+      "name": "совместная переработка ЖМК и ГПС",
+      "attributes": {},
+      "evidence": "совместной переработки ЖМК+ГПС"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "печи кипящего слоя",
+      "attributes": {},
+      "evidence": "печи кипящего слоя"
+    },
+    {
+      "entity_type": "Material",
+      "name": "кобальт",
+      "attributes": {},
+      "evidence": "никеля, кобальта и марганца"
+    },
+    {
+      "entity_type": "Material",
+      "name": "марганец",
+      "attributes": {},
+      "evidence": "никеля, кобальта и марганца"
+    },
+    {
+      "entity_type": "Material",
+      "name": "медь",
+      "attributes": {},
+      "evidence": "никеля, кобальта, меди и марганца"
+    },
+    {
+      "entity_type": "Process",
+      "name": "обжиг-выщелачивание-электро-экстракция",
+      "attributes": {},
+      "evidence": "по схеме обжиг-выщелачивание-электро-экстракция"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "совместная переработка ЖМК+ГПС",
+      "attributes": {},
+      "evidence": "Процесс ЦНИГРИ совместной переработки ЖМК+ГПС"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "глубоководная добыча полиметаллических конкреций",
+      "attributes": {},
+      "evidence": "Схема процесса глубоководной добычи полиметаллических конкреций от компании NORI"
+    },
+    {
+      "entity_type": "Material",
+      "name": "водород сероводород",
+      "attributes": {},
+      "evidence": "осаждение меди сероводородом натрия (Na2S)"
+    },
+    {
+      "entity_type": "Process",
+      "name": "транспортировка на поверхность",
+      "attributes": {},
+      "evidence": "транспортировки их на поверхность"
+    },
+    {
+      "entity_type": "Process",
+      "name": "подъем руды по трубам",
+      "attributes": {},
+      "evidence": "системы подъема руды по трубам к судам"
+    },
+    {
+      "entity_type": "Process",
+      "name": "двухстадийное выщелачивание серной кислотой",
+      "attributes": {},
+      "evidence": "двухстадийное выщелачивание серной кислотой"
+    },
+    {
+      "entity_type": "Process",
+      "name": "извлечение металлов из руды",
+      "attributes": {},
+      "evidence": "процесс извлечения металлов из руды"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "ТЭО эффективности переработки ЖМК Clarion-Clipperton",
+      "attributes": {},
+      "evidence": "ТЭО эффективности переработки ЖМК Clarion-Clipperton"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "тестирование отдельных операций",
+      "attributes": {},
+      "evidence": "Тестирование отдельных операций для уточнения технологических показателей"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "SWOT-анализ технологий",
+      "attributes": {},
+      "evidence": "SWOT-анализ технологий с определением наиболее перспективных 2-3 вариантов"
+    },
+    {
+      "entity_type": "Material",
+      "name": "гидротермальные сульфиды",
+      "attributes": {},
+      "evidence": "Hydrothermal Sulfides"
+    },
+    {
+      "entity_type": "Material",
+      "name": "железомарганцевые корки",
+      "attributes": {},
+      "evidence": "Ferromanganese crusts"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "переработка полиметаллической руды",
+      "attributes": {},
+      "evidence": "комплексной переработки руды на никель"
+    },
+    {
+      "entity_type": "Material",
+      "name": "молибден",
+      "attributes": {},
+      "evidence": "молибдена (Mo)"
+    },
+    {
+      "entity_type": "Material",
+      "name": "редкоземельные элементы",
+      "attributes": {},
+      "evidence": "редкоземельных элементов (РЭЭ)"
+    },
+    {
+      "entity_type": "Material",
+      "name": "металлургические шлаки",
+      "attributes": {},
+      "evidence": "или металлургических шлаков"
+    },
+    {
+      "entity_type": "Process",
+      "name": "подготовка сырья",
+      "attributes": {},
+      "evidence": "стадии подготовки сырья"
+    }
+  ],
+  "relations": [
+    {
+      "relation_type": "affiliated_with",
+      "source_name": "Цымбулов Л.Б.",
+      "source_type": "Expert",
+      "target_name": "Институт Гипроникель",
+      "target_type": "Facility",
+      "attributes": {
+        "original_relation_type": "affiliated_with"
+      },
+      "evidence": "Директор Департамента по исследования и разработкам д т н [Институт Гипроникель]"
+    },
+    {
+      "relation_type": "described_in",
+      "source_name": "NORI",
+      "source_type": "Facility",
+      "target_name": "Схема процесса глубоководной добычи полиметаллических конкреций",
+      "target_type": "Experiment",
+      "attributes": {},
+      "evidence": "Схема процесса глубоководной добычи полиметаллических конкреций от компании NORI"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "FeS2",
+      "source_type": "Material",
+      "target_name": "SO2",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "обжиг пирита (FeS2) для получения диоксида серы (SO2)"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "FeS2",
+      "source_type": "Material",
+      "target_name": "огарок",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "обжиг пирита (FeS2) для получения ... железного огарка"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "Na2S",
+      "source_type": "Material",
+      "target_name": "осаждение меди",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "осаждение меди сероводородом натрия (Na2S)"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "NH4OH",
+      "source_type": "Material",
+      "target_name": "осаждение марганца",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "осаждение марганца аммиаком (NH4OH)"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "MnSO4·7H2O",
+      "source_type": "Material",
+      "target_name": "оксид марганца",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "Сульфат марганца подвергается термохимическому разложению с получением оксида марганца"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "оксид марганца",
+      "source_type": "Material",
+      "target_name": "SiMn",
+      "target_type": "material",
+      "attributes": {},
+      "evidence": "оксид марганца, который затем используется в шихте для электроплавки ферросилициймарганца (SiMn)"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "SiMn",
+      "source_type": "material",
+      "target_name": "коксик",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "электроплавки ферросилициймарганца (SiMn) совместно с коксом и известью"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "SiMn",
+      "source_type": "material",
+      "target_name": "Известь",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "электроплавки ферросилициймарганца (SiMn) совместно с коксом и известью"
+    },
+    {
+      "relation_type": "uses_process",
+      "source_name": "КМК",
+      "source_type": "Material",
+      "target_name": "измельчение",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "uses_process"
+      },
+      "evidence": "Процесс включает измельчение ... КМК"
+    },
+    {
+      "relation_type": "uses_process",
+      "source_name": "КМК",
+      "source_type": "Material",
+      "target_name": "термическая обработка",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "uses_process"
+      },
+      "evidence": "термическую обработку при 250°C ... КМК"
+    },
+    {
+      "relation_type": "uses_process",
+      "source_name": "КМК",
+      "source_type": "Material",
+      "target_name": "двухстадийное выщелачивание",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "uses_process"
+      },
+      "evidence": "двухстадийное выщелачивание серной кислотой ... КМК"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "H2SO4",
+      "source_type": "Material",
+      "target_name": "двухстадийное выщелачивание",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "двухстадийное выщелачивание серной кислотой"
+    },
+    {
+      "relation_type": "operates_at_condition",
+      "source_name": "горные машины",
+      "source_type": "Equipment",
+      "target_name": "глубоководная добыча",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "Показаны горные машины на дне океана ... глубоководной добычи"
+    },
+    {
+      "relation_type": "uses_equipment",
+      "source_name": "подводные системы подъема руды",
+      "source_type": "Equipment",
+      "target_name": "глубоководная добыча",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "uses_equipment"
+      },
+      "evidence": "системы подъема руды по трубам к судам ... глубоководной добычи"
+    },
+    {
+      "relation_type": "uses_equipment",
+      "source_name": "системы мониторинга",
+      "source_type": "Equipment",
+      "target_name": "глубоководная добыча",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "uses_equipment"
+      },
+      "evidence": "системы мониторинга ... глубоководной добычи"
+    },
+    {
+      "relation_type": "alias",
+      "source_name": "NORI",
+      "source_type": "Facility",
+      "target_name": "Nauru Ocean Resources Inc.",
+      "target_type": "Facility",
+      "attributes": {
+        "original_relation_type": "alias"
+      },
+      "evidence": "NORI (Nauru Ocean Resources Inc.)"
+    },
+    {
+      "relation_type": "part_of",
+      "source_name": "измельчение",
+      "source_type": "Process",
+      "target_name": "переработка КМК",
+      "target_type": "Experiment",
+      "attributes": {
+        "original_relation_type": "part_of"
+      },
+      "evidence": "Процесс включает измельчение"
+    },
+    {
+      "relation_type": "part_of",
+      "source_name": "термическая обработка",
+      "source_type": "Process",
+      "target_name": "переработка КМК",
+      "target_type": "Experiment",
+      "attributes": {
+        "original_relation_type": "part_of"
+      },
+      "evidence": "термическую обработку при 250°C"
+    },
+    {
+      "relation_type": "part_of",
+      "source_name": "двухстадийное выщелачивание",
+      "source_type": "Process",
+      "target_name": "переработка КМК",
+      "target_type": "Experiment",
+      "attributes": {
+        "original_relation_type": "part_of"
+      },
+      "evidence": "двухстадийное выщелачивание серной кислотой"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "серная кислота",
+      "source_type": "Material",
+      "target_name": "двухстадийное выщелачивание",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "выщелачивание серной кислотой"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "Co",
+      "source_type": "Material",
+      "target_name": "двухстадийное выщелачивание",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "обеспечивает извлечение Co"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "Ni",
+      "source_type": "Material",
+      "target_name": "двухстадийное выщелачивание",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "обеспечивает извлечение ... Ni"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "Cu",
+      "source_type": "Material",
+      "target_name": "двухстадийное выщелачивание",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "обеспечивает извлечение ... Cu"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "Mn",
+      "source_type": "Material",
+      "target_name": "двухстадийное выщелачивание",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "обеспечивает извлечение ... Mn"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "Mo",
+      "source_type": "Material",
+      "target_name": "двухстадийное выщелачивание",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "направлена на извлечение Mo"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "РЭЭ",
+      "source_type": "Material",
+      "target_name": "двухстадийное выщелачивание",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "направлена на извлечение ... РЭЭ"
+    },
+    {
+      "relation_type": "uses_equipment",
+      "source_name": "горные машины",
+      "source_type": "Equipment",
+      "target_name": "глубоководная добыча",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "uses_equipment"
+      },
+      "evidence": "Показаны горные машины на дне океана"
+    },
+    {
+      "relation_type": "uses_equipment",
+      "source_name": "системы подъема руды",
+      "source_type": "Equipment",
+      "target_name": "глубоководная добыча",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "uses_equipment"
+      },
+      "evidence": "системы подъема руды по трубам к судам"
+    },
+    {
+      "relation_type": "uses_equipment",
+      "source_name": "судами",
+      "source_type": "Equipment",
+      "target_name": "глубоководная добыча",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "uses_equipment"
+      },
+      "evidence": "подъема руды по трубам к судам"
+    },
+    {
+      "relation_type": "requires_property",
+      "source_name": "коррозионностойкие материалы",
+      "source_type": "Material",
+      "target_name": "глубоководная добыча",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "requires_property"
+      },
+      "evidence": "необходимость использования коррозионностойких ... материалов для оборудования"
+    },
+    {
+      "relation_type": "requires_property",
+      "source_name": "износостойкие материалы",
+      "source_type": "Material",
+      "target_name": "глубоководная добыча",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "requires_property"
+      },
+      "evidence": "необходимость использования ... износостойких материалов для оборудования"
+    },
+    {
+      "relation_type": "part_of",
+      "source_name": "обжиг",
+      "source_type": "Process",
+      "target_name": "переработка пиритного концентрата",
+      "target_type": "Experiment",
+      "attributes": {
+        "original_relation_type": "part_of"
+      },
+      "evidence": "Процесс включает обжиг сырья"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "SO2",
+      "source_type": "Material",
+      "target_name": "обжиг",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "для получения SO2"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "огарок",
+      "source_type": "Material",
+      "target_name": "обжиг",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "и огарка"
+    },
+    {
+      "relation_type": "part_of",
+      "source_name": "многоступенчатая гидрометаллургическая обработка",
+      "source_type": "Process",
+      "target_name": "переработка пиритного концентрата",
+      "target_type": "Experiment",
+      "attributes": {
+        "original_relation_type": "part_of"
+      },
+      "evidence": "огарок подвергается многоступенчатой гидрометаллургической обработке"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "Na2S",
+      "source_type": "Material",
+      "target_name": "многоступенчатая гидрометаллургическая обработка",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "с использованием Na2S"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "NH4OH",
+      "source_type": "Material",
+      "target_name": "многоступенчатая гидрометаллургическая обработка",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "и NH4OH"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "Cu концентрат",
+      "source_type": "Material",
+      "target_name": "многоступенчатая гидрометаллургическая обработка",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "для извлечения концентратов меди"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "Ni-Co концентрат",
+      "source_type": "Material",
+      "target_name": "многоступенчатая гидрометаллургическая обработка",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "никеля, кобальта"
+    },
+    {
+      "relation_type": "described_in",
+      "source_name": "NORI",
+      "source_type": "Facility",
+      "target_name": "глубоководная добыча полиметаллических конкреций",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "Схема процесса глубоководной добычи полиметаллических конкреций от компании NORI"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "горные машины",
+      "source_type": "Equipment",
+      "target_name": "глубоководная добыча полиметаллических конкреций",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "Показаны горные машины на дне океана"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "системы подъема руды",
+      "source_type": "Equipment",
+      "target_name": "глубоководная добыча полиметаллических конкреций",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "системы подъема руды по трубам к судам"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "системы мониторинга",
+      "source_type": "Equipment",
+      "target_name": "глубоководная добыча полиметаллических конкреций",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "системы мониторинга"
+    },
+    {
+      "relation_type": "property_of",
+      "source_name": "коррозионностойкость",
+      "source_type": "Property",
+      "target_name": "оборудование",
+      "target_type": "Entity",
+      "attributes": {
+        "original_relation_type": "property_of"
+      },
+      "evidence": "необходимость использования коррозионностойких и износостойких материалов для оборудования"
+    },
+    {
+      "relation_type": "property_of",
+      "source_name": "износостойкость",
+      "source_type": "Property",
+      "target_name": "оборудование",
+      "target_type": "Entity",
+      "attributes": {
+        "original_relation_type": "property_of"
+      },
+      "evidence": "необходимость использования коррозионностойких и износостойких материалов для оборудования"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "гидрометаллургический процесс переработки полиметаллической руды",
+      "source_type": "Process",
+      "target_name": "Ni",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "выделение никеля и кобальта (Ni, Co)"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "гидрометаллургический процесс переработки полиметаллической руды",
+      "source_type": "Process",
+      "target_name": "Co",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "выделение никеля и кобальта (Ni, Co)"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "гидрометаллургический процесс переработки полиметаллической руды",
+      "source_type": "Process",
+      "target_name": "MnSO4·7H2O",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "получение сульфата марганца (MnSO4·7H2O)"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "термохимическое разложение",
+      "source_type": "Process",
+      "target_name": "оксид марганца",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "термохимическому разложению с получением оксида марганца"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "электроплавка ферросилициймарганца",
+      "source_type": "Process",
+      "target_name": "SiMn",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "электроплавки ферросилициймарганца (SiMn)"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "электроплавка ферросилициймарганца",
+      "source_type": "Process",
+      "target_name": "SiMn",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "используется в шихте для электроплавки ферросилициймарганца (SiMn) совместно с коксом и известью"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "кокс",
+      "source_type": "Material",
+      "target_name": "электроплавка ферросилициймарганца",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "совместно с коксом и известью"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "известь",
+      "source_type": "Material",
+      "target_name": "электроплавка ферросилициймарганца",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "совместно с коксом и известью"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "Ni-Co концентрат",
+      "source_type": "chemical",
+      "target_name": "гидрометаллургический процесс переработки полиметаллической руды",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "выделяется концентрат Ni-Co"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "гидрометаллургическая переработка кобальт-медистых концентратов",
+      "source_type": "Process",
+      "target_name": "Co",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "извлечение Co, Ni, Cu и Mn"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "гидрометаллургическая переработка кобальт-медистых концентратов",
+      "source_type": "Process",
+      "target_name": "Ni",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "извлечение Co, Ni, Cu и Mn"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "гидрометаллургическая переработка кобальт-медистых концентратов",
+      "source_type": "Process",
+      "target_name": "Cu",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "извлечение Co, Ni, Cu и Mn"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "гидрометаллургическая переработка кобальт-медистых концентратов",
+      "source_type": "Process",
+      "target_name": "Mn",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "извлечение Co, Ni, Cu и Mn"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "извлечение молибдена и редкоземельных элементов",
+      "source_type": "Process",
+      "target_name": "Mo",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "извлечения молибдена (Mo)"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "извлечение молибдена и редкоземельных элементов",
+      "source_type": "Process",
+      "target_name": "РЭЭ",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "извлечения ... редкоземельных элементов (РЭЭ)"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "обжиг сырья",
+      "source_type": "Process",
+      "target_name": "SO2",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "обжиг сырья для получения SO2"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "обжиг сырья",
+      "source_type": "Process",
+      "target_name": "огарок",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "обжиг сырья для получения SO2 и огарка"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "многоступенчатая гидрометаллургическая обработка",
+      "source_type": "Process",
+      "target_name": "Cu концентрат",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "извлечения концентратов меди"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "многоступенчатая гидрометаллургическая обработка",
+      "source_type": "Process",
+      "target_name": "Ni-Co концентрат",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "извлечения ... никеля, кобальта"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "многоступенчатая гидрометаллургическая обработка",
+      "source_type": "Process",
+      "target_name": "Mn концентрат",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "извлечения ... марганца"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "многоступенчатая гидрометаллургическая обработка",
+      "source_type": "Process",
+      "target_name": "Na2S",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "с использованием Na2S"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "многоступенчатая гидрометаллургическая обработка",
+      "source_type": "Process",
+      "target_name": "NH4OH",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "и NH4OH"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "осаждение меди сероводородом натрия",
+      "source_type": "Process",
+      "target_name": "Cu концентрат",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "осаждение меди сероводородом натрия (Na2S)"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "осаждение марганца аммиаком",
+      "source_type": "Process",
+      "target_name": "Mn концентрат",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "финальное осаждение марганца аммиаком (NH4OH)"
+    },
+    {
+      "relation_type": "described_in",
+      "source_name": "Vale",
+      "source_type": "Facility",
+      "target_name": "Технологии переработки железо-марганцевых конкреций",
+      "target_type": "Entity",
+      "attributes": {},
+      "evidence": "Технологии переработки железо-марганцевых конкреций Процесс Vale"
+    },
+    {
+      "relation_type": "described_in",
+      "source_name": "IOM",
+      "source_type": "Facility",
+      "target_name": "Технологии переработки железо-марганцевых конкреций",
+      "target_type": "Entity",
+      "attributes": {},
+      "evidence": "Технологии переработки железо-марганцевых конкреций Процесс компании IOM"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "IOM",
+      "source_type": "Facility",
+      "target_name": "Cu",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "Извлечение: •Cu > 95%"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "IOM",
+      "source_type": "Facility",
+      "target_name": "Ni",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "Извлечение: •Ni > 95%"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "IOM",
+      "source_type": "Facility",
+      "target_name": "Co",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "Извлечение: •Co > 95%"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "IOM",
+      "source_type": "Facility",
+      "target_name": "Mn",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "Извлечение: •Mn -75%"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "электроэкстракция",
+      "source_type": "Process",
+      "target_name": "Cu мет.",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "Электроэкстракция ... Cu мет."
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "электроэкстракция",
+      "source_type": "Process",
+      "target_name": "Ni мет.",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "Электроэкстракция ... Ni мет."
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "электроэкстракция",
+      "source_type": "Process",
+      "target_name": "Co",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "Электроэкстракция ... Co"
+    },
+    {
+      "relation_type": "employs",
+      "source_name": "Институт Гипроникель",
+      "source_type": "Facility",
+      "target_name": "Цымбулов Л.Б.",
+      "target_type": "Expert",
+      "attributes": {
+        "original_relation_type": "employs"
+      },
+      "evidence": "Институт Гипроникель-16-06-2024.pptx ... Цымбулов Л.Б."
+    },
+    {
+      "relation_type": "extracts",
+      "source_name": "NORI",
+      "source_type": "Facility",
+      "target_name": "полиметаллические конкреции",
+      "target_type": "Material",
+      "attributes": {
+        "original_relation_type": "extracts"
+      },
+      "evidence": "Схема процесса глубоководной добычи полиметаллических конкреций от компании NORI."
+    },
+    {
+      "relation_type": "uses_process",
+      "source_name": "Процесс Kennecott Copper Corporation",
+      "source_type": "Experiment",
+      "target_name": "аммиачное выщелачивание",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "uses_process"
+      },
+      "evidence": "Процесс Kennecott Copper Corporation Основан на аммиачном выщелачивании"
+    },
+    {
+      "relation_type": "uses_process",
+      "source_name": "Процесс Kennecott Copper Corporation",
+      "source_type": "Experiment",
+      "target_name": "восстановление",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "uses_process"
+      },
+      "evidence": "Основан на аммиачном выщелачивании и восстановлении Mn ионами Cu"
+    },
+    {
+      "relation_type": "uses_equipment",
+      "source_name": "глубоководная добыча",
+      "source_type": "Process",
+      "target_name": "горные машины",
+      "target_type": "Equipment",
+      "attributes": {
+        "original_relation_type": "uses_equipment"
+      },
+      "evidence": "Показаны горные машины на дне океана"
+    },
+    {
+      "relation_type": "uses_equipment",
+      "source_name": "глубоководная добыча",
+      "source_type": "Process",
+      "target_name": "судна",
+      "target_type": "Equipment",
+      "attributes": {
+        "original_relation_type": "uses_equipment"
+      },
+      "evidence": "системы подъема руды по трубам к судам"
+    },
+    {
+      "relation_type": "requires_property",
+      "source_name": "глубоководная добыча",
+      "source_type": "Process",
+      "target_name": "коррозионностойкость",
+      "target_type": "Property",
+      "attributes": {
+        "original_relation_type": "requires_property"
+      },
+      "evidence": "необходимость использования коррозионностойких ... материалов для оборудования, работающего в агрессивной морской среде"
+    },
+    {
+      "relation_type": "requires_property",
+      "source_name": "глубоководная добыча",
+      "source_type": "Process",
+      "target_name": "износостойкость",
+      "target_type": "Property",
+      "attributes": {
+        "original_relation_type": "requires_property"
+      },
+      "evidence": "необходимость использования ... износостойких материалов для оборудования"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "гидрометаллургическая переработка",
+      "source_type": "Process",
+      "target_name": "H2SO4",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "выщелачивания серной кислотой"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "гидрометаллургическая переработка",
+      "source_type": "Process",
+      "target_name": "Na2S",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "осаждение меди сероводородом натрия (Na2S)"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "гидрометаллургическая переработка",
+      "source_type": "Process",
+      "target_name": "NH4OH",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "осаждение марганца аммиаком (NH4OH)"
+    },
+    {
+      "relation_type": "processes_material",
+      "source_name": "обжиг",
+      "source_type": "Process",
+      "target_name": "FeS2",
+      "target_type": "Material",
+      "attributes": {
+        "original_relation_type": "processes_material"
+      },
+      "evidence": "обжиг пирита (FeS2)"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "обжиг",
+      "source_type": "Process",
+      "target_name": "SO2",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "для получения диоксида серы (SO2)"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "электроплавка",
+      "source_type": "Process",
+      "target_name": "SiMn",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "электроплавки ферросилициймарганца (SiMn)"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "электроплавка",
+      "source_type": "Process",
+      "target_name": "коксик",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "совместно с коксом"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "электроплавка",
+      "source_type": "Process",
+      "target_name": "Известь",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "и известью"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "двухстадийное выщелачивание",
+      "source_type": "Process",
+      "target_name": "H2SO4",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "двухстадийного сернокислого выщелачивания"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "двухстадийное выщелачивание",
+      "source_type": "Process",
+      "target_name": "Mo",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "предназначена для извлечения молибдена (Mo)"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "двухстадийное выщелачивание",
+      "source_type": "Process",
+      "target_name": "РЭЭ",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "и редкоземельных элементов (РЭЭ)"
+    },
+    {
+      "relation_type": "operates_at_condition",
+      "source_name": "измельчение",
+      "source_type": "Process",
+      "target_name": "90% -74 мкм",
+      "target_type": "measurement",
+      "attributes": {},
+      "evidence": "измельчения (90% -74 мкм)"
+    },
+    {
+      "relation_type": "operates_at_condition",
+      "source_name": "термическая обработка",
+      "source_type": "Process",
+      "target_name": "250°C",
+      "target_type": "measurement",
+      "attributes": {},
+      "evidence": "термической подготовки (250°C, 1 ч)"
+    },
+    {
+      "relation_type": "operates_at_condition",
+      "source_name": "термическая обработка",
+      "source_type": "Process",
+      "target_name": "1 ч",
+      "target_type": "measurement",
+      "attributes": {},
+      "evidence": "термической подготовки (250°C, 1 ч)"
+    },
+    {
+      "relation_type": "processes_material",
+      "source_name": "переработка КМК",
+      "source_type": "Entity",
+      "target_name": "кобальт-медистые концентраты",
+      "target_type": "Material",
+      "attributes": {
+        "original_relation_type": "processes_material"
+      },
+      "evidence": "переработки кобальт-медистых концентратов (КМК)"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "переработка КМК",
+      "source_type": "Entity",
+      "target_name": "Co",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "извлечение основных металлов (Co, Ni, Cu, Mn)"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "переработка КМК",
+      "source_type": "Entity",
+      "target_name": "Ni",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "извлечение основных металлов (Co, Ni, Cu, Mn)"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "переработка КМК",
+      "source_type": "Entity",
+      "target_name": "Cu",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "извлечение основных металлов (Co, Ni, Cu, Mn)"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "переработка КМК",
+      "source_type": "Entity",
+      "target_name": "Mn",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "извлечение основных металлов (Co, Ni, Cu, Mn)"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "переработка полиметаллической руды",
+      "source_type": "Entity",
+      "target_name": "MnSO4·7H2O",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "на получение сульфата марганца (MnSO4·7H2O)"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "переработка полиметаллической руды",
+      "source_type": "Entity",
+      "target_name": "Ni-Co концентрат",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "выделяется концентрат Ni-Co"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "переработка полиметаллической руды",
+      "source_type": "Entity",
+      "target_name": "SiMn",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "электроплавки ферросилициймарганца (SiMn)"
+    },
+    {
+      "relation_type": "processes_material",
+      "source_name": "переработка пиритного концентрата",
+      "source_type": "Entity",
+      "target_name": "пиритный концентрат",
+      "target_type": "Material",
+      "attributes": {
+        "original_relation_type": "processes_material"
+      },
+      "evidence": "переработки пиритного концентрата"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "переработка пиритного концентрата",
+      "source_type": "Entity",
+      "target_name": "Cu концентрат",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "Продукты переработки: Cu концентрат"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "переработка пиритного концентрата",
+      "source_type": "Entity",
+      "target_name": "Ni-Co концентрат",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "Ni-Co концентрат"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "переработка пиритного концентрата",
+      "source_type": "Entity",
+      "target_name": "Mn концентрат",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "Mn концентрат"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "переработка пиритного концентрата",
+      "source_type": "Entity",
+      "target_name": "Na2S",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "с использованием Na2S"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "переработка пиритного концентрата",
+      "source_type": "Entity",
+      "target_name": "NH4OH",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "и NH4OH"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "переработка пиритного концентрата",
+      "source_type": "Entity",
+      "target_name": "воздух",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "с окислением воздухом"
+    },
+    {
+      "relation_type": "processes_material",
+      "source_name": "переработка пиритного концентрата",
+      "source_type": "Entity",
+      "target_name": "FeS2",
+      "target_type": "Material",
+      "attributes": {
+        "original_relation_type": "processes_material"
+      },
+      "evidence": "обжиг пирита (FeS2)"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "переработка пиритного концентрата",
+      "source_type": "Entity",
+      "target_name": "SO2",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "для получения диоксида серы (SO2)"
+    },
+    {
+      "relation_type": "operates_at_condition",
+      "source_name": "горные машины",
+      "source_type": "Equipment",
+      "target_name": "агрессивная морская среда",
+      "target_type": "Property",
+      "attributes": {},
+      "evidence": "оборудования, работающего в агрессивной морской среде"
+    },
+    {
+      "relation_type": "operates_at_condition",
+      "source_name": "горные машины",
+      "source_type": "Equipment",
+      "target_name": "высокое давление",
+      "target_type": "Property",
+      "attributes": {},
+      "evidence": "работающего в агрессивной морской среде под высоким давлением"
+    },
+    {
+      "relation_type": "described_in",
+      "source_name": "процесс компании HZL",
+      "source_type": "Experiment",
+      "target_name": "HZL",
+      "target_type": "Facility",
+      "attributes": {},
+      "evidence": "Процесс компании HZL"
+    },
+    {
+      "relation_type": "described_in",
+      "source_name": "процесс CSIR-NML",
+      "source_type": "Experiment",
+      "target_name": "CSIR-NML",
+      "target_type": "Facility",
+      "attributes": {},
+      "evidence": "Процесс CSIR-NML"
+    },
+    {
+      "relation_type": "described_in",
+      "source_name": "схема процесса глубоководной добычи NORI",
+      "source_type": "Experiment",
+      "target_name": "NORI",
+      "target_type": "Facility",
+      "attributes": {},
+      "evidence": "Схема процесса глубоководной добычи полиметаллических конкреций от компании NORI"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "переработка полиметаллической руды",
+      "source_type": "Process",
+      "target_name": "H2SO4",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "выщелачивания серной кислотой"
+    },
+    {
+      "relation_type": "operates_process",
+      "source_name": "NORI",
+      "source_type": "Facility",
+      "target_name": "глубоководная добыча",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "operates_process"
+      },
+      "evidence": "\"Схема процесса глубоководной добычи полиметаллических конкреций от компании NORI\""
+    },
+    {
+      "relation_type": "developed_process",
+      "source_name": "CSIR-NML",
+      "source_type": "Facility",
+      "target_name": "CSIR-NML процесс",
+      "target_type": "Experiment",
+      "attributes": {
+        "original_relation_type": "developed_process"
+      },
+      "evidence": "\"Альтернативный процесс CSIR-NML\""
+    },
+    {
+      "relation_type": "undergoes_process",
+      "source_name": "пиритный концентрат",
+      "source_type": "Material",
+      "target_name": "обжиг",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "undergoes_process"
+      },
+      "evidence": "\"переработки пиритного концентрата. Процесс включает обжиг сырья\""
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "обжиг",
+      "source_type": "Process",
+      "target_name": "огарок",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "\"для получения SO2 и огарка\""
+    },
+    {
+      "relation_type": "undergoes_process",
+      "source_name": "огарок",
+      "source_type": "chemical",
+      "target_name": "гидрометаллургическая обработка",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "undergoes_process"
+      },
+      "evidence": "\"огарок подвергается многоступенчатой гидрометаллургической обработке\""
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "гидрометаллургическая обработка",
+      "source_type": "Process",
+      "target_name": "Na2S",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "\"с использованием Na2S\""
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "гидрометаллургическая обработка",
+      "source_type": "Process",
+      "target_name": "NH4OH",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "\"и NH4OH для извлечения\""
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "гидрометаллургическая обработка",
+      "source_type": "Process",
+      "target_name": "Cu концентрат",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "\"извлечения концентратов меди\""
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "гидрометаллургическая обработка",
+      "source_type": "Process",
+      "target_name": "Ni-Co концентрат",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "\"никеля, кобальта\""
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "гидрометаллургическая обработка",
+      "source_type": "Process",
+      "target_name": "Mn концентрат",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "\"и марганца\""
+    },
+    {
+      "relation_type": "extracted_by",
+      "source_name": "полиметаллические конкреции",
+      "source_type": "Material",
+      "target_name": "горные машины",
+      "target_type": "Equipment",
+      "attributes": {
+        "original_relation_type": "extracted_by"
+      },
+      "evidence": "\"добычи полиметаллических конкреций... Показаны горные машины\""
+    },
+    {
+      "relation_type": "transported_by",
+      "source_name": "полиметаллические конкреции",
+      "source_type": "Material",
+      "target_name": "системы подъема руды",
+      "target_type": "Equipment",
+      "attributes": {
+        "original_relation_type": "transported_by"
+      },
+      "evidence": "\"системы подъема руды по трубам к судам\""
+    },
+    {
+      "relation_type": "requires_property",
+      "source_name": "полиметаллические конкреции",
+      "source_type": "Material",
+      "target_name": "коррозионностойкость",
+      "target_type": "Property",
+      "attributes": {
+        "original_relation_type": "requires_property"
+      },
+      "evidence": "\"необходимость использования коррозионностойких... материалов для оборудования, работающего в агрессивной морской среде\""
+    },
+    {
+      "relation_type": "requires_property",
+      "source_name": "полиметаллические конкреции",
+      "source_type": "Material",
+      "target_name": "износостойкость",
+      "target_type": "Property",
+      "attributes": {
+        "original_relation_type": "requires_property"
+      },
+      "evidence": "\"и износостойких материалов для оборудования\""
+    },
+    {
+      "relation_type": "undergoes_process",
+      "source_name": "полиметаллической руды",
+      "source_type": "chemical",
+      "target_name": "измельчение",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "undergoes_process"
+      },
+      "evidence": "\"переработки полиметаллической руды. Процесс начинается с измельчения\""
+    },
+    {
+      "relation_type": "followed_by",
+      "source_name": "измельчение",
+      "source_type": "Process",
+      "target_name": "выщелачивание",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "followed_by"
+      },
+      "evidence": "\"измельчения и выщелачивания\""
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "выщелачивание",
+      "source_type": "Process",
+      "target_name": "H2SO4",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "\"выщелачивания серной кислотой\""
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "выщелачивание",
+      "source_type": "Process",
+      "target_name": "MnSO4·7H2O",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "\"получение сульфата марганца (MnSO4·7H2O)\""
+    },
+    {
+      "relation_type": "undergoes_process",
+      "source_name": "MnSO4·7H2O",
+      "source_type": "Material",
+      "target_name": "термохимическое разложение",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "undergoes_process"
+      },
+      "evidence": "\"Сульфат марганца подвергается термохимическому разложению\""
+    },
+    {
+      "relation_type": "used_in",
+      "source_name": "оксид марганца",
+      "source_type": "chemical",
+      "target_name": "электроплавка",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "used_in"
+      },
+      "evidence": "\"используется в шихте для электроплавки ферросилициймарганца\""
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "выщелачивание",
+      "source_type": "Process",
+      "target_name": "Ni-Co концентрат",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "\"выделение никеля и кобальта (Ni, Co)... выделяется концентрат Ni-Co\""
+    },
+    {
+      "relation_type": "undergoes_process",
+      "source_name": "кобальт-медистые концентраты",
+      "source_type": "Material",
+      "target_name": "измельчение",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "undergoes_process"
+      },
+      "evidence": "\"переработки кобальт-медистых концентратов (КМК). Включает стадии измельчения\""
+    },
+    {
+      "relation_type": "followed_by",
+      "source_name": "измельчение",
+      "source_type": "Process",
+      "target_name": "термическая обработка",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "followed_by"
+      },
+      "evidence": "\"измельчения, термической подготовки\""
+    },
+    {
+      "relation_type": "followed_by",
+      "source_name": "термическая обработка",
+      "source_type": "Process",
+      "target_name": "двухстадийное выщелачивание",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "followed_by"
+      },
+      "evidence": "\"термической подготовки (250°C, 1 ч) и двухстадийного сернокислого выщелачивания\""
+    },
+    {
+      "relation_type": "extracts",
+      "source_name": "двухстадийное выщелачивание",
+      "source_type": "Process",
+      "target_name": "Co",
+      "target_type": "Material",
+      "attributes": {
+        "original_relation_type": "extracts"
+      },
+      "evidence": "\"извлечение Co, Ni, Cu и Mn\""
+    },
+    {
+      "relation_type": "extracts",
+      "source_name": "двухстадийное выщелачивание",
+      "source_type": "Process",
+      "target_name": "Ni",
+      "target_type": "Material",
+      "attributes": {
+        "original_relation_type": "extracts"
+      },
+      "evidence": "\"извлечение Co, Ni, Cu и Mn\""
+    },
+    {
+      "relation_type": "extracts",
+      "source_name": "двухстадийное выщелачивание",
+      "source_type": "Process",
+      "target_name": "Cu",
+      "target_type": "Material",
+      "attributes": {
+        "original_relation_type": "extracts"
+      },
+      "evidence": "\"извлечение Co, Ni, Cu и Mn\""
+    },
+    {
+      "relation_type": "extracts",
+      "source_name": "двухстадийное выщелачивание",
+      "source_type": "Process",
+      "target_name": "Mn",
+      "target_type": "chemical",
+      "attributes": {
+        "original_relation_type": "extracts"
+      },
+      "evidence": "\"извлечение Co, Ni, Cu и Mn\""
+    },
+    {
+      "relation_type": "extracts",
+      "source_name": "двухстадийное выщелачивание",
+      "source_type": "Process",
+      "target_name": "Mo",
+      "target_type": "chemical",
+      "attributes": {
+        "original_relation_type": "extracts"
+      },
+      "evidence": "\"извлечения молибдена (Mo)\""
+    },
+    {
+      "relation_type": "extracts",
+      "source_name": "двухстадийное выщелачивание",
+      "source_type": "Process",
+      "target_name": "РЭЭ",
+      "target_type": "chemical",
+      "attributes": {
+        "original_relation_type": "extracts"
+      },
+      "evidence": "\"и редкоземельных элементов (РЭЭ)\""
+    },
+    {
+      "relation_type": "contains",
+      "source_name": "окисленные медные руды",
+      "source_type": "Material",
+      "target_name": "малахит",
+      "target_type": "Material",
+      "attributes": {
+        "original_relation_type": "contains"
+      },
+      "evidence": "\"окисленных медных руд... характерный для вторичных минералов меди (малахит\""
+    },
+    {
+      "relation_type": "contains",
+      "source_name": "окисленные медные руды",
+      "source_type": "Material",
+      "target_name": "азурит",
+      "target_type": "Material",
+      "attributes": {
+        "original_relation_type": "contains"
+      },
+      "evidence": "\"вторичных минералов меди (малахит, азурит)\""
+    },
+    {
+      "relation_type": "contains",
+      "source_name": "металлургических шлаков",
+      "source_type": "Material",
+      "target_name": "оксиды железа",
+      "target_type": "chemical",
+      "attributes": {
+        "original_relation_type": "contains"
+      },
+      "evidence": "\"металлургических шлаков... указывающими на присутствие оксидов железа\""
+    },
+    {
+      "relation_type": "contains",
+      "source_name": "металлургических шлаков",
+      "source_type": "Material",
+      "target_name": "оксиды меди",
+      "target_type": "chemical",
+      "attributes": {
+        "original_relation_type": "contains"
+      },
+      "evidence": "\"оксидов железа или меди\""
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "CSIR-NML процесс",
+      "source_type": "Experiment",
+      "target_name": "Cu-Ni-Co-Fe-Mn",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "\"плавке с получением сплава Cu-Ni-Co-Fe-Mn\""
+    },
+    {
+      "relation_type": "undergoes_process",
+      "source_name": "Cu-Ni-Co-Fe-Mn",
+      "source_type": "Material",
+      "target_name": "окисление",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "undergoes_process"
+      },
+      "evidence": "\"с последующим его окислением\""
+    },
+    {
+      "relation_type": "undergoes_process",
+      "source_name": "Cu-Ni-Co-Fe-Mn",
+      "source_type": "Material",
+      "target_name": "сульфидирование",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "undergoes_process"
+      },
+      "evidence": "\"сульфидированием\""
+    },
+    {
+      "relation_type": "undergoes_process",
+      "source_name": "Cu-Ni-Co-Fe-Mn",
+      "source_type": "Material",
+      "target_name": "сернокислотное выщелачивание",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "undergoes_process"
+      },
+      "evidence": "\"сернокислотным выщелачиванием\""
+    },
+    {
+      "relation_type": "extracts",
+      "source_name": "CSIR-NML процесс",
+      "source_type": "Experiment",
+      "target_name": "Cu",
+      "target_type": "Material",
+      "attributes": {
+        "original_relation_type": "extracts"
+      },
+      "evidence": "\"Извлечение в раствор: Cu – 97%\""
+    },
+    {
+      "relation_type": "extracts",
+      "source_name": "CSIR-NML процесс",
+      "source_type": "Experiment",
+      "target_name": "Ni",
+      "target_type": "Material",
+      "attributes": {
+        "original_relation_type": "extracts"
+      },
+      "evidence": "\"Ni - 98%\""
+    },
+    {
+      "relation_type": "extracts",
+      "source_name": "CSIR-NML процесс",
+      "source_type": "Experiment",
+      "target_name": "Co",
+      "target_type": "Material",
+      "attributes": {
+        "original_relation_type": "extracts"
+      },
+      "evidence": "\"Co – 99%\""
+    },
+    {
+      "relation_type": "related_to",
+      "source_name": "Hydrothermal Sulfides",
+      "source_type": "Material",
+      "target_name": "Ferromanganese crusts",
+      "target_type": "Material",
+      "attributes": {
+        "original_relation_type": "related_to"
+      },
+      "evidence": "\"Hydrothermal Sulfides, Ferromanganese crusts, Polymetallic Nodules\""
+    },
+    {
+      "relation_type": "related_to",
+      "source_name": "Ferromanganese crusts",
+      "source_type": "Material",
+      "target_name": "Polymetallic Nodules",
+      "target_type": "Material",
+      "attributes": {
+        "original_relation_type": "related_to"
+      },
+      "evidence": "\"Ferromanganese crusts, Polymetallic Nodules\""
+    },
+    {
+      "relation_type": "found_in",
+      "source_name": "Polymetallic Nodules",
+      "source_type": "Material",
+      "target_name": "Rift Valley",
+      "target_type": "location",
+      "attributes": {
+        "original_relation_type": "found_in"
+      },
+      "evidence": "\"Polymetallic Nodules, Rift Valley\""
+    },
+    {
+      "relation_type": "found_in",
+      "source_name": "Polymetallic Nodules",
+      "source_type": "Material",
+      "target_name": "Seamount",
+      "target_type": "location",
+      "attributes": {
+        "original_relation_type": "found_in"
+      },
+      "evidence": "\"Seamount\""
+    },
+    {
+      "relation_type": "found_in",
+      "source_name": "Polymetallic Nodules",
+      "source_type": "Material",
+      "target_name": "Abyssal Plain",
+      "target_type": "location",
+      "attributes": {
+        "original_relation_type": "found_in"
+      },
+      "evidence": "\"Abyssal Plain\""
+    },
+    {
+      "relation_type": "found_in",
+      "source_name": "Polymetallic Nodules",
+      "source_type": "Material",
+      "target_name": "Continental Slope",
+      "target_type": "location",
+      "attributes": {
+        "original_relation_type": "found_in"
+      },
+      "evidence": "\"Continental Slope\""
+    },
+    {
+      "relation_type": "co_present_in",
+      "source_name": "Ni",
+      "source_type": "Material",
+      "target_name": "Co",
+      "target_type": "Material",
+      "attributes": {
+        "original_relation_type": "co_present_in"
+      },
+      "evidence": "Ni, Co"
+    },
+    {
+      "relation_type": "co_present_in",
+      "source_name": "Cu",
+      "source_type": "Material",
+      "target_name": "Mn",
+      "target_type": "Material",
+      "attributes": {
+        "original_relation_type": "co_present_in"
+      },
+      "evidence": "Cu, Mn"
+    },
+    {
+      "relation_type": "co_present_in",
+      "source_name": "Fe",
+      "source_type": "Material",
+      "target_name": "Ni",
+      "target_type": "Material",
+      "attributes": {
+        "original_relation_type": "co_present_in"
+      },
+      "evidence": "Ni, Co, Cu, Mn, Fe"
+    },
+    {
+      "relation_type": "followed_by",
+      "source_name": "измельчение",
+      "source_type": "Process",
+      "target_name": "выщелачивание серной кислотой",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "followed_by"
+      },
+      "evidence": "Процесс начинается с измельчения и выщелачивания серной кислотой"
+    },
+    {
+      "relation_type": "leads_to",
+      "source_name": "выщелачивание серной кислотой",
+      "source_type": "Process",
+      "target_name": "очистка от железа",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "leads_to"
+      },
+      "evidence": "Далее следует разделение потоков: один идет на очистку от железа"
+    },
+    {
+      "relation_type": "leads_to",
+      "source_name": "очистка от железа",
+      "source_type": "Process",
+      "target_name": "выделение никеля и кобальта",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "leads_to"
+      },
+      "evidence": "очистку от железа и выделение никеля и кобальта"
+    },
+    {
+      "relation_type": "undergoes",
+      "source_name": "MnSO4·7H2O",
+      "source_type": "Material",
+      "target_name": "термохимическое разложение",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "undergoes"
+      },
+      "evidence": "Сульфат марганца подвергается термохимическому разложению"
+    },
+    {
+      "relation_type": "feeds_into",
+      "source_name": "термохимическое разложение",
+      "source_type": "Process",
+      "target_name": "электроплавка",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "feeds_into"
+      },
+      "evidence": "который затем используется в шихте для электроплавки ферросилициймарганца"
+    },
+    {
+      "relation_type": "produces",
+      "source_name": "электроплавка",
+      "source_type": "Process",
+      "target_name": "SiMn",
+      "target_type": "Material",
+      "attributes": {
+        "original_relation_type": "produces"
+      },
+      "evidence": "электроплавки ферросилициймарганца (SiMn)"
+    },
+    {
+      "relation_type": "sent_to",
+      "source_name": "Ni-Co концентрат",
+      "source_type": "Material",
+      "target_name": "никелевые комбинаты",
+      "target_type": "Entity",
+      "attributes": {
+        "original_relation_type": "sent_to"
+      },
+      "evidence": "концентрат Ni-Co для отправки на никелевые комбинаты"
+    },
+    {
+      "relation_type": "located_at",
+      "source_name": "горные машины",
+      "source_type": "Equipment",
+      "target_name": "дн океана",
+      "target_type": "location",
+      "attributes": {
+        "original_relation_type": "located_at"
+      },
+      "evidence": "горные машины на дне океана"
+    },
+    {
+      "relation_type": "uses",
+      "source_name": "системы подъема руды",
+      "source_type": "Equipment",
+      "target_name": "трубы",
+      "target_type": "Equipment",
+      "attributes": {
+        "original_relation_type": "uses"
+      },
+      "evidence": "подъем руды по трубам к судам"
+    },
+    {
+      "relation_type": "connects_to",
+      "source_name": "системы подъема руды",
+      "source_type": "Equipment",
+      "target_name": "суда",
+      "target_type": "Equipment",
+      "attributes": {
+        "original_relation_type": "connects_to"
+      },
+      "evidence": "подъем руды по трубам к судам"
+    },
+    {
+      "relation_type": "operates_in",
+      "source_name": "оборудование",
+      "source_type": "Equipment",
+      "target_name": "агрессивная морская среда",
+      "target_type": "Property",
+      "attributes": {
+        "original_relation_type": "operates_in"
+      },
+      "evidence": "для оборудования, работающего в агрессивной морской среде"
+    },
+    {
+      "relation_type": "related_to",
+      "source_name": "оборудование",
+      "source_type": "Equipment",
+      "target_name": "высокое давление",
+      "target_type": "Property",
+      "attributes": {
+        "original_relation_type": "related_to"
+      },
+      "evidence": null
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "переработка пиритного концентрата",
+      "source_type": "Process",
+      "target_name": "пиритный концентрат",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "Технологическая схема переработки пиритного концентрата"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "переработка пиритного концентрата",
+      "source_type": "Process",
+      "target_name": "обжиг сырья",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "Процесс включает обжиг сырья"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "переработка пиритного концентрата",
+      "source_type": "Process",
+      "target_name": "гидрометаллургическая обработка",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "подвергается многоступенчатой гидрометаллургической обработке"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "глубоководная добыча",
+      "source_type": "Process",
+      "target_name": "полиметаллические конкреции",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "процесса глубоководной добычи полиметаллических конкреций"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "глубоководная добыча",
+      "source_type": "Process",
+      "target_name": "горные машины",
+      "target_type": "Equipment",
+      "attributes": {},
+      "evidence": "Показаны горные машины на дне океана"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "глубоководная добыча",
+      "source_type": "Process",
+      "target_name": "судами",
+      "target_type": "Equipment",
+      "attributes": {},
+      "evidence": "подъема руды по трубам к судам"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "глубоководная добыча",
+      "source_type": "Process",
+      "target_name": "трубы",
+      "target_type": "Equipment",
+      "attributes": {},
+      "evidence": "подъема руды по трубам"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "глубоководная добыча",
+      "source_type": "Process",
+      "target_name": "системы мониторинга",
+      "target_type": "Equipment",
+      "attributes": {},
+      "evidence": "и системы мониторинга"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "переработка пиритного концентрата",
+      "source_type": "Process",
+      "target_name": "FeS2",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "обжиг пирита (FeS2)"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "переработка пиритного концентрата",
+      "source_type": "Process",
+      "target_name": "огарок",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "получения SO2 и огарка"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "переработка КМК",
+      "source_type": "Entity",
+      "target_name": "КМК",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "переработки КМК"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "переработка КМК",
+      "source_type": "Entity",
+      "target_name": "измельчение",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "Процесс включает измельчение"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "переработка КМК",
+      "source_type": "Entity",
+      "target_name": "термическая обработка",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "термическую обработку при 250°C"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "переработка КМК",
+      "source_type": "Entity",
+      "target_name": "двухстадийное выщелачивание",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "двухстадийное выщелачивание серной кислотой"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "переработка КМК",
+      "source_type": "Entity",
+      "target_name": "H2SO4",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "двухстадийное выщелачивание серной кислотой"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "переработка КМК",
+      "source_type": "Entity",
+      "target_name": "Mo",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "извлечение Mo"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "переработка КМК",
+      "source_type": "Entity",
+      "target_name": "РЭЭ",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "и РЭЭ"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "переработка полиметаллической руды",
+      "source_type": "Entity",
+      "target_name": "Ni",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "Компоненты руды: Ni"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "переработка полиметаллической руды",
+      "source_type": "Entity",
+      "target_name": "Co",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "Co"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "переработка полиметаллической руды",
+      "source_type": "Entity",
+      "target_name": "Cu",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "Cu"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "переработка полиметаллической руды",
+      "source_type": "Entity",
+      "target_name": "Mn",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "Mn"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "переработка полиметаллической руды",
+      "source_type": "Entity",
+      "target_name": "Fe",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "Fe"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "переработка полиметаллической руды",
+      "source_type": "Entity",
+      "target_name": "Шлак",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "Шлак"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "переработка полиметаллической руды",
+      "source_type": "Entity",
+      "target_name": "H2O",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "H2O"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "переработка полиметаллической руды",
+      "source_type": "Entity",
+      "target_name": "Известь",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "Известь"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "переработка полиметаллической руды",
+      "source_type": "Entity",
+      "target_name": "коксик",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "коксик"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "переработка полиметаллической руды",
+      "source_type": "Entity",
+      "target_name": "электроплавка",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "электроплавки ферросилициймарганца"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "Процесс ЦНИГРИ",
+      "source_type": "Experiment",
+      "target_name": "Ni",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "Ni - 83%"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "Процесс ЦНИГРИ",
+      "source_type": "Experiment",
+      "target_name": "Co",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "Co – 80%"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "Процесс ЦНИГРИ",
+      "source_type": "Experiment",
+      "target_name": "Mn",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "Mn - 71%"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "Процесс ЦНИГРИ",
+      "source_type": "Experiment",
+      "target_name": "Cu",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "переходят Cu"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "Процесс ЦНИГРИ",
+      "source_type": "Experiment",
+      "target_name": "Fe",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "Fe"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "Процесс ЦНИГРИ",
+      "source_type": "Experiment",
+      "target_name": "MnSO4·7H2O",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "кристаллизуют сульфат Mn"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "Процесс ЦНИГРИ",
+      "source_type": "Experiment",
+      "target_name": "электроэкстракция",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "Электроэкстракция"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "Процесс ЦНИГРИ",
+      "source_type": "Experiment",
+      "target_name": "SX Cu",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "SX Cu"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "Процесс ЦНИГРИ",
+      "source_type": "Experiment",
+      "target_name": "SX Ni",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "SX Ni"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "Процесс ЦНИГРИ",
+      "source_type": "Experiment",
+      "target_name": "Cu мет.",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "Cu мет."
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "Процесс ЦНИГРИ",
+      "source_type": "Experiment",
+      "target_name": "Ni мет.",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "Ni мет."
+    },
+    {
+      "relation_type": "alias_of",
+      "source_name": "NORI",
+      "source_type": "Facility",
+      "target_name": "Nauru Ocean Resources Inc.",
+      "target_type": "Facility",
+      "attributes": {
+        "original_relation_type": "alias_of"
+      },
+      "evidence": "NORI (Nauru Ocean Resources Inc.)"
+    },
+    {
+      "relation_type": "operated_by",
+      "source_name": "Процесс ФГУП ВИМС",
+      "source_type": "Experiment",
+      "target_name": "ФГУП ВИМС",
+      "target_type": "Facility",
+      "attributes": {
+        "original_relation_type": "operated_by"
+      },
+      "evidence": "Процесс ФГУП ВИМС"
+    },
+    {
+      "relation_type": "operated_by",
+      "source_name": "Процесс Cuprion",
+      "source_type": "Experiment",
+      "target_name": "Cuprion",
+      "target_type": "Entity",
+      "attributes": {
+        "original_relation_type": "operated_by"
+      },
+      "evidence": "Процесс Cuprion"
+    },
+    {
+      "relation_type": "conducted_by",
+      "source_name": "глубоководная добыча",
+      "source_type": "Process",
+      "target_name": "NORI",
+      "target_type": "Facility",
+      "attributes": {
+        "original_relation_type": "conducted_by"
+      },
+      "evidence": "Схема процесса глубоководной добычи полиметаллических конкреций от компании NORI"
+    },
+    {
+      "relation_type": "produced_by",
+      "source_name": "SiMn",
+      "source_type": "Material",
+      "target_name": "электроплавка",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "produced_by"
+      },
+      "evidence": "используется в шихте для электроплавки ферросилициймарганца (SiMn)"
+    },
+    {
+      "relation_type": "undergoes_process",
+      "source_name": "FeS2",
+      "source_type": "Material",
+      "target_name": "обжиг",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "undergoes_process"
+      },
+      "evidence": "обжиг пирита (FeS2)"
+    },
+    {
+      "relation_type": "produced_by",
+      "source_name": "Cu концентрат",
+      "source_type": "Material",
+      "target_name": "гидрометаллургическая обработка",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "produced_by"
+      },
+      "evidence": "Продукты переработки: Cu концентрат"
+    },
+    {
+      "relation_type": "produced_by",
+      "source_name": "Ni-Co концентрат",
+      "source_type": "Material",
+      "target_name": "гидрометаллургическая обработка",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "produced_by"
+      },
+      "evidence": "Продукты переработки: ... Ni-Co концентрат"
+    },
+    {
+      "relation_type": "produced_by",
+      "source_name": "Mn концентрат",
+      "source_type": "Material",
+      "target_name": "гидрометаллургическая обработка",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "produced_by"
+      },
+      "evidence": "Продукты переработки: ... Mn концентрат"
+    },
+    {
+      "relation_type": "extracts",
+      "source_name": "Процесс ФГУП ВИМС",
+      "source_type": "Experiment",
+      "target_name": "Cu",
+      "target_type": "Material",
+      "attributes": {
+        "original_relation_type": "extracts"
+      },
+      "evidence": "Извлечение в тов. продукцию: •Cu – 98,8%"
+    },
+    {
+      "relation_type": "extracts",
+      "source_name": "Процесс ФГУП ВИМС",
+      "source_type": "Experiment",
+      "target_name": "Ni",
+      "target_type": "Material",
+      "attributes": {
+        "original_relation_type": "extracts"
+      },
+      "evidence": "Извлечение в тов. продукцию: •Ni - 91,7%"
+    },
+    {
+      "relation_type": "extracts",
+      "source_name": "Процесс ФГУП ВИМС",
+      "source_type": "Experiment",
+      "target_name": "Co",
+      "target_type": "Material",
+      "attributes": {
+        "original_relation_type": "extracts"
+      },
+      "evidence": "Извлечение в тов. продукцию: •Co – 92,0%"
+    },
+    {
+      "relation_type": "extracts",
+      "source_name": "Процесс ФГУП ВИМС",
+      "source_type": "Experiment",
+      "target_name": "Mn",
+      "target_type": "Material",
+      "attributes": {
+        "original_relation_type": "extracts"
+      },
+      "evidence": "Извлечение в тов. продукцию: •Mn – 98,2%"
+    },
+    {
+      "relation_type": "extracts",
+      "source_name": "Процесс Cuprion",
+      "source_type": "Experiment",
+      "target_name": "Co",
+      "target_type": "Material",
+      "attributes": {
+        "original_relation_type": "extracts"
+      },
+      "evidence": "Извлечение в тов. продукцию при аммиачно-сульфатном выщелачивании: •Co – 91%"
+    },
+    {
+      "relation_type": "extracts",
+      "source_name": "Процесс Cuprion",
+      "source_type": "Experiment",
+      "target_name": "Ni",
+      "target_type": "Material",
+      "attributes": {
+        "original_relation_type": "extracts"
+      },
+      "evidence": "Извлечение в тов. продукцию ... •Ni - 85%"
+    },
+    {
+      "relation_type": "extracts",
+      "source_name": "Процесс Cuprion",
+      "source_type": "Experiment",
+      "target_name": "Cu",
+      "target_type": "Material",
+      "attributes": {
+        "original_relation_type": "extracts"
+      },
+      "evidence": "Извлечение в тов. продукцию ... •Cu – 61%"
+    },
+    {
+      "relation_type": "extracts",
+      "source_name": "Процесс Cuprion",
+      "source_type": "Experiment",
+      "target_name": "Mn",
+      "target_type": "Material",
+      "attributes": {
+        "original_relation_type": "extracts"
+      },
+      "evidence": "Извлечение в тов. продукцию ... •Mn – 60%"
+    },
+    {
+      "relation_type": "authored_by",
+      "source_name": "Переработка рудных образований океана",
+      "source_type": "Experiment",
+      "target_name": "Цымбулов Л.Б.",
+      "target_type": "Expert",
+      "attributes": {
+        "original_relation_type": "authored_by"
+      },
+      "evidence": "a169e46cb91f_Переработка рудных образований океана - Цымбулов Л.Б."
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "гидрометаллургический процесс",
+      "source_type": "Process",
+      "target_name": "Ni",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "выделение никеля и кобальта (Ni, Co)"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "гидрометаллургический процесс",
+      "source_type": "Process",
+      "target_name": "Co",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "выделение никеля и кобальта (Ni, Co)"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "гидрометаллургический процесс",
+      "source_type": "Process",
+      "target_name": "MnSO4·7H2O",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "на получение сульфата марганца (MnSO4·7H2O)"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "термохимическому разложению",
+      "source_type": "Process",
+      "target_name": "MnSO4·7H2O",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "Сульфат марганца подвергается термохимическому разложению"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "электроплавки",
+      "source_type": "Process",
+      "target_name": "SiMn",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "электроплавки ферросилициймарганца (SiMn)"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "электроплавки",
+      "source_type": "Process",
+      "target_name": "Известь",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "электроплавки ферросилициймарганца (SiMn) совместно с коксом и известью"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "электроплавки",
+      "source_type": "Process",
+      "target_name": "коксик",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "электроплавки ферросилициймарганца (SiMn) совместно с коксом и известью"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "двухстадийное выщелачивание",
+      "source_type": "Process",
+      "target_name": "Co",
+      "target_type": "chemical",
+      "attributes": {},
+      "evidence": "обеспечивает извлечение Co, Ni, Cu и Mn"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "двухстадийное выщелачивание",
+      "source_type": "Process",
+      "target_name": "Ni",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "обеспечивает извлечение Co, Ni, Cu и Mn"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "двухстадийное выщелачивание",
+      "source_type": "Process",
+      "target_name": "Cu",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "обеспечивает извлечение Co, Ni, Cu и Mn"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "переработка пиритного концентрата",
+      "source_type": "Process",
+      "target_name": "пирит",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "обжиг пирита (FeS2)"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "переработка пиритного концентрата",
+      "source_type": "Process",
+      "target_name": "обжиг",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "Начальный этап — обжиг пирита"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "глубоководная добыча",
+      "source_type": "Process",
+      "target_name": "системы подъема руды",
+      "target_type": "Equipment",
+      "attributes": {},
+      "evidence": "системы подъема руды по трубам к судам"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "переработка глубоководных полиметаллических сульфидов",
+      "source_type": "Process",
+      "target_name": "печи кипящего слоя",
+      "target_type": "Equipment",
+      "attributes": {},
+      "evidence": "обжиге в печах кипящего слоя"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "переработка глубоководных полиметаллических сульфидов",
+      "source_type": "Process",
+      "target_name": "сернокислотное выщелачивание",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "сернокислотном выщелачиванием огарка"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "переработка глубоководных полиметаллических сульфидов",
+      "source_type": "Process",
+      "target_name": "Zn пыль",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "с осажденеим меди из раствора Zn-пылью"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "переработка глубоководных полиметаллических сульфидов",
+      "source_type": "Process",
+      "target_name": "Na2CO3",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "и цинка содой"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "переработка глубоководных полиметаллических сульфидов",
+      "source_type": "Process",
+      "target_name": "Сплав Доре",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "получением сплава Доре"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "переработка глубоководных полиметаллических сульфидов",
+      "source_type": "Process",
+      "target_name": "Au",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "с выделением Au"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "переработка глубоководных полиметаллических сульфидов",
+      "source_type": "Process",
+      "target_name": "Ag",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "и Ag"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "совместная переработка ЖМК и ГПС",
+      "source_type": "Process",
+      "target_name": "ЖМК",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "совместной переработки ЖМК+ГПС"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "совместная переработка ЖМК и ГПС",
+      "source_type": "Process",
+      "target_name": "ГПС",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "совместной переработки ЖМК+ГПС"
+    },
+    {
+      "relation_type": "described_in",
+      "source_name": "Цымбулов Л.Б.",
+      "source_type": "Expert",
+      "target_name": "Институт Гипроникель",
+      "target_type": "Facility",
+      "attributes": {},
+      "evidence": "Цымбулов Л.Б. Институт Гипроникель"
+    },
+    {
+      "relation_type": "described_in",
+      "source_name": "NORI",
+      "source_type": "Facility",
+      "target_name": "глубоководная добыча",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "Схема процесса глубоководной добычи полиметаллических конкреций от компании NORI"
+    },
+    {
+      "relation_type": "conducted_by",
+      "source_name": "совместная переработка ЖМК+ГПС",
+      "source_type": "Experiment",
+      "target_name": "ЦНИГРИ",
+      "target_type": "Facility",
+      "attributes": {
+        "original_relation_type": "conducted_by"
+      },
+      "evidence": "Процесс ЦНИГРИ совместной переработки ЖМК+ГПС"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "совместная переработка ЖМК+ГПС",
+      "source_type": "Experiment",
+      "target_name": "ЖМК",
+      "target_type": "material",
+      "attributes": {},
+      "evidence": "Основан на совместной переработке ЖМК и ГПС"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "совместная переработка ЖМК+ГПС",
+      "source_type": "Experiment",
+      "target_name": "ГПС",
+      "target_type": "material",
+      "attributes": {},
+      "evidence": "Основан на совместной переработке ЖМК и ГПС"
+    },
+    {
+      "relation_type": "uses_process",
+      "source_name": "совместная переработка ЖМК+ГПС",
+      "source_type": "Experiment",
+      "target_name": "сернокислотное выщелачивание",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "uses_process"
+      },
+      "evidence": "с применением сернокислотного выщелачивания"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "совместная переработка ЖМК+ГПС",
+      "source_type": "Experiment",
+      "target_name": "электролитная Cu",
+      "target_type": "product",
+      "attributes": {},
+      "evidence": "Cu из двух схем объединяется для получения электролитной Cu"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "совместная переработка ЖМК+ГПС",
+      "source_type": "Experiment",
+      "target_name": "электролитический марганец",
+      "target_type": "product",
+      "attributes": {},
+      "evidence": "Из раствора MnSO4 получают электротермический и электролитический марганец"
+    },
+    {
+      "relation_type": "uses_process",
+      "source_name": "переработка пиритного концентрата",
+      "source_type": "Experiment",
+      "target_name": "обжиг",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "uses_process"
+      },
+      "evidence": "Процесс включает обжиг сырья"
+    },
+    {
+      "relation_type": "conducted_by",
+      "source_name": "глубоководная добыча полиметаллических конкреций",
+      "source_type": "Experiment",
+      "target_name": "NORI",
+      "target_type": "Facility",
+      "attributes": {
+        "original_relation_type": "conducted_by"
+      },
+      "evidence": "Схема процесса глубоководной добычи полиметаллических конкреций от компании NORI"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "глубоководная добыча полиметаллических конкреций",
+      "source_type": "Experiment",
+      "target_name": "Polymetallic Nodules",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "добычи полиметаллических конкреций"
+    },
+    {
+      "relation_type": "uses_equipment",
+      "source_name": "глубоководная добыча полиметаллических конкреций",
+      "source_type": "Experiment",
+      "target_name": "горные машины",
+      "target_type": "Equipment",
+      "attributes": {
+        "original_relation_type": "uses_equipment"
+      },
+      "evidence": "Показаны горные машины на дне океана"
+    },
+    {
+      "relation_type": "uses_equipment",
+      "source_name": "глубоководная добыча полиметаллических конкреций",
+      "source_type": "Experiment",
+      "target_name": "трубы",
+      "target_type": "Equipment",
+      "attributes": {
+        "original_relation_type": "uses_equipment"
+      },
+      "evidence": "системы подъема руды по трубам к судам"
+    },
+    {
+      "relation_type": "uses_equipment",
+      "source_name": "глубоководная добыча полиметаллических конкреций",
+      "source_type": "Experiment",
+      "target_name": "судна",
+      "target_type": "Equipment",
+      "attributes": {
+        "original_relation_type": "uses_equipment"
+      },
+      "evidence": "системы подъема руды по трубам к судам"
+    },
+    {
+      "relation_type": "uses_process",
+      "source_name": "переработка КМК",
+      "source_type": "Experiment",
+      "target_name": "измельчение",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "uses_process"
+      },
+      "evidence": "Процесс включает измельчение"
+    },
+    {
+      "relation_type": "uses_process",
+      "source_name": "переработка КМК",
+      "source_type": "Experiment",
+      "target_name": "термическая обработка",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "uses_process"
+      },
+      "evidence": "термическую обработку при 250°C"
+    },
+    {
+      "relation_type": "uses_process",
+      "source_name": "переработка КМК",
+      "source_type": "Experiment",
+      "target_name": "двухстадийное выщелачивание",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "uses_process"
+      },
+      "evidence": "двухстадийное выщелачивание серной кислотой"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "переработка полиметаллической руды",
+      "source_type": "Entity",
+      "target_name": "Руда",
+      "target_type": "material",
+      "attributes": {},
+      "evidence": "Исходное сырье: Руда"
+    },
+    {
+      "relation_type": "operates_process",
+      "source_name": "NORI",
+      "source_type": "Facility",
+      "target_name": "глубоководная добыча полиметаллических конкреций",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "operates_process"
+      },
+      "evidence": "Схема процесса глубоководной добычи полиметаллических конкреций от компании NORI"
+    },
+    {
+      "relation_type": "used_in",
+      "source_name": "горные машины",
+      "source_type": "Equipment",
+      "target_name": "глубоководная добыча полиметаллических конкреций",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "used_in"
+      },
+      "evidence": "Показаны горные машины на дне океана... Схема иллюстрирует технологический процесс глубоководной добычи полиметаллических конкреций"
+    },
+    {
+      "relation_type": "used_in",
+      "source_name": "системы мониторинга",
+      "source_type": "Equipment",
+      "target_name": "глубоководная добыча полиметаллических конкреций",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "used_in"
+      },
+      "evidence": "системы мониторинга... Схема иллюстрирует технологический процесс глубоководной добычи полиметаллических конкреций"
+    },
+    {
+      "relation_type": "used_for",
+      "source_name": "коррозионностойкие материалы",
+      "source_type": "Material",
+      "target_name": "оборудование",
+      "target_type": "Equipment",
+      "attributes": {
+        "original_relation_type": "used_for"
+      },
+      "evidence": "необходимость использования коррозионностойких и износостойких материалов для оборудования"
+    },
+    {
+      "relation_type": "used_for",
+      "source_name": "износостойкие материалы",
+      "source_type": "Material",
+      "target_name": "оборудование",
+      "target_type": "Equipment",
+      "attributes": {
+        "original_relation_type": "used_for"
+      },
+      "evidence": "необходимость использования коррозионностойких и износостойких материалов для оборудования"
+    },
+    {
+      "relation_type": "operates_at_condition",
+      "source_name": "оборудование",
+      "source_type": "Equipment",
+      "target_name": "агрессивная морская среда",
+      "target_type": "Property",
+      "attributes": {},
+      "evidence": "оборудования, работающего в агрессивной морской среде под высоким давлением"
+    },
+    {
+      "relation_type": "operates_at_condition",
+      "source_name": "оборудование",
+      "source_type": "Equipment",
+      "target_name": "высокое давление",
+      "target_type": "Property",
+      "attributes": {},
+      "evidence": "оборудования, работающего в агрессивной морской среде под высоким давлением"
+    },
+    {
+      "relation_type": "component_of",
+      "source_name": "Ni",
+      "source_type": "Material",
+      "target_name": "Ni-Co концентрат",
+      "target_type": "Material",
+      "attributes": {
+        "original_relation_type": "component_of"
+      },
+      "evidence": "выделение никеля и кобальта (Ni, Co)... Параллельно выделяется концентрат Ni-Co"
+    },
+    {
+      "relation_type": "component_of",
+      "source_name": "Co",
+      "source_type": "Material",
+      "target_name": "Ni-Co концентрат",
+      "target_type": "Material",
+      "attributes": {
+        "original_relation_type": "component_of"
+      },
+      "evidence": "выделение никеля и кобальта (Ni, Co)... Параллельно выделяется концентрат Ni-Co"
+    },
+    {
+      "relation_type": "input_for",
+      "source_name": "MnSO4·7H2O",
+      "source_type": "Material",
+      "target_name": "SiMn",
+      "target_type": "Material",
+      "attributes": {
+        "original_relation_type": "input_for"
+      },
+      "evidence": "Сульфат марганца подвергается термохимическому разложению... используется в шихте для электроплавки ферросилициймарганца (SiMn)"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "SiMn",
+      "source_type": "Material",
+      "target_name": "кокс",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "электроплавки ферросилициймарганца (SiMn) совместно с коксом и известью"
+    },
+    {
+      "relation_type": "includes_step",
+      "source_name": "переработка КМК",
+      "source_type": "Process",
+      "target_name": "измельчение",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "includes_step"
+      },
+      "evidence": "Включает стадии измельчения"
+    },
+    {
+      "relation_type": "includes_step",
+      "source_name": "переработка КМК",
+      "source_type": "Process",
+      "target_name": "термическая подготовка",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "includes_step"
+      },
+      "evidence": "стадии измельчения, термической подготовки (250°C, 1 ч)"
+    },
+    {
+      "relation_type": "includes_step",
+      "source_name": "переработка КМК",
+      "source_type": "Process",
+      "target_name": "сернокислое выщелачивание",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "includes_step"
+      },
+      "evidence": "двухстадийного сернокислого выщелачивания"
+    },
+    {
+      "relation_type": "includes_step",
+      "source_name": "переработка пиритного концентрата",
+      "source_type": "Process",
+      "target_name": "обжиг сырья",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "includes_step"
+      },
+      "evidence": "Процесс включает обжиг сырья"
+    },
+    {
+      "relation_type": "performs",
+      "source_name": "NORI",
+      "source_type": "Facility",
+      "target_name": "глубоководная добыча",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "performs"
+      },
+      "evidence": "Схема процесса глубоководной добычи полиметаллических конкреций от компании NORI"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "осаждение меди",
+      "source_type": "Process",
+      "target_name": "Na2S",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "осаждение меди сероводородом натрия (Na2S)"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "осаждение марганца",
+      "source_type": "Process",
+      "target_name": "NH4OH",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "осаждение марганца аммиаком (NH4OH)"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "гидрометаллургический процесс",
+      "source_type": "Process",
+      "target_name": "извлечение металлов",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "гидрометаллургический и пирометаллургический процесс извлечения металлов"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "пирометаллургический процесс",
+      "source_type": "Process",
+      "target_name": "извлечение металлов",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "гидрометаллургический и пирометаллургический процесс извлечения металлов"
+    },
+    {
+      "relation_type": "part_of",
+      "source_name": "дробление",
+      "source_type": "Process",
+      "target_name": "подготовка сырья",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "part_of"
+      },
+      "evidence": "стадии подготовки сырья (дробление, измельчение"
+    },
+    {
+      "relation_type": "part_of",
+      "source_name": "измельчение",
+      "source_type": "Process",
+      "target_name": "подготовка сырья",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "part_of"
+      },
+      "evidence": "стадии подготовки сырья (дробление, измельчение"
+    }
+  ],
+  "other_entities": [
+    {
+      "entity_type": "location",
+      "name": "Rift Valley",
+      "attributes": {},
+      "evidence": "Rift Valley"
+    },
+    {
+      "entity_type": "location",
+      "name": "Seamount",
+      "attributes": {},
+      "evidence": "Seamount"
+    },
+    {
+      "entity_type": "location",
+      "name": "Abyssal Plain",
+      "attributes": {},
+      "evidence": "Abyssal Plain"
+    },
+    {
+      "entity_type": "location",
+      "name": "Continental Slope",
+      "attributes": {},
+      "evidence": "Continental Slope"
+    },
+    {
+      "entity_type": "location",
+      "name": "Clarion Clipperton",
+      "attributes": {},
+      "evidence": "Clarion Clipperton"
+    },
+    {
+      "entity_type": "location",
+      "name": "РФ",
+      "attributes": {},
+      "evidence": "РФ"
+    },
+    {
+      "entity_type": "material",
+      "name": "Железо-марганцевые конкреции",
+      "attributes": {},
+      "evidence": "Железо-марганцевые конкреции"
+    },
+    {
+      "entity_type": "material",
+      "name": "Кобальт-марганцевые корки",
+      "attributes": {},
+      "evidence": "Кобальт-марганцевые корки"
+    },
+    {
+      "entity_type": "material",
+      "name": "Глубоководные полиметаллические сульфиды",
+      "attributes": {},
+      "evidence": "Глубоководные полиметаллические сульфиды"
+    },
+    {
+      "entity_type": "material",
+      "name": "полиметаллических конкреций",
+      "attributes": {},
+      "evidence": "полиметаллических конкреций"
+    },
+    {
+      "entity_type": "material",
+      "name": "вторичных минералов меди",
+      "attributes": {},
+      "evidence": "вторичных минералов меди"
+    },
+    {
+      "entity_type": "material",
+      "name": "ферросилициймарганец",
+      "attributes": {},
+      "evidence": "ферросилициймарганец"
+    },
+    {
+      "entity_type": "material",
+      "name": "SiMn",
+      "attributes": {},
+      "evidence": "SiMn"
+    },
+    {
+      "entity_type": "material",
+      "name": "Fe kek",
+      "attributes": {},
+      "evidence": "Fe kek (осадок)"
+    },
+    {
+      "entity_type": "material",
+      "name": "Ni, Co kek",
+      "attributes": {},
+      "evidence": "Ni, Co kek"
+    },
+    {
+      "entity_type": "material",
+      "name": "p-p Ni, Co, Cu, Mn, Fe",
+      "attributes": {},
+      "evidence": "p-p Ni, Co, Cu, Mn, Fe (растворы)"
+    },
+    {
+      "entity_type": "material",
+      "name": "растворимый сульфат и аммиак",
+      "attributes": {},
+      "evidence": "Растворимый сульфат и аммиак (жид"
+    },
+    {
+      "entity_type": "material",
+      "name": "Осадок выщелачивания",
+      "attributes": {},
+      "evidence": "Осадок выщелачивания"
+    },
+    {
+      "entity_type": "material",
+      "name": "водa",
+      "attributes": {},
+      "evidence": "вода"
+    },
+    {
+      "entity_type": "material",
+      "name": "5% раствор H2SO4",
+      "attributes": {},
+      "evidence": "5% раствор H2SO4"
+    },
+    {
+      "entity_type": "material",
+      "name": "восстановитель",
+      "attributes": {},
+      "evidence": "с восстановителем"
+    },
+    {
+      "entity_type": "material",
+      "name": "90% Кл. -74 мкм",
+      "attributes": {},
+      "evidence": "90% Кл. -74 мкм"
+    },
+    {
+      "entity_type": "material",
+      "name": "-0,071 мм",
+      "attributes": {},
+      "evidence": "-0,071 мм"
+    },
+    {
+      "entity_type": "material",
+      "name": "Т:Ж=1:5",
+      "attributes": {},
+      "evidence": "Т:Ж=1:5"
+    },
+    {
+      "entity_type": "location",
+      "name": "днe океана",
+      "attributes": {},
+      "evidence": "на дне океана"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "5% H2SO4",
+      "attributes": {},
+      "evidence": "5% H2SO4"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "восстановитель",
+      "attributes": {},
+      "evidence": "с восстановителем"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "оксиды железа",
+      "attributes": {},
+      "evidence": "оксидов железа"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "оксиды меди",
+      "attributes": {},
+      "evidence": "оксидов меди"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "Fe",
+      "attributes": {},
+      "evidence": "Fe"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "Fe kek",
+      "attributes": {},
+      "evidence": "Fe kek (осадок)"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "Ni, Co kek",
+      "attributes": {},
+      "evidence": "Ni, Co kek"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "ПAA",
+      "attributes": {},
+      "evidence": "ПAA"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "H2O",
+      "attributes": {},
+      "evidence": "H2O"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "коксик",
+      "attributes": {},
+      "evidence": "коксик"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "огарок",
+      "attributes": {},
+      "evidence": "огарка"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "Cu концентрат",
+      "attributes": {},
+      "evidence": "Cu концентрат"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "Ni-Co концентрат",
+      "attributes": {},
+      "evidence": "Ni-Co концентрат"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "Mn концентрат",
+      "attributes": {},
+      "evidence": "Mn концентрат"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "Кек в отвал",
+      "attributes": {},
+      "evidence": "Кек в отвал"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "Осадок выщелачивания",
+      "attributes": {},
+      "evidence": "Осадок выщелачивания"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "вода",
+      "attributes": {},
+      "evidence": "Промывка (вода)"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "аммиак",
+      "attributes": {},
+      "evidence": "аммиак"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "воздух",
+      "attributes": {},
+      "evidence": "воздухом"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "SX Cu",
+      "attributes": {},
+      "evidence": "SX Cu"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "SX Ni",
+      "attributes": {},
+      "evidence": "SX Ni"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "Co",
+      "attributes": {},
+      "evidence": "Co"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "ЖМК пирит",
+      "attributes": {},
+      "evidence": "ЖМК пирит"
+    },
+    {
+      "entity_type": "location",
+      "name": "Nauru Ocean Resources Inc.",
+      "attributes": {},
+      "evidence": "Nauru Ocean Resources Inc."
+    },
+    {
+      "entity_type": "chemical",
+      "name": "Cu",
+      "attributes": {},
+      "evidence": "Cu"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "Ni",
+      "attributes": {},
+      "evidence": "Ni"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "Mn",
+      "attributes": {},
+      "evidence": "Mn"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "Mo",
+      "attributes": {},
+      "evidence": "Mo"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "РЭЭ",
+      "attributes": {},
+      "evidence": "РЭЭ"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "оксид марганца",
+      "attributes": {},
+      "evidence": "оксида марганца"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "Cu мет.",
+      "attributes": {},
+      "evidence": "Cu мет."
+    },
+    {
+      "entity_type": "chemical",
+      "name": "Ni мет.",
+      "attributes": {},
+      "evidence": "Ni мет."
+    },
+    {
+      "entity_type": "chemical",
+      "name": "Шлак",
+      "attributes": {},
+      "evidence": "Шлак"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "Растворимый сульфат и аммиак",
+      "attributes": {},
+      "evidence": "Растворимый сульфат и аммиак (жид"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "Кек",
+      "attributes": {},
+      "evidence": "Кек в отвал"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "Mn ионы",
+      "attributes": {},
+      "evidence": "Mn ионами Cu"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "Cu ионы",
+      "attributes": {},
+      "evidence": "ионами Cu"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "вторичные минералы меди",
+      "attributes": {},
+      "evidence": "вторичных минералов меди"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "окисленные медные руды",
+      "attributes": {},
+      "evidence": "окисленных медных руд"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "металлургические шлаки",
+      "attributes": {},
+      "evidence": "металлургических шлаков"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "полиметаллическая руда",
+      "attributes": {},
+      "evidence": "полиметаллической руды"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "железный огарок",
+      "attributes": {},
+      "evidence": "железного огарка"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "цветные металлы",
+      "attributes": {},
+      "evidence": "ценные цветные металлы"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "основные металлы",
+      "attributes": {},
+      "evidence": "основных металлов"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "никелевые комбинаты",
+      "attributes": {},
+      "evidence": "никелевые комбинаты"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "шихта",
+      "attributes": {},
+      "evidence": "в шихте"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "p-p Ni, Co, Cu, Mn, Fe",
+      "attributes": {},
+      "evidence": "p-p Ni, Co, Cu, Mn, Fe (растворы)"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "раствор H2SO4",
+      "attributes": {},
+      "evidence": "раствор H2SO4"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "5% раствор H2SO4",
+      "attributes": {},
+      "evidence": "5% раствор H2SO4"
+    },
+    {
+      "entity_type": "measurement",
+      "name": "90% -74 мкм",
+      "attributes": {},
+      "evidence": "90% -74 мкм"
+    },
+    {
+      "entity_type": "measurement",
+      "name": "250°C",
+      "attributes": {},
+      "evidence": "250°C"
+    },
+    {
+      "entity_type": "measurement",
+      "name": "1 ч",
+      "attributes": {},
+      "evidence": "1 ч"
+    },
+    {
+      "entity_type": "measurement",
+      "name": "-0,071 мм",
+      "attributes": {},
+      "evidence": "-0,071 мм"
+    },
+    {
+      "entity_type": "measurement",
+      "name": "Т:Ж=1:5",
+      "attributes": {},
+      "evidence": "Т:Ж=1:5"
+    },
+    {
+      "entity_type": "measurement",
+      "name": "1 cm",
+      "attributes": {},
+      "evidence": "1 cm"
+    },
+    {
+      "entity_type": "measurement",
+      "name": "5 cm",
+      "attributes": {},
+      "evidence": "5 cm"
+    },
+    {
+      "entity_type": "measurement",
+      "name": "T=250 °C",
+      "attributes": {},
+      "evidence": "T=250 °C"
+    },
+    {
+      "entity_type": "measurement",
+      "name": "τ=1 ч",
+      "attributes": {},
+      "evidence": "τ=1 ч"
+    },
+    {
+      "entity_type": "measurement",
+      "name": "90% Кл.",
+      "attributes": {},
+      "evidence": "90% Кл."
+    },
+    {
+      "entity_type": "location",
+      "name": "дну океана",
+      "attributes": {},
+      "evidence": "дну океана"
+    },
+    {
+      "entity_type": "location",
+      "name": "поверхности",
+      "attributes": {},
+      "evidence": "поверхности"
+    },
+    {
+      "entity_type": "material",
+      "name": "окисленных медных руд",
+      "attributes": {},
+      "evidence": "окисленных медных руд"
+    },
+    {
+      "entity_type": "material",
+      "name": "металлургических шлаков",
+      "attributes": {},
+      "evidence": "металлургических шлаков"
+    },
+    {
+      "entity_type": "material",
+      "name": "оксидов железа",
+      "attributes": {},
+      "evidence": "оксидов железа"
+    },
+    {
+      "entity_type": "material",
+      "name": "оксидов меди",
+      "attributes": {},
+      "evidence": "оксидов меди"
+    },
+    {
+      "entity_type": "material",
+      "name": "огарок",
+      "attributes": {},
+      "evidence": "огарка"
+    },
+    {
+      "entity_type": "material",
+      "name": "железного огарка",
+      "attributes": {},
+      "evidence": "железного огарка"
+    },
+    {
+      "entity_type": "material",
+      "name": "пиритного концентрата",
+      "attributes": {},
+      "evidence": "пиритного концентрата"
+    },
+    {
+      "entity_type": "material",
+      "name": "КМК",
+      "attributes": {},
+      "evidence": "КМК"
+    },
+    {
+      "entity_type": "material",
+      "name": "кобальт-медистых концентратов",
+      "attributes": {},
+      "evidence": "кобальт-медистых концентратов"
+    },
+    {
+      "entity_type": "material",
+      "name": "полиметаллической руды",
+      "attributes": {},
+      "evidence": "полиметаллической руды"
+    },
+    {
+      "entity_type": "material",
+      "name": "оксида марганца",
+      "attributes": {},
+      "evidence": "оксида марганца"
+    },
+    {
+      "entity_type": "material",
+      "name": "шихте",
+      "attributes": {},
+      "evidence": "шихте"
+    },
+    {
+      "entity_type": "material",
+      "name": "никелевые комбинаты",
+      "attributes": {},
+      "evidence": "никелевые комбинаты"
+    },
+    {
+      "entity_type": "material",
+      "name": "Кек",
+      "attributes": {},
+      "evidence": "Кек в отвал"
+    },
+    {
+      "entity_type": "material",
+      "name": "Шлак",
+      "attributes": {},
+      "evidence": "Шлак"
+    },
+    {
+      "entity_type": "material",
+      "name": "воздух",
+      "attributes": {},
+      "evidence": "воздух"
+    },
+    {
+      "entity_type": "material",
+      "name": "растворы",
+      "attributes": {},
+      "evidence": "растворы"
+    },
+    {
+      "entity_type": "material",
+      "name": "Cu концентрат",
+      "attributes": {},
+      "evidence": "Cu концентрат"
+    },
+    {
+      "entity_type": "material",
+      "name": "Ni-Co концентрат",
+      "attributes": {},
+      "evidence": "Ni-Co концентрат"
+    },
+    {
+      "entity_type": "material",
+      "name": "Mn концентрат",
+      "attributes": {},
+      "evidence": "Mn концентрат"
+    },
+    {
+      "entity_type": "material",
+      "name": "SO2 (газ)",
+      "attributes": {},
+      "evidence": "SO2 (газ)"
+    },
+    {
+      "entity_type": "material",
+      "name": "диоксида серы",
+      "attributes": {},
+      "evidence": "диоксида серы"
+    },
+    {
+      "entity_type": "material",
+      "name": "сероводород натрия",
+      "attributes": {},
+      "evidence": "сероводород натрия"
+    },
+    {
+      "entity_type": "material",
+      "name": "аммиак",
+      "attributes": {},
+      "evidence": "аммиак"
+    },
+    {
+      "entity_type": "material",
+      "name": "воды",
+      "attributes": {},
+      "evidence": "вода"
+    },
+    {
+      "entity_type": "material",
+      "name": "Руда",
+      "attributes": {},
+      "evidence": "Руда"
+    },
+    {
+      "entity_type": "material",
+      "name": "ЖМК пирит",
+      "attributes": {},
+      "evidence": "ЖМК пирит"
+    },
+    {
+      "entity_type": "material",
+      "name": "FeS2",
+      "attributes": {},
+      "evidence": "FeS2"
+    },
+    {
+      "entity_type": "material",
+      "name": "Fe",
+      "attributes": {},
+      "evidence": "Fe"
+    },
+    {
+      "entity_type": "material",
+      "name": "Cu",
+      "attributes": {},
+      "evidence": "Cu"
+    },
+    {
+      "entity_type": "material",
+      "name": "Ni",
+      "attributes": {},
+      "evidence": "Ni"
+    },
+    {
+      "entity_type": "material",
+      "name": "Co",
+      "attributes": {},
+      "evidence": "Co"
+    },
+    {
+      "entity_type": "material",
+      "name": "Mn",
+      "attributes": {},
+      "evidence": "Mn"
+    },
+    {
+      "entity_type": "geographical_feature",
+      "name": "Rift Valley",
+      "attributes": {},
+      "evidence": "Rift Valley"
+    },
+    {
+      "entity_type": "geographical_feature",
+      "name": "Seamount",
+      "attributes": {},
+      "evidence": "Seamount"
+    },
+    {
+      "entity_type": "geographical_feature",
+      "name": "Abyssal Plain",
+      "attributes": {},
+      "evidence": "Abyssal Plain"
+    },
+    {
+      "entity_type": "geographical_feature",
+      "name": "Continental Slope",
+      "attributes": {},
+      "evidence": "Continental Slope"
+    },
+    {
+      "entity_type": "company",
+      "name": "Nauru Ocean Resources Inc.",
+      "attributes": {},
+      "evidence": "Nauru Ocean Resources Inc."
+    },
+    {
+      "entity_type": "chemical",
+      "name": "Промывка",
+      "attributes": {},
+      "evidence": "\"Промывка (вода)\""
+    },
+    {
+      "entity_type": "chemical",
+      "name": "диоксид серы",
+      "attributes": {},
+      "evidence": "\"диоксида серы (SO2)\""
+    },
+    {
+      "entity_type": "chemical",
+      "name": "полиметаллической руды",
+      "attributes": {},
+      "evidence": "\"полиметаллической руды\""
+    },
+    {
+      "entity_type": "chemical",
+      "name": "руды",
+      "attributes": {},
+      "evidence": "\"Исходное сырье: Руда\""
+    },
+    {
+      "entity_type": "location",
+      "name": "дн океана",
+      "attributes": {},
+      "evidence": "на дне океана"
+    },
+    {
+      "entity_type": "date",
+      "name": "2024",
+      "attributes": {},
+      "evidence": "Получен первый сульфат Ni – 2024 г"
+    },
+    {
+      "entity_type": "date",
+      "name": "конец 2025 г",
+      "attributes": {},
+      "evidence": "Коммерческая реализация – конец 2025 г"
+    },
+    {
+      "entity_type": "chemical_formula",
+      "name": "Fe kek",
+      "attributes": {},
+      "evidence": "Fe kek (осадок)"
+    },
+    {
+      "entity_type": "chemical_formula",
+      "name": "Ni, Co kek",
+      "attributes": {},
+      "evidence": "Ni, Co kek"
+    },
+    {
+      "entity_type": "chemical_formula",
+      "name": "p-p Ni, Co, Cu, Mn, Fe",
+      "attributes": {},
+      "evidence": "p-p Ni, Co, Cu, Mn, Fe (растворы)"
+    },
+    {
+      "entity_type": "measurement",
+      "name": "5% H2SO4",
+      "attributes": {},
+      "evidence": "Первая стадия (5% H2SO4)"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "FeS2",
+      "attributes": {},
+      "evidence": "FeS2"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "SO2",
+      "attributes": {},
+      "evidence": "SO2"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "Na2S",
+      "attributes": {},
+      "evidence": "Na2S"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "NH4OH",
+      "attributes": {},
+      "evidence": "NH4OH"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "MnSO4·7H2O",
+      "attributes": {},
+      "evidence": "MnSO4·7H2O"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "H2SO4",
+      "attributes": {},
+      "evidence": "H2SO4"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "Na2CO3",
+      "attributes": {},
+      "evidence": "Na2CO3"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "Zn пыль",
+      "attributes": {},
+      "evidence": "Zn пыль"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "SiMn",
+      "attributes": {},
+      "evidence": "SiMn"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "Известь",
+      "attributes": {},
+      "evidence": "Известь"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "малахит",
+      "attributes": {},
+      "evidence": "малахит"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "азурит",
+      "attributes": {},
+      "evidence": "азурит"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "Сплав Доре",
+      "attributes": {},
+      "evidence": "Сплав Доре"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "Hydrothermal Sulfides",
+      "attributes": {},
+      "evidence": "Hydrothermal Sulfides"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "Ferromanganese crusts",
+      "attributes": {},
+      "evidence": "Ferromanganese crusts"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "Polymetallic Nodules",
+      "attributes": {},
+      "evidence": "Polymetallic Nodules"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "пиритный концентрат",
+      "attributes": {},
+      "evidence": "пиритный концентрат"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "полиметаллические конкреции",
+      "attributes": {},
+      "evidence": "полиметаллические конкреции"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "КМК",
+      "attributes": {},
+      "evidence": "КМК"
+    },
+    {
+      "entity_type": "ocean_geological_feature",
+      "name": "рудные образования океана",
+      "attributes": {},
+      "evidence": "Переработка рудных образований океана"
+    },
+    {
+      "entity_type": "metal",
+      "name": "медь",
+      "attributes": {},
+      "evidence": "Cu – 98,8%"
+    },
+    {
+      "entity_type": "metal",
+      "name": "никель",
+      "attributes": {},
+      "evidence": "Ni - 91,7%"
+    },
+    {
+      "entity_type": "metal",
+      "name": "кобальт",
+      "attributes": {},
+      "evidence": "Co – 92,0%"
+    },
+    {
+      "entity_type": "metal",
+      "name": "марганец",
+      "attributes": {},
+      "evidence": "Mn – 98,2%"
+    },
+    {
+      "entity_type": "metal",
+      "name": "кобальт-марганцевые корки",
+      "attributes": {},
+      "evidence": "Технологии переработки кобальт-марганцевых корок"
+    },
+    {
+      "entity_type": "metal",
+      "name": "кобальт-медистые концентраты",
+      "attributes": {},
+      "evidence": "переработки кобальт-медистых концентратов (КМК)"
+    },
+    {
+      "entity_type": "particle_size",
+      "name": "-0,071 мм",
+      "attributes": {},
+      "evidence": "-0,071 мм"
+    },
+    {
+      "entity_type": "ratio",
+      "name": "Т:Ж=1:5",
+      "attributes": {},
+      "evidence": "Т:Ж=1:5"
+    },
+    {
+      "entity_type": "temperature",
+      "name": "250°C",
+      "attributes": {},
+      "evidence": "термической обработке при 250°C"
+    },
+    {
+      "entity_type": "concentration",
+      "name": "5% H2SO4",
+      "attributes": {},
+      "evidence": "5% H2SO4"
+    },
+    {
+      "entity_type": "time",
+      "name": "1 ч",
+      "attributes": {},
+      "evidence": "τ=1 ч"
+    },
+    {
+      "entity_type": "particle_size",
+      "name": "-74 мкм",
+      "attributes": {},
+      "evidence": "90% -74 мкм"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "оксидов железа",
+      "attributes": {},
+      "evidence": "указывающими на присутствие оксидов железа или меди"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "оксидов меди",
+      "attributes": {},
+      "evidence": "указывающими на присутствие оксидов железа или меди"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "диоксида серы",
+      "attributes": {},
+      "evidence": "для получения диоксида серы (SO2)"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "сероводород натрия",
+      "attributes": {},
+      "evidence": "Na2S (сероводород натрия)"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "водора",
+      "attributes": {},
+      "evidence": "Промывка (вода)"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "сульфат",
+      "attributes": {},
+      "evidence": "Растворимый сульфат и аммиак"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "жид",
+      "attributes": {},
+      "evidence": "Растворимый сульфат и аммиак (жид"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "Растворимый сульфат",
+      "attributes": {},
+      "evidence": "Растворимый сульфат и аммиак"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "Zn-пылью",
+      "attributes": {},
+      "evidence": "Zn-пылью"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "содой",
+      "attributes": {},
+      "evidence": "содой"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "аммиак (жид)",
+      "attributes": {},
+      "evidence": "аммиак (жид"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "промежуточные продукты",
+      "attributes": {},
+      "evidence": "Промежуточные продукты"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "конечные продукты",
+      "attributes": {},
+      "evidence": "Конечные продукты"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "исходное сырье",
+      "attributes": {},
+      "evidence": "Исходное сырье"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "компоненты руды",
+      "attributes": {},
+      "evidence": "Компоненты руды"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "реагенты",
+      "attributes": {},
+      "evidence": "Реагенты"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "продукты обжига",
+      "attributes": {},
+      "evidence": "Продукты обжига"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "продукты переработки",
+      "attributes": {},
+      "evidence": "Продукты переработки"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "отходы",
+      "attributes": {},
+      "evidence": "Отходы"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "огарок в отвал",
+      "attributes": {},
+      "evidence": "огарок в отвал"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "90% -74 мкм",
+      "attributes": {},
+      "evidence": "90% -74 мкм"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "-0,071 мм",
+      "attributes": {},
+      "evidence": "-0,071 мм"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "Т:Ж=1:5",
+      "attributes": {},
+      "evidence": "Т:Ж=1:5"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "T=250 °C",
+      "attributes": {},
+      "evidence": "T=250 °C"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "τ=1 ч",
+      "attributes": {},
+      "evidence": "τ=1 ч"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "250°C",
+      "attributes": {},
+      "evidence": "250°C"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "1 ч",
+      "attributes": {},
+      "evidence": "1 ч"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "90% Кл.",
+      "attributes": {},
+      "evidence": "90% Кл."
+    },
+    {
+      "entity_type": "location",
+      "name": "Clarion-Clipperton",
+      "attributes": {},
+      "evidence": "месторождение железо-марганцевых конкреций Clarion-Clipperton"
+    },
+    {
+      "entity_type": "product",
+      "name": "электролитная Cu",
+      "attributes": {},
+      "evidence": "получения электролитной Cu"
+    },
+    {
+      "entity_type": "product",
+      "name": "электротермический марганец",
+      "attributes": {},
+      "evidence": "получают электротермический и электролитический марганец"
+    },
+    {
+      "entity_type": "product",
+      "name": "электролитический марганец",
+      "attributes": {},
+      "evidence": "получают электротермический и электролитический марганец"
+    },
+    {
+      "entity_type": "product",
+      "name": "огарок",
+      "attributes": {},
+      "evidence": "огарка, после чего огарок подвергается"
+    },
+    {
+      "entity_type": "product",
+      "name": "Fe kek",
+      "attributes": {},
+      "evidence": "Fe kek (осадок)"
+    },
+    {
+      "entity_type": "product",
+      "name": "Ni, Co kek",
+      "attributes": {},
+      "evidence": "Ni, Co kek"
+    },
+    {
+      "entity_type": "product",
+      "name": "оксид марганца",
+      "attributes": {},
+      "evidence": "получением оксида марганца"
+    },
+    {
+      "entity_type": "product",
+      "name": "аккумуляторы новых поколений",
+      "attributes": {},
+      "evidence": "аккумуляторы новых поколений"
+    },
+    {
+      "entity_type": "material",
+      "name": "латеритные никелевые руды",
+      "attributes": {},
+      "evidence": "переработке латеритных никелевых руд"
+    },
+    {
+      "entity_type": "material",
+      "name": "медно-цинковые сульфидные концентраты",
+      "attributes": {},
+      "evidence": "медных и медно-цинковых сульфидных концентратов"
+    },
+    {
+      "entity_type": "material",
+      "name": "ЖМК",
+      "attributes": {},
+      "evidence": "переработки ЖМК и ГПС"
+    },
+    {
+      "entity_type": "material",
+      "name": "ГПС",
+      "attributes": {},
+      "evidence": "переработки ЖМК и ГПС"
+    },
+    {
+      "entity_type": "material",
+      "name": "пиритный концентрат",
+      "attributes": {},
+      "evidence": "переработки пиритного концентрата"
+    },
+    {
+      "entity_type": "material",
+      "name": "пирит",
+      "attributes": {},
+      "evidence": "ЖМК пирит"
+    },
+    {
+      "entity_type": "material",
+      "name": "диоксид серы",
+      "attributes": {},
+      "evidence": "получения диоксида серы (SO2)"
+    },
+    {
+      "entity_type": "material",
+      "name": "железный огарок",
+      "attributes": {},
+      "evidence": "железного огарка"
+    },
+    {
+      "entity_type": "material",
+      "name": "цветные металлы",
+      "attributes": {},
+      "evidence": "ценные цветные металлы"
+    },
+    {
+      "entity_type": "material",
+      "name": "ПAA",
+      "attributes": {},
+      "evidence": "Реагенты: ПAA, H2SO4, H2O, Известь, коксик"
+    },
+    {
+      "entity_type": "material",
+      "name": "H2O",
+      "attributes": {},
+      "evidence": "Реагенты: ПAA, H2SO4, H2O, Известь, коксик"
+    },
+    {
+      "entity_type": "material",
+      "name": "окисление воздухом",
+      "attributes": {},
+      "evidence": "с окислением воздухом"
+    },
+    {
+      "entity_type": "location",
+      "name": "Nauru",
+      "attributes": {},
+      "evidence": "Nauru Ocean Resources Inc."
+    },
+    {
+      "entity_type": "chemical",
+      "name": "SO2 (газ)",
+      "attributes": {},
+      "evidence": "Продукты обжига: SO2 (газ), огарок"
+    },
+    {
+      "entity_type": "chemical",
+      "name": "водород",
+      "attributes": {},
+      "evidence": "Промывка (вода)"
+    },
+    {
+      "entity_type": "material",
+      "name": "вода",
+      "attributes": {},
+      "evidence": "Промывка (вода)"
+    },
+    {
+      "entity_type": "material",
+      "name": "Cu мет.",
+      "attributes": {},
+      "evidence": "Cu мет."
+    },
+    {
+      "entity_type": "material",
+      "name": "Ni мет.",
+      "attributes": {},
+      "evidence": "Ni мет."
+    },
+    {
+      "entity_type": "material",
+      "name": "оксид марганца",
+      "attributes": {},
+      "evidence": "оксида марганца"
+    },
+    {
+      "entity_type": "material",
+      "name": "окисленные медные руды",
+      "attributes": {},
+      "evidence": "окисленных медных руд"
+    },
+    {
+      "entity_type": "material",
+      "name": "металлургические шлаки",
+      "attributes": {},
+      "evidence": "металлургических шлаков"
+    },
+    {
+      "entity_type": "material",
+      "name": "вторичные минералы меди",
+      "attributes": {},
+      "evidence": "вторичных минералов меди"
+    },
+    {
+      "entity_type": "material",
+      "name": "полиметаллическая руда",
+      "attributes": {},
+      "evidence": "полиметаллической руды"
+    },
+    {
+      "entity_type": "material",
+      "name": "Сплав Доре",
+      "attributes": {},
+      "evidence": "Сплав Доре"
+    },
+    {
+      "entity_type": "geological_feature",
+      "name": "Rift Valley",
+      "attributes": {},
+      "evidence": "Rift Valley"
+    },
+    {
+      "entity_type": "geological_feature",
+      "name": "Seamount",
+      "attributes": {},
+      "evidence": "Seamount"
+    },
+    {
+      "entity_type": "geological_feature",
+      "name": "Abyssal Plain",
+      "attributes": {},
+      "evidence": "Abyssal Plain"
+    },
+    {
+      "entity_type": "geological_feature",
+      "name": "Continental Slope",
+      "attributes": {},
+      "evidence": "Continental Slope"
+    }
+  ],
+  "clarification_questions": [],
+  "is_final_answer": true,
+  "chunks_processed": 17,
+  "prompt_source": "builtin"
+}

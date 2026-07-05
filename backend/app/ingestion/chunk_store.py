@@ -18,6 +18,43 @@ logger = logging.getLogger(__name__)
 
 CHUNK_VECTOR_INDEX = "document_chunk_embedding"
 
+_SEARCH_BY_GROUP = """
+CALL db.index.vector.queryNodes($index_name, $top_k, $embedding)
+YIELD node, score
+WHERE node.group_id = $group_id
+MATCH (d:SourceDocument {group_id: $group_id})-[:HAS_CHUNK]->(node)
+RETURN node.chunk_id AS chunk_id,
+       node.text AS text,
+       node.source_path AS source_path,
+       node.page_start AS page_start,
+       node.page_end AS page_end,
+       node.group_id AS group_id,
+       d.document_category AS document_category,
+       d.document_title AS document_title,
+       d.updated_at AS updated_at,
+       d.original_storage_path AS original_storage_path,
+       score
+ORDER BY score DESC
+"""
+
+_SEARCH_ALL = """
+CALL db.index.vector.queryNodes($index_name, $top_k, $embedding)
+YIELD node, score
+OPTIONAL MATCH (d:SourceDocument {group_id: node.group_id})-[:HAS_CHUNK]->(node)
+RETURN node.chunk_id AS chunk_id,
+       node.text AS text,
+       node.source_path AS source_path,
+       node.page_start AS page_start,
+       node.page_end AS page_end,
+       node.group_id AS group_id,
+       d.document_category AS document_category,
+       d.document_title AS document_title,
+       d.updated_at AS updated_at,
+       d.original_storage_path AS original_storage_path,
+       score
+ORDER BY score DESC
+"""
+
 
 @dataclass
 class IngestStats:
@@ -192,21 +229,7 @@ class DocumentChunkStore:
         with self.driver.session() as session:
             if group_id:
                 result = session.run(
-                    f"""
-                    CALL db.index.vector.queryNodes($index_name, $top_k, $embedding)
-                    YIELD node, score
-                    WHERE node.group_id = $group_id
-                    MATCH (d:SourceDocument {group_id: $group_id})-[:HAS_CHUNK]->(node)
-                    RETURN node.chunk_id AS chunk_id,
-                           node.text AS text,
-                           node.source_path AS source_path,
-                           node.page_start AS page_start,
-                           node.page_end AS page_end,
-                           d.document_category AS document_category,
-                           d.document_title AS document_title,
-                           score
-                    ORDER BY score DESC
-                    """,
+                    _SEARCH_BY_GROUP,
                     index_name=CHUNK_VECTOR_INDEX,
                     top_k=top_k,
                     embedding=embedding,
@@ -214,20 +237,7 @@ class DocumentChunkStore:
                 )
             else:
                 result = session.run(
-                    f"""
-                    CALL db.index.vector.queryNodes($index_name, $top_k, $embedding)
-                    YIELD node, score
-                    OPTIONAL MATCH (d:SourceDocument {group_id: node.group_id})-[:HAS_CHUNK]->(node)
-                    RETURN node.chunk_id AS chunk_id,
-                           node.text AS text,
-                           node.source_path AS source_path,
-                           node.page_start AS page_start,
-                           node.page_end AS page_end,
-                           d.document_category AS document_category,
-                           d.document_title AS document_title,
-                           score
-                    ORDER BY score DESC
-                    """,
+                    _SEARCH_ALL,
                     index_name=CHUNK_VECTOR_INDEX,
                     top_k=top_k,
                     embedding=embedding,

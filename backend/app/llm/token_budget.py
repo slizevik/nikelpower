@@ -1,7 +1,7 @@
 """
 Учёт токенов и лимит использования.
 
-TOKEN_LIMIT задаётся в .env (по умолчанию 10 000).
+TOKEN_LIMIT задаётся в .env (по умолчанию 30 000).
 """
 
 from __future__ import annotations
@@ -17,7 +17,7 @@ import tiktoken
 
 from app.config import settings
 
-TOKEN_LIMIT: int = int(os.getenv("TOKEN_LIMIT", "10000"))
+TOKEN_LIMIT: int = int(os.getenv("TOKEN_LIMIT", "1000000"))
 
 _STATE_FILE = "token_usage.json"
 _lock = threading.Lock()
@@ -59,6 +59,24 @@ def count_tokens(text: str) -> int:
 
 def count_tokens_many(texts: list[str]) -> int:
     return sum(count_tokens(t) for t in texts)
+
+
+def clip_text_to_token_limit(text: str, max_tokens: int) -> str:
+    """Обрезает текст так, чтобы он не превышал max_tokens (tiktoken cl100k_base)."""
+    if max_tokens <= 0 or not text:
+        return text or ""
+    if count_tokens(text) <= max_tokens:
+        return text
+
+    lo, hi = 0, len(text)
+    while lo < hi:
+        mid = (lo + hi + 1) // 2
+        if count_tokens(text[:mid]) <= max_tokens:
+            lo = mid
+        else:
+            hi = mid - 1
+    clipped = text[:lo].rstrip()
+    return clipped if clipped else text[: max(1, hi)]
 
 
 def usage_from_api_response(response: object) -> int | None:

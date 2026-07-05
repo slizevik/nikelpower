@@ -1,0 +1,6 @@
+source=/data/documents/uploads/17eee97cccca_59 ТНК МЕДНОГО НИКЕЛЬСОДЕРЖАЩЕГО СЫРЬЯ.docx
+pdf=data/ingestion/converted/17eee97cccca_59 ТНК МЕДНОГО НИКЕЛЬСОДЕРЖАЩЕГО СЫРЬЯ_0c6b8e3a.pdf
+doc_type=docx
+language=ru
+pages=9
+images=2

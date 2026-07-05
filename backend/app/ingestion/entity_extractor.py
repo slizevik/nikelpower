@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import json
 import logging
-import re
 from pathlib import Path
 
 from app.config import settings
@@ -13,6 +12,7 @@ from app.ingestion.entity_extraction_prompt import (
     build_user_message,
     get_entity_extraction_prompt,
 )
+from app.llm.json_utils import parse_llm_json
 from app.llm.token_budget import count_tokens
 from app.llm.tracked_api import chat_completions_create
 from app.llm.yandex_client import get_yandex_client
@@ -46,11 +46,23 @@ _CATEGORY_KEY_MAP: dict[str, str] = {
 
 
 def _parse_json_response(raw: str) -> dict:
-    text = raw.strip()
-    fence = re.search(r"```(?:json)?\s*([\s\S]*?)```", text)
-    if fence:
-        text = fence.group(1).strip()
-    return json.loads(text)
+    return parse_llm_json(raw)
+
+
+def _empty_extraction_payload() -> dict:
+    return {
+        "material": [],
+        "process": [],
+        "equipment": [],
+        "property": [],
+        "experiment": [],
+        "publication": [],
+        "experts": [],
+        "other_entities": [],
+        "relationships": [],
+        "clarification_questions": [],
+        "is_final_answer": True,
+    }
 
 
 def _split_text(text: str, max_chars: int) -> list[str]:
@@ -266,18 +278,46 @@ def _extract_chunk(
     )
 
     client = get_yandex_client()
-    response = chat_completions_create(
-        client,
-        model=settings.yandex_cloud_model,
-        messages=[
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": user_message},
-        ],
-        response_format={"type": "json_object"},
-        temperature=0.1,
-    )
-    raw = response.choices[0].message.content or "{}"
-    payload = _parse_json_response(raw)
+    messages = [
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": user_message},
+    ]
+    payload: dict | None = None
+    for attempt in range(2):
+        response = chat_completions_create(
+            client,
+            model=settings.yandex_cloud_model,
+            messages=messages,
+            response_format={"type": "json_object"},
+            temperature=0.1,
+            max_tokens=8192,
+        )
+        raw = response.choices[0].message.content or "{}"
+        try:
+            payload = _parse_json_response(raw)
+            break
+        except json.JSONDecodeError as exc:
+            logger.warning(
+                "Entity extraction JSON parse failed (attempt %s/2): %s",
+                attempt + 1,
+                exc,
+            )
+            if attempt == 0:
+                messages = [
+                    messages[0],
+                    {
+                        "role": "user",
+                        "content": (
+                            user_message
+                            + "\n\nВАЖНО: верните строго валидный JSON-объект. "
+                            "Все ключи и строки — в двойных кавычках. "
+                            "Без комментариев, trailing comma и текста вне JSON."
+                        ),
+                    },
+                ]
+            else:
+                payload = _empty_extraction_payload()
+                logger.warning("Chunk skipped: using empty entity extraction result")
 
     entities, other_entities = _parse_entities_from_payload(payload)
     type_lookup = _name_to_type_lookup(entities, other_entities)

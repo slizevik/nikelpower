@@ -1,0 +1,6 @@
+source=/data/documents/uploads/1c6ebd2eec69_Доклад_Вязовой О.Н.pdf
+pdf=/data/documents/uploads/1c6ebd2eec69_Доклад_Вязовой О.Н.pdf
+doc_type=pdf
+language=ru
+pages=11
+images=23

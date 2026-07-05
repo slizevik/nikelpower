@@ -1,0 +1,1576 @@
+{
+  "source_path": "/data/documents/uploads/17eee97cccca_59 ТНК МЕДНОГО НИКЕЛЬСОДЕРЖАЩЕГО СЫРЬЯ.docx",
+  "document_category": "talk",
+  "document_title": "17eee97cccca_59 ТНК МЕДНОГО НИКЕЛЬСОДЕРЖАЩЕГО СЫРЬЯ.docx",
+  "language_hint": "ru",
+  "entities": [
+    {
+      "entity_type": "Material",
+      "name": "медный никельсодержащий штейн",
+      "attributes": {},
+      "evidence": "медный никельсодержащих штейнов"
+    },
+    {
+      "entity_type": "Material",
+      "name": "черновая медь",
+      "attributes": {},
+      "evidence": "получением черновой меди"
+    },
+    {
+      "entity_type": "Material",
+      "name": "шлак",
+      "attributes": {},
+      "evidence": "слива продуктов плавки (шлака, сульфидной массы, черновой меди)"
+    },
+    {
+      "entity_type": "Material",
+      "name": "сульфидная масса",
+      "attributes": {},
+      "evidence": "слива продуктов плавки (шлака, сульфидной массы, черновой меди)"
+    },
+    {
+      "entity_type": "Material",
+      "name": "сухие свернутые никелевые шлаки",
+      "attributes": {},
+      "evidence": "переработки сухих свернутых никелевых шлаков"
+    },
+    {
+      "entity_type": "Material",
+      "name": "кислород",
+      "attributes": {},
+      "evidence": "обогащенного кислородом"
+    },
+    {
+      "entity_type": "Material",
+      "name": "SO2",
+      "attributes": {},
+      "evidence": "низких выбросов SO2 содержащих газов"
+    },
+    {
+      "entity_type": "Material",
+      "name": "Cu-Ni-Fe сплав",
+      "attributes": {},
+      "evidence": "с получением Cu-Ni-Fe сплава"
+    },
+    {
+      "entity_type": "Material",
+      "name": "медный концентрат",
+      "attributes": {},
+      "evidence": "переработка медного концентрата"
+    },
+    {
+      "entity_type": "Material",
+      "name": "файнштейн",
+      "attributes": {},
+      "evidence": "разделения файнштейна"
+    },
+    {
+      "entity_type": "Material",
+      "name": "цементная медь",
+      "attributes": {},
+      "evidence": "цементной меди"
+    },
+    {
+      "entity_type": "Material",
+      "name": "железо",
+      "attributes": {},
+      "evidence": "примесей, содержащихся в штейне (железо, никель, кобальт)"
+    },
+    {
+      "entity_type": "Material",
+      "name": "никель",
+      "attributes": {},
+      "evidence": "примесей, содержащихся в штейне (железо, никель, кобальт)"
+    },
+    {
+      "entity_type": "Material",
+      "name": "кобальт",
+      "attributes": {},
+      "evidence": "примесей, содержащихся в штейне (железо, никель, кобальт)"
+    },
+    {
+      "entity_type": "Material",
+      "name": "сера",
+      "attributes": {},
+      "evidence": "удаления серы в отходящие газы"
+    },
+    {
+      "entity_type": "Material",
+      "name": "природный газ",
+      "attributes": {},
+      "evidence": "объем поступавшего кислорода и природного газа"
+    },
+    {
+      "entity_type": "Material",
+      "name": "диоксид серы",
+      "attributes": {},
+      "evidence": "утилизацию диоксида серы"
+    },
+    {
+      "entity_type": "Process",
+      "name": "непрерывное конвертирование",
+      "attributes": {},
+      "evidence": "технология непрерывного конвертирования медных никельсодержащих штейнов"
+    },
+    {
+      "entity_type": "Process",
+      "name": "конвертирование медных штейнов",
+      "attributes": {},
+      "evidence": "конвертирование медных штейнов преимущественно осуществляется традиционным способом"
+    },
+    {
+      "entity_type": "Process",
+      "name": "плавка",
+      "attributes": {},
+      "evidence": "слива продуктов плавки"
+    },
+    {
+      "entity_type": "Process",
+      "name": "грануляция медного штейна",
+      "attributes": {},
+      "evidence": "Грануляция медного штейна производится на двух независимых узлах грануляции"
+    },
+    {
+      "entity_type": "Process",
+      "name": "обезвоживание штейна",
+      "attributes": {},
+      "evidence": "Обезвоживание штейна осуществляется в процессе отстаивания коробок"
+    },
+    {
+      "entity_type": "Process",
+      "name": "газоочистка",
+      "attributes": {},
+      "evidence": "Схема описывает технологический процесс газоочистки отходящих газов"
+    },
+    {
+      "entity_type": "Process",
+      "name": "дожигание",
+      "attributes": {},
+      "evidence": "Процесс включает стадию дожигания"
+    },
+    {
+      "entity_type": "Process",
+      "name": "охлаждение газа",
+      "attributes": {},
+      "evidence": "охлаждение газа (башня и ск"
+    },
+    {
+      "entity_type": "Process",
+      "name": "обеднение шлаков",
+      "attributes": {},
+      "evidence": "обеднения шлаков с высокой концентрацией никеля и меди"
+    },
+    {
+      "entity_type": "Process",
+      "name": "анодное рафинирование",
+      "attributes": {},
+      "evidence": "передел анодного рафинирования"
+    },
+    {
+      "entity_type": "Process",
+      "name": "сгущение и осветление",
+      "attributes": {},
+      "evidence": "поступает на сгущение и осветление"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "горизонтальные конверторы Пирса-Смита",
+      "attributes": {},
+      "evidence": "в горизонтальных конверторах Пирса-Смита"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "фурмы",
+      "attributes": {},
+      "evidence": "необходимости использования фурм специальной конструкции"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "печи Ванюкова",
+      "attributes": {},
+      "evidence": "на базе печей Ванюкова"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "печь Ванюкова конвертерная (ПВК)",
+      "attributes": {},
+      "evidence": "печи Ванюкова конвертерной (ПВК)"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "печь Ванюкова обеднительная (ПВО)",
+      "attributes": {},
+      "evidence": "печи Ванюкова обеднительной (ПВО)"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "гидромониторы",
+      "attributes": {},
+      "evidence": "оборудованного двумя гидромониторами"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "эрлифт",
+      "attributes": {},
+      "evidence": "забирается эрлифтом"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "стационарный обезвоживатель",
+      "attributes": {},
+      "evidence": "подается к стационарному обезвоживателю"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "конденсатор",
+      "attributes": {},
+      "evidence": "поступает в конденсатор"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "спрейеры",
+      "attributes": {},
+      "evidence": "оборудованный спрейерами"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "квенчер",
+      "attributes": {},
+      "evidence": "поступают в квенчер"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "распылительные форсунки",
+      "attributes": {},
+      "evidence": "через распылительные форсунки"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "комплекс очистки газов (КОГ)",
+      "attributes": {},
+      "evidence": "поступает на очистку в комплекс очистки газов (КОГ)"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "блок труб-коагуляторов Вентури (БТК)",
+      "attributes": {},
+      "evidence": "состоящий из блока труб-коагуляторов Вентури (БТК)"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "каплеуловитель",
+      "attributes": {},
+      "evidence": "и каплеуловителя"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "МЭФ",
+      "attributes": {},
+      "evidence": "доочистку в МЭФ"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "ламельные сгустители",
+      "attributes": {},
+      "evidence": "в двух ламельных сгустителях"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "пульподелитель",
+      "attributes": {},
+      "evidence": "через пульподелитель"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "сгустители",
+      "attributes": {},
+      "evidence": "сливов сгустителей пульпа направляется"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "бак-дегазатор",
+      "attributes": {},
+      "evidence": "бак-дегазатор"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "сборник фильтрата",
+      "attributes": {},
+      "evidence": "сборник фильтрата"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "сборник пульпы",
+      "attributes": {},
+      "evidence": "сборник пульпы"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "сборники циркуляционных растворов",
+      "attributes": {},
+      "evidence": "сборники циркуляционных растворов"
+    },
+    {
+      "entity_type": "Property",
+      "name": "стойкость футеровки",
+      "attributes": {},
+      "evidence": "снижения стойкости футеровки"
+    },
+    {
+      "entity_type": "Property",
+      "name": "удельная производительность",
+      "attributes": {},
+      "evidence": "высокая удельная производительность"
+    },
+    {
+      "entity_type": "Property",
+      "name": "крупность",
+      "attributes": {},
+      "evidence": "материалов различной крупности"
+    },
+    {
+      "entity_type": "Property",
+      "name": "влажность",
+      "attributes": {},
+      "evidence": "и влажности"
+    },
+    {
+      "entity_type": "Property",
+      "name": "расход топлива",
+      "attributes": {},
+      "evidence": "низкий расход топлива"
+    },
+    {
+      "entity_type": "Property",
+      "name": "пылевынос",
+      "attributes": {},
+      "evidence": "низкий пылевынос"
+    },
+    {
+      "entity_type": "Property",
+      "name": "капитальные затраты",
+      "attributes": {},
+      "evidence": "низкие капитальные и эксплуатационные затраты"
+    },
+    {
+      "entity_type": "Property",
+      "name": "эксплуатационные затраты",
+      "attributes": {},
+      "evidence": "низкие капитальные и эксплуатационные затраты"
+    },
+    {
+      "entity_type": "Property",
+      "name": "температура",
+      "attributes": {},
+      "evidence": "охлаждаются до температуры ~ 60-70 °С"
+    },
+    {
+      "entity_type": "Property",
+      "name": "содержание S",
+      "attributes": {},
+      "evidence": "содержание S не превышало 0,05 %"
+    },
+    {
+      "entity_type": "Property",
+      "name": "содержание Ni",
+      "attributes": {},
+      "evidence": "а Ni – 0,5 %"
+    },
+    {
+      "entity_type": "Property",
+      "name": "окислительный потенциал",
+      "attributes": {},
+      "evidence": "контролировать окислительный потенциал"
+    },
+    {
+      "entity_type": "Property",
+      "name": "состав шлакового расплава",
+      "attributes": {},
+      "evidence": "состав шлакового расплава"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "термодинамический анализ",
+      "attributes": {},
+      "evidence": "термодинамический анализ процесса окисления медных штейнов"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "лабораторные исследования",
+      "attributes": {},
+      "evidence": "лабораторные исследования процесса окисления медных штейнов"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "исследования свойств шлаковых расплавов",
+      "attributes": {},
+      "evidence": "исследования свойств шлаковых расплавов непрерывного конвертирования"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "исследования взаимодействия огнеупоров",
+      "attributes": {},
+      "evidence": "исследования взаимодействия различного вида огнеупоров с шлаками"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "испытания на опытной печи Ванюкова",
+      "attributes": {},
+      "evidence": "испытания технологии на опытной печи Ванюкова экспериментальной базы института Гипроникель"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "опытно-промышленные испытания на ОПУ ПВ комбината «Североникель»",
+      "attributes": {},
+      "evidence": "опытно-промышленные испытания технологии непрерывного конвертирования на ОПУ ПВ комбината «Североникель»"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "укрупненно-лабораторные исследования",
+      "attributes": {},
+      "evidence": "укрупненно-лабораторные исследования процесса обеднения шлака"
+    },
+    {
+      "entity_type": "Publication",
+      "name": "17eee97cccca_59 ТНК МЕДНОГО НИКЕЛЬСОДЕРЖАЩЕГО СЫРЬЯ.docx",
+      "attributes": {},
+      "evidence": "Document Title: 17eee97cccca_59 ТНК МЕДНОГО НИКЕЛЬСОДЕРЖАЩЕГО СЫРЬЯ.docx"
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Л.Б. Цымбулов",
+      "attributes": {
+        "organization": "ООО «Институт Гипроникель»",
+        "is_russian": true
+      },
+      "evidence": "Л.Б. Цымбулов1"
+    },
+    {
+      "entity_type": "Expert",
+      "name": "С.Ю. Ерошевич",
+      "attributes": {
+        "organization": "ПАО «ГМК «Норильский Никель»",
+        "is_russian": true
+      },
+      "evidence": "С.Ю. Ерошевич2"
+    },
+    {
+      "entity_type": "Expert",
+      "name": "С.С. Озеров",
+      "attributes": {
+        "is_russian": true
+      },
+      "evidence": "С.С. Озеров"
+    },
+    {
+      "entity_type": "Expert",
+      "name": "В.Б. Грицких",
+      "attributes": {
+        "organization": "ПАО «ГМК «Норильский Никель»",
+        "is_russian": true
+      },
+      "evidence": "В.Б. Грицких2"
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Ю.В. Васильев",
+      "attributes": {
+        "organization": "ООО «Институт Гипроникель»",
+        "is_russian": true
+      },
+      "evidence": "Ю.В. Васильев1"
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Р.А. Пахомов",
+      "attributes": {
+        "organization": "ООО «Институт Гипроникель»",
+        "is_russian": true
+      },
+      "evidence": "Р.А. Пахомов1"
+    },
+    {
+      "entity_type": "Facility",
+      "name": "ООО «Институт Гипроникель»",
+      "attributes": {},
+      "evidence": "ООО «Институт Гипроникель», г. Санкт-Петербург, Россия"
+    },
+    {
+      "entity_type": "Facility",
+      "name": "ПАО «ГМК «Норильский Никель»",
+      "attributes": {},
+      "evidence": "ПАО «ГМК «Норильский Никель» г. Санкт-Петербург, Россия"
+    },
+    {
+      "entity_type": "Facility",
+      "name": "Медный завод (МЗ) Заполярного Филиала (ЗФ)",
+      "attributes": {},
+      "evidence": "Медного завода (МЗ) Заполярного Филиала (ЗФ)"
+    },
+    {
+      "entity_type": "Facility",
+      "name": "Надеждинский металлургический завод (НМЗ)",
+      "attributes": {},
+      "evidence": "Надеждинском металлургическом заводе (НМЗ)"
+    },
+    {
+      "entity_type": "Facility",
+      "name": "комбинат «Североникель»",
+      "attributes": {},
+      "evidence": "комбината «Североникель»"
+    },
+    {
+      "entity_type": "Facility",
+      "name": "Outotec",
+      "attributes": {},
+      "evidence": "Kennecott-Outokumpu фирмы Outotec"
+    },
+    {
+      "entity_type": "Facility",
+      "name": "Vale Inco",
+      "attributes": {},
+      "evidence": "компании Vale Inco"
+    },
+    {
+      "entity_type": "Material",
+      "name": "твердый восстановитель",
+      "attributes": {},
+      "evidence": "загрузки твердого восстановителя"
+    },
+    {
+      "entity_type": "Material",
+      "name": "окись углерода",
+      "attributes": {},
+      "evidence": "содержащие окись углерода и водород"
+    },
+    {
+      "entity_type": "Material",
+      "name": "водород",
+      "attributes": {},
+      "evidence": "содержащие окись углерода и водород"
+    },
+    {
+      "entity_type": "Material",
+      "name": "мельхиор",
+      "attributes": {},
+      "evidence": "близкий по составу к мельхиору"
+    },
+    {
+      "entity_type": "Material",
+      "name": "цемент",
+      "attributes": {},
+      "evidence": "снижения расхода цемента"
+    },
+    {
+      "entity_type": "Material",
+      "name": "оксидная медь",
+      "attributes": {},
+      "evidence": "высокой концентрацией оксидной меди"
+    },
+    {
+      "entity_type": "Material",
+      "name": "оксидный никель",
+      "attributes": {},
+      "evidence": "и оксидного никеля с магнезитовыми"
+    },
+    {
+      "entity_type": "Material",
+      "name": "магнезитовые огнеупоры",
+      "attributes": {},
+      "evidence": "с магнезитовыми, перирклазохромитовыми и хромитовыми огнеупорами"
+    },
+    {
+      "entity_type": "Material",
+      "name": "перирклазохромитовые огнеупоры",
+      "attributes": {},
+      "evidence": "магнезитовыми, перирклазохромитовыми и хромитовыми огнеупорами"
+    },
+    {
+      "entity_type": "Material",
+      "name": "хромитовые огнеупоры",
+      "attributes": {},
+      "evidence": "перирклазохромитовыми и хромитовыми огнеупорами"
+    },
+    {
+      "entity_type": "Process",
+      "name": "дегазация пульпы",
+      "attributes": {},
+      "evidence": "Дегазация пульпы производится водяным паром и сжатым воздухом"
+    },
+    {
+      "entity_type": "Process",
+      "name": "фильтрация",
+      "attributes": {},
+      "evidence": "после дегазации пульпа подаётся на фильтрацию в фильтр-прессы"
+    },
+    {
+      "entity_type": "Process",
+      "name": "нейтрализация",
+      "attributes": {},
+      "evidence": "Фильтрат ... нейтрализуется в существующем цехе"
+    },
+    {
+      "entity_type": "Process",
+      "name": "обеднение конвертерного шлака",
+      "attributes": {},
+      "evidence": "Обеднение конвертерного шлака ПВК происходит в обеднительной печи Ванюкова"
+    },
+    {
+      "entity_type": "Process",
+      "name": "грануляция",
+      "attributes": {},
+      "evidence": "Продукты ПВО подвергаются грануляции"
+    },
+    {
+      "entity_type": "Process",
+      "name": "конвертирование",
+      "attributes": {},
+      "evidence": "переработки медно-никелевого сплава на конвертерном переделе"
+    },
+    {
+      "entity_type": "Process",
+      "name": "гидрометаллургическая схема",
+      "attributes": {},
+      "evidence": "переработана по гидрометаллургической схеме"
+    },
+    {
+      "entity_type": "Process",
+      "name": "обезвоживание шлака",
+      "attributes": {},
+      "evidence": "Обезвоживание шлака осуществляется в процессе вращения обезвоживателя"
+    },
+    {
+      "entity_type": "Process",
+      "name": "окислительная плавка",
+      "attributes": {},
+      "evidence": "при окислительной плавке медных маложелезистых никельсодержащих штейнов"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "газоанализаторы",
+      "attributes": {},
+      "evidence": "устанавливаются газоанализаторы"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "фильтр-прессы",
+      "attributes": {},
+      "evidence": "фильтрацию в фильтр-прессы"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "кожухотрубные теплообменники",
+      "attributes": {},
+      "evidence": "стадию охлаждения в кожухотрубных теплообменниках"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "градирня",
+      "attributes": {},
+      "evidence": "вновь проектируемой градирне"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "насосная станция",
+      "attributes": {},
+      "evidence": "исходной водой от насосной станции"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "обеднительная печь Ванюкова",
+      "attributes": {},
+      "evidence": "обеднительной печи Ванюкова"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "камера дожига",
+      "attributes": {},
+      "evidence": "дожигаются в камере дожига (1)"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "башня охлаждения",
+      "attributes": {},
+      "evidence": "башне охлаждения (2)"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "форсунки",
+      "attributes": {},
+      "evidence": "подаваемой через форсунки"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "скруббер испарительного охлаждения",
+      "attributes": {},
+      "evidence": "скруббере испарительного охлаждения (3)"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "групповой циклон",
+      "attributes": {},
+      "evidence": "очистку в групповой циклон (4)"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "дымосос",
+      "attributes": {},
+      "evidence": "дымосос (5)"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "миксеры",
+      "attributes": {},
+      "evidence": "топочными газами миксеров"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "желоба",
+      "attributes": {},
+      "evidence": "газами миксеров, желобов, сифонов печей"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "сифоны печей",
+      "attributes": {},
+      "evidence": "желобов, сифонов печей"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "вытяжные зонты пресс-фильтров",
+      "attributes": {},
+      "evidence": "воздухом вытяжных зонтов пресс-фильтров"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "гидромонитор",
+      "attributes": {},
+      "evidence": "затопленные струи гидромонитора"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "ковшевой элеватор",
+      "attributes": {},
+      "evidence": "Выгрузка гранулированного сплава осуществляется ковшевым элеватором"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "карусельный обезвоживатель",
+      "attributes": {},
+      "evidence": "вращающемуся карусельному обезвоживателю"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "конвертерная печь Ванюкова (ПВК)",
+      "attributes": {},
+      "evidence": "конвертерной печи Ванюкова"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "обеднительная печь Ванюкова (ПВО)",
+      "attributes": {},
+      "evidence": "Отходящие газы ПВО"
+    },
+    {
+      "entity_type": "Property",
+      "name": "прочностные характеристики",
+      "attributes": {},
+      "evidence": "сохранять прочностные характеристики на регламентном уровне"
+    },
+    {
+      "entity_type": "Property",
+      "name": "температура ликвидуса",
+      "attributes": {},
+      "evidence": "температуру ликвидуса шлаков"
+    },
+    {
+      "entity_type": "Property",
+      "name": "поверхностное натяжение",
+      "attributes": {},
+      "evidence": "влияние состава шлака на поверхностное натяжение и плотность шлаков"
+    },
+    {
+      "entity_type": "Property",
+      "name": "плотность шлаков",
+      "attributes": {},
+      "evidence": "поверхностное натяжение и плотность шлаков"
+    },
+    {
+      "entity_type": "Property",
+      "name": "вязкость шлаков",
+      "attributes": {},
+      "evidence": "влияние температуры и состава шлака на вязкость шла"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "термодинамические расчеты",
+      "attributes": {},
+      "evidence": "Термодинамические расчеты конвертерного передела показали"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "лабораторные эксперименты",
+      "attributes": {},
+      "evidence": "Термодинамические расчеты и лабораторные эксперименты показали"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "оценка крупности частиц",
+      "attributes": {},
+      "evidence": "оценка крупности частиц гранулированного сплава"
+    },
+    {
+      "entity_type": "Experiment",
+      "name": "исследования по использованию отвального шлака",
+      "attributes": {},
+      "evidence": "проведены исследования по использования отвального шлака ПВО КНК"
+    },
+    {
+      "entity_type": "Publication",
+      "name": "Цветные металлы – 2009. № 9. С. 43-48",
+      "attributes": {},
+      "evidence": "Цветные металлы – 2009. № 9. С. 43-48"
+    },
+    {
+      "entity_type": "Publication",
+      "name": "Цветные металлы. 2004. № 12. С. 36-42",
+      "attributes": {},
+      "evidence": "Цветные металлы. 2004. № 12. С. 36-42"
+    },
+    {
+      "entity_type": "Publication",
+      "name": "Цветные металлы. 2011. №8/9. С. 62-72",
+      "attributes": {},
+      "evidence": "Цветные металлы. 2011. №8/9. С. 62-72"
+    },
+    {
+      "entity_type": "Publication",
+      "name": "Цветные металлы. 2009. № 7. С. 30-36",
+      "attributes": {},
+      "evidence": "Цветные металлы. 2009. № 7. С. 30-36"
+    },
+    {
+      "entity_type": "Publication",
+      "name": "Металлы. 2011. № 3. С. 3-14",
+      "attributes": {},
+      "evidence": "Металлы. 2011. № 3. С. 3-14"
+    },
+    {
+      "entity_type": "Publication",
+      "name": "Металлы. 2012. № 2. С. 3-11",
+      "attributes": {},
+      "evidence": "Металлы. 2012. № 2. С. 3-11"
+    },
+    {
+      "entity_type": "Publication",
+      "name": "Металлы. 2012. №6. С. 3-9",
+      "attributes": {},
+      "evidence": "Металлы. 2012. №6. С. 3-9"
+    },
+    {
+      "entity_type": "Publication",
+      "name": "Новые огнеупоры. 2005. № 8. с. 41-47",
+      "attributes": {},
+      "evidence": "Новые огнеупоры. 2005. № 8. с. 41-47"
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Цемехман Л.Ш.",
+      "attributes": {},
+      "evidence": "Цемехман Л.Ш., Цымбулов Л.Б., Князев М.В."
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Цымбулов Л.Б.",
+      "attributes": {},
+      "evidence": "Цемехман Л.Ш., Цымбулов Л.Б., Князев М.В."
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Князев М.В.",
+      "attributes": {},
+      "evidence": "Цемехман Л.Ш., Цымбулов Л.Б., Князев М.В."
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Кайтмазов Н.Г.",
+      "attributes": {},
+      "evidence": "Князев М.В., Кайтмазов Н.Г., Фомичев В.Б."
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Фомичев В.Б.",
+      "attributes": {},
+      "evidence": "Кайтмазов Н.Г., Фомичев В.Б."
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Фёдоров М.С.",
+      "attributes": {},
+      "evidence": "Князев М.В., Фёдоров М.С., Галанцев В.Н."
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Галанцев В.Н.",
+      "attributes": {},
+      "evidence": "Фёдоров М.С., Галанцев В.Н."
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Пигарев С.П.",
+      "attributes": {},
+      "evidence": "Цымбулов Л.Б., Пигарев С.П., Жак Е."
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Жак Е.",
+      "attributes": {},
+      "evidence": "Пигарев С.П., Жак Е."
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Колосова Е.Ю.",
+      "attributes": {},
+      "evidence": "Колосова Е.Ю., Князев М.В."
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Селиванов Е.Н.",
+      "attributes": {},
+      "evidence": "Пигарев С.П., Селиванов Е.Н., Чумарев В.М."
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Чумарев В.М.",
+      "attributes": {},
+      "evidence": "Селиванов Е.Н., Чумарев В.М."
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Красиков С.А.",
+      "attributes": {},
+      "evidence": "Чумарев В.М., Красиков С.А."
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Ерцева Л.Н.",
+      "attributes": {},
+      "evidence": "Фёдоров М.С., Ерцева Л.Н., Цымбулов Л.Б."
+    },
+    {
+      "entity_type": "Expert",
+      "name": "Истомин С.А.",
+      "attributes": {},
+      "evidence": "Пигарев С.П., Истомин С.А., Селиванов Е.Н."
+    },
+    {
+      "entity_type": "Material",
+      "name": "медь",
+      "attributes": {},
+      "evidence": "оксидной меди"
+    },
+    {
+      "entity_type": "Material",
+      "name": "SiO2/CaO",
+      "attributes": {},
+      "evidence": "отношения SiO2/CaO"
+    },
+    {
+      "entity_type": "Material",
+      "name": "шлаки",
+      "attributes": {},
+      "evidence": "Строение и свойства шлаков непрерывного конвертирования медных никельсодержащих штейнов и концентратов"
+    },
+    {
+      "entity_type": "Material",
+      "name": "штейны",
+      "attributes": {},
+      "evidence": "медных никельсодержащих штейнов"
+    },
+    {
+      "entity_type": "Material",
+      "name": "концентраты",
+      "attributes": {},
+      "evidence": "штейнов и концентратов"
+    },
+    {
+      "entity_type": "Material",
+      "name": "газ",
+      "attributes": {},
+      "evidence": "охлаждение газа"
+    },
+    {
+      "entity_type": "Process",
+      "name": "взаимодействие шлаков",
+      "attributes": {},
+      "evidence": "Исследование взаимодействия шлаков с высокой концентрацией оксидной меди"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "печь Ванюкова",
+      "attributes": {},
+      "evidence": "от печи Ванюкова"
+    },
+    {
+      "entity_type": "Equipment",
+      "name": "башня",
+      "attributes": {},
+      "evidence": "охлаждение газа (башня и ск"
+    },
+    {
+      "entity_type": "Property",
+      "name": "плотность",
+      "attributes": {},
+      "evidence": "поверхностное натяжение и плотность шлаков"
+    },
+    {
+      "entity_type": "Property",
+      "name": "вязкость",
+      "attributes": {},
+      "evidence": "влияние температуры и состава шлака на вязкость шлаковых расплавов"
+    },
+    {
+      "entity_type": "Property",
+      "name": "концентрация оксидной меди",
+      "attributes": {},
+      "evidence": "высокую концентрацию оксидной меди"
+    },
+    {
+      "entity_type": "Publication",
+      "name": "Металлы. 2013. № 2. С.13-21",
+      "attributes": {},
+      "evidence": "Влияние температуры и состава шлака на вязкость шлаковых расплавов // Металлы. 2013. № 2. С.13-21."
+    }
+  ],
+  "relations": [
+    {
+      "relation_type": "affiliated_with",
+      "source_name": "Л.Б. Цымбулов",
+      "source_type": "Expert",
+      "target_name": "ООО «Институт Гипроникель»",
+      "target_type": "Facility",
+      "attributes": {
+        "original_relation_type": "affiliated_with"
+      },
+      "evidence": "Л.Б. Цымбулов1, 1ООО «Институт Гипроникель»"
+    },
+    {
+      "relation_type": "affiliated_with",
+      "source_name": "С.Ю. Ерошевич",
+      "source_type": "Expert",
+      "target_name": "ПАО «ГМК «Норильский Никель»",
+      "target_type": "Facility",
+      "attributes": {
+        "original_relation_type": "affiliated_with"
+      },
+      "evidence": "С.Ю. Ерошевич2, 2 Департамент управления инвестиционными проектами Группа медного производства ПАО «ГМК «Норильский Никель»"
+    },
+    {
+      "relation_type": "affiliated_with",
+      "source_name": "В.Б. Грицких",
+      "source_type": "Expert",
+      "target_name": "ПАО «ГМК «Норильский Никель»",
+      "target_type": "Facility",
+      "attributes": {
+        "original_relation_type": "affiliated_with"
+      },
+      "evidence": "В.Б. Грицких2"
+    },
+    {
+      "relation_type": "affiliated_with",
+      "source_name": "Ю.В. Васильев",
+      "source_type": "Expert",
+      "target_name": "ООО «Институт Гипроникель»",
+      "target_type": "Facility",
+      "attributes": {
+        "original_relation_type": "affiliated_with"
+      },
+      "evidence": "Ю.В. Васильев1"
+    },
+    {
+      "relation_type": "affiliated_with",
+      "source_name": "Р.А. Пахомов",
+      "source_type": "Expert",
+      "target_name": "ООО «Институт Гипроникель»",
+      "target_type": "Facility",
+      "attributes": {
+        "original_relation_type": "affiliated_with"
+      },
+      "evidence": "Р.А. Пахомов1"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "непрерывное конвертирование",
+      "source_type": "Process",
+      "target_name": "черновая медь",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "получением черновой меди"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "непрерывное конвертирование",
+      "source_type": "Process",
+      "target_name": "шлак",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "конвертерного шлака"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "непрерывное конвертирование",
+      "source_type": "Process",
+      "target_name": "Cu-Ni-Fe сплав",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "с получением Cu-Ni-Fe сплава"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "непрерывное конвертирование",
+      "source_type": "Process",
+      "target_name": "печи Ванюкова",
+      "target_type": "Equipment",
+      "attributes": {},
+      "evidence": "на базе печей Ванюкова"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "грануляция медного штейна",
+      "source_type": "Process",
+      "target_name": "медный никельсодержащий штейн",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "Грануляция медного штейна"
+    },
+    {
+      "relation_type": "uses_material",
+      "source_name": "газоочистка",
+      "source_type": "Process",
+      "target_name": "печи Ванюкова",
+      "target_type": "Equipment",
+      "attributes": {},
+      "evidence": "Схема описывает технологический процесс газоочистки отходящих газов от печи Ванюкова"
+    },
+    {
+      "relation_type": "produces_output",
+      "source_name": "газоочистка",
+      "source_type": "Process",
+      "target_name": "SO2",
+      "target_type": "Material",
+      "attributes": {},
+      "evidence": "утилизацию диоксида серы"
+    },
+    {
+      "relation_type": "validated_by",
+      "source_name": "лабораторные исследования",
+      "source_type": "Experiment",
+      "target_name": "непрерывное конвертирование",
+      "target_type": "Process",
+      "attributes": {},
+      "evidence": "лабораторные исследования процесса окисления медных штейнов и обеднения шлаков"
+    },
+    {
+      "relation_type": "validated_by",
+      "source_name": "испытания на опытной печи Ванюкова",
+      "source_type": "Experiment",
+      "target_name": "ООО «Институт Гипроникель»",
+      "target_type": "Facility",
+      "attributes": {},
+      "evidence": "испытания технологии на опытной печи Ванюкова экспериментальной базы института Гипроникель"
+    },
+    {
+      "relation_type": "validated_by",
+      "source_name": "опытно-промышленные испытания на ОПУ ПВ комбината «Североникель»",
+      "source_type": "Experiment",
+      "target_name": "комбинат «Североникель»",
+      "target_type": "Facility",
+      "attributes": {},
+      "evidence": "опытно-промышленные испытания технологии непрерывного конвертирования на ОПУ ПВ комбината «Североникель»"
+    },
+    {
+      "relation_type": "described_in",
+      "source_name": "непрерывное конвертирование",
+      "source_type": "Process",
+      "target_name": "17eee97cccca_59 ТНК МЕДНОГО НИКЕЛЬСОДЕРЖАЩЕГО СЫРЬЯ.docx",
+      "target_type": "Publication",
+      "attributes": {},
+      "evidence": "Технология непрерывного конвертирования медных никельсодержащих штейнов"
+    },
+    {
+      "relation_type": "described_in",
+      "source_name": "Цемехман Л.Ш.",
+      "source_type": "Expert",
+      "target_name": "Цветные металлы – 2009. № 9. С. 43-48",
+      "target_type": "Publication",
+      "attributes": {},
+      "evidence": "Цемехман Л.Ш., Цымбулов Л.Б., Князев М.В., Кайтмазов Н.Г., Фомичев В.Б. Непрерывное конвертирование медных и медно-никелевых штейнов. Современное состояние и результаты исследований // Цветные металлы – 2009. № 9. С. 43-48."
+    },
+    {
+      "relation_type": "described_in",
+      "source_name": "Цымбулов Л.Б.",
+      "source_type": "Expert",
+      "target_name": "Цветные металлы – 2009. № 9. С. 43-48",
+      "target_type": "Publication",
+      "attributes": {},
+      "evidence": "Цемехман Л.Ш., Цымбулов Л.Б., Князев М.В., Кайтмазов Н.Г., Фомичев В.Б. Непрерывное конвертирование медных и медно-никелевых штейнов. Современное состояние и результаты исследований // Цветные металлы – 2009. № 9. С. 43-48."
+    },
+    {
+      "relation_type": "described_in",
+      "source_name": "Князев М.В.",
+      "source_type": "Expert",
+      "target_name": "Цветные металлы – 2009. № 9. С. 43-48",
+      "target_type": "Publication",
+      "attributes": {},
+      "evidence": "Цемехман Л.Ш., Цымбулов Л.Б., Князев М.В., Кайтмазов Н.Г., Фомичев В.Б. Непрерывное конвертирование медных и медно-никелевых штейнов. Современное состояние и результаты исследований // Цветные металлы – 2009. № 9. С. 43-48."
+    },
+    {
+      "relation_type": "described_in",
+      "source_name": "Кайтмазов Н.Г.",
+      "source_type": "Expert",
+      "target_name": "Цветные металлы – 2009. № 9. С. 43-48",
+      "target_type": "Publication",
+      "attributes": {},
+      "evidence": "Цемехман Л.Ш., Цымбулов Л.Б., Князев М.В., Кайтмазов Н.Г., Фомичев В.Б. Непрерывное конвертирование медных и медно-никелевых штейнов. Современное состояние и результаты исследований // Цветные металлы – 2009. № 9. С. 43-48."
+    },
+    {
+      "relation_type": "described_in",
+      "source_name": "Фомичев В.Б.",
+      "source_type": "Expert",
+      "target_name": "Цветные металлы – 2009. № 9. С. 43-48",
+      "target_type": "Publication",
+      "attributes": {},
+      "evidence": "Цемехман Л.Ш., Цымбулов Л.Б., Князев М.В., Кайтмазов Н.Г., Фомичев В.Б. Непрерывное конвертирование медных и медно-никелевых штейнов. Современное состояние и результаты исследований // Цветные металлы – 2009. № 9. С. 43-48."
+    },
+    {
+      "relation_type": "described_in",
+      "source_name": "Цымбулов Л.Б.",
+      "source_type": "Expert",
+      "target_name": "Цветные металлы. 2004. № 12. С. 36-42",
+      "target_type": "Publication",
+      "attributes": {},
+      "evidence": "Цымбулов Л.Б., Цемехман Л.Ш., Князев М.В., Фёдоров М.С., Галанцев В.Н.. Поведение меди и никеля при окислительной плавке медных маложелезистых никельсодержащих штейнов и концентратов на черновую медь // Цветные металлы. 2004. № 12. С. 36-42."
+    },
+    {
+      "relation_type": "described_in",
+      "source_name": "Цемехман Л.Ш.",
+      "source_type": "Expert",
+      "target_name": "Цветные металлы. 2004. № 12. С. 36-42",
+      "target_type": "Publication",
+      "attributes": {},
+      "evidence": "Цымбулов Л.Б., Цемехман Л.Ш., Князев М.В., Фёдоров М.С., Галанцев В.Н.. Поведение меди и никеля при окислительной плавке медных маложелезистых никельсодержащих штейнов и концентратов на черновую медь // Цветные металлы. 2004. № 12. С. 36-42."
+    },
+    {
+      "relation_type": "described_in",
+      "source_name": "Князев М.В.",
+      "source_type": "Expert",
+      "target_name": "Цветные металлы. 2004. № 12. С. 36-42",
+      "target_type": "Publication",
+      "attributes": {},
+      "evidence": "Цымбулов Л.Б., Цемехман Л.Ш., Князев М.В., Фёдоров М.С., Галанцев В.Н.. Поведение меди и никеля при окислительной плавке медных маложелезистых никельсодержащих штейнов и концентратов на черновую медь // Цветные металлы. 2004. № 12. С. 36-42."
+    },
+    {
+      "relation_type": "described_in",
+      "source_name": "Фёдоров М.С.",
+      "source_type": "Expert",
+      "target_name": "Цветные металлы. 2004. № 12. С. 36-42",
+      "target_type": "Publication",
+      "attributes": {},
+      "evidence": "Цымбулов Л.Б., Цемехман Л.Ш., Князев М.В., Фёдоров М.С., Галанцев В.Н.. Поведение меди и никеля при окислительной плавке медных маложелезистых никельсодержащих штейнов и концентратов на черновую медь // Цветные металлы. 2004. № 12. С. 36-42."
+    },
+    {
+      "relation_type": "described_in",
+      "source_name": "Пигарев С.П.",
+      "source_type": "Expert",
+      "target_name": "Металлы. 2012. № 2. С. 3-11",
+      "target_type": "Publication",
+      "attributes": {},
+      "evidence": "Пигарев С.П., Цымбулов Л.Б., Селиванов Е.Н., Чумарев В.М. Строение и свойства шлаков непрерывного конвертирования медных никельсодержащих штейнов и концентратов. Часть II. Влияние отношения SiO2/CaO на строение и температуру ликвидуса шлаков. // Металлы. 2012. № 2. С. 3-11."
+    },
+    {
+      "relation_type": "described_in",
+      "source_name": "Пигарев С.П.",
+      "source_type": "Expert",
+      "target_name": "Металлы. 2012. №6. С. 3-9",
+      "target_type": "Publication",
+      "attributes": {},
+      "evidence": "Пигарев С.П., Цымбулов Л.Б., Селиванов Е.Н., Чумарев В.М., Красиков С.А. Строение и свойства шлаков непрерывного конвертирования медных никельсодержащих штейнов и концентратов. Часть III. Влияние состава шлака на поверхностное натяжение и плотность шлаков //Металлы. 2012. №6. С. 3-9."
+    },
+    {
+      "relation_type": "described_in",
+      "source_name": "Фёдоров М.С.",
+      "source_type": "Expert",
+      "target_name": "Новые огнеупоры. 2005. № 8. с. 41-47",
+      "target_type": "Publication",
+      "attributes": {},
+      "evidence": "Фёдоров М.С., Ерцева Л.Н., Цымбулов Л.Б. Исследование взаимодействия шлаков с высокой концентрацией оксидной меди и оксидного никеля с магнезитовыми, перирклазохромитовыми и хромитовыми огнеупорами // Новые огнеупоры. 2005. № 8. с. 41-47."
+    },
+    {
+      "relation_type": "described_in",
+      "source_name": "Пигарев С.П.",
+      "source_type": "Expert",
+      "target_name": "Металлы. 2013. № 2. С.13-21",
+      "target_type": "Publication",
+      "attributes": {},
+      "evidence": "Пигарев С.П., Цымбулов Л.Б., Истомин С.А., Селиванов Е.Н., Чумарев В.М. Строение и свойства шлаков непрерывного конвертирования медных никельсодержащих штейнов и концентратов. Часть IV. Влияние температуры и состава шлака на вязкость шлаковых расплавов // Металлы. 2013. № 2. С.13-21."
+    },
+    {
+      "relation_type": "uses_process",
+      "source_name": "печь Ванюкова",
+      "source_type": "Equipment",
+      "target_name": "дожигание",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "uses_process"
+      },
+      "evidence": "Процесс включает стадию дожигания, охлаждение газа (башня и ск от печи Ванюкова."
+    },
+    {
+      "relation_type": "uses_process",
+      "source_name": "печь Ванюкова",
+      "source_type": "Equipment",
+      "target_name": "охлаждение газа",
+      "target_type": "Process",
+      "attributes": {
+        "original_relation_type": "uses_process"
+      },
+      "evidence": "Процесс включает стадию дожигания, охлаждение газа (башня и ск от печи Ванюкова."
+    },
+    {
+      "relation_type": "has_property",
+      "source_name": "шлаки",
+      "source_type": "Material",
+      "target_name": "вязкость",
+      "target_type": "Property",
+      "attributes": {
+        "original_relation_type": "has_property"
+      },
+      "evidence": "Влияние температуры и состава шлака на вязкость шлаковых расплавов"
+    },
+    {
+      "relation_type": "has_property",
+      "source_name": "шлаки",
+      "source_type": "Material",
+      "target_name": "поверхностное натяжение",
+      "target_type": "Property",
+      "attributes": {
+        "original_relation_type": "has_property"
+      },
+      "evidence": "Влияние состава шлака на поверхностное натяжение и плотность шлаков"
+    },
+    {
+      "relation_type": "has_property",
+      "source_name": "шлаки",
+      "source_type": "Material",
+      "target_name": "плотность",
+      "target_type": "Property",
+      "attributes": {
+        "original_relation_type": "has_property"
+      },
+      "evidence": "Влияние состава шлака на поверхностное натяжение и плотность шлаков"
+    },
+    {
+      "relation_type": "has_property",
+      "source_name": "шлаки",
+      "source_type": "Material",
+      "target_name": "температура ликвидуса",
+      "target_type": "Property",
+      "attributes": {
+        "original_relation_type": "has_property"
+      },
+      "evidence": "Влияние отношения SiO2/CaO на строение и температуру ликвидуса шлаков"
+    }
+  ],
+  "other_entities": [
+    {
+      "entity_type": "technology",
+      "name": "Mitsubishi",
+      "attributes": {},
+      "evidence": "Mitsubishi – в виде комплекса из трёх печей"
+    },
+    {
+      "entity_type": "technology",
+      "name": "Ausmelt-С3",
+      "attributes": {},
+      "evidence": "технологии Ausmelt-С3"
+    },
+    {
+      "entity_type": "technology",
+      "name": "Isaconvert",
+      "attributes": {},
+      "evidence": "и Isaconvert"
+    },
+    {
+      "entity_type": "technology",
+      "name": "традиционный способ",
+      "attributes": {},
+      "evidence": "традиционным способом в горизонтальных конверторах Пирса-Смита"
+    },
+    {
+      "entity_type": "technology",
+      "name": "кислородно-взвешеное конвертирование",
+      "attributes": {},
+      "evidence": "кислородно-взвешеное конвертирование компании Vale Inco"
+    },
+    {
+      "entity_type": "technology",
+      "name": "комплекс непрерывного конвертирования (КНК)",
+      "attributes": {},
+      "evidence": "создают комплекс непрерывного конвертирования (КНК)"
+    },
+    {
+      "entity_type": "technology",
+      "name": "анодное рафинирование",
+      "attributes": {},
+      "evidence": "требуется только восстановительная стадия процесса и не предполагается образование анодного шлака"
+    },
+    {
+      "entity_type": "technology",
+      "name": "потоковые анализаторы",
+      "attributes": {},
+      "evidence": "использованием потоковых анализаторов"
+    },
+    {
+      "entity_type": "technology",
+      "name": "аптейк",
+      "attributes": {},
+      "evidence": "через теплоизолированный футерованный аптейк"
+    },
+    {
+      "entity_type": "technology",
+      "name": "водоохлаждаемый переходник",
+      "attributes": {},
+      "evidence": "водоохлаждаемый переходник"
+    },
+    {
+      "entity_type": "technology",
+      "name": "аспирационные газы",
+      "attributes": {},
+      "evidence": "влажные аспирационные газы от аппаратов с раствором"
+    },
+    {
+      "entity_type": "technology",
+      "name": "пульподелитель",
+      "attributes": {},
+      "evidence": "через пульподелитель"
+    },
+    {
+      "entity_type": "technology",
+      "name": "сгустители",
+      "attributes": {},
+      "evidence": "в двух ламельных сгустителях"
+    },
+    {
+      "entity_type": "technology",
+      "name": "бак-дегазатор",
+      "attributes": {},
+      "evidence": "бак-дегазатор"
+    },
+    {
+      "entity_type": "technology",
+      "name": "сборник фильтрата",
+      "attributes": {},
+      "evidence": "сборник фильтрата"
+    },
+    {
+      "entity_type": "technology",
+      "name": "сборник пульпы",
+      "attributes": {},
+      "evidence": "сборник пульпы"
+    },
+    {
+      "entity_type": "technology",
+      "name": "сборники циркуляционных растворов",
+      "attributes": {},
+      "evidence": "сборники циркуляционных растворов"
+    },
+    {
+      "entity_type": "technology",
+      "name": "ламельные сгустители",
+      "attributes": {},
+      "evidence": "в двух ламельных сгустителях"
+    },
+    {
+      "entity_type": "material",
+      "name": "отвальный шлак",
+      "attributes": {},
+      "evidence": "получение шлака отвальных кондиций"
+    },
+    {
+      "entity_type": "material",
+      "name": "закладочные смеси",
+      "attributes": {},
+      "evidence": "компонента закладочных смесей"
+    },
+    {
+      "entity_type": "legal_document",
+      "name": "патенты",
+      "attributes": {},
+      "evidence": "защищена несколькими патентами"
+    },
+    {
+      "entity_type": "date",
+      "name": "4 квартал 2019 года",
+      "attributes": {},
+      "evidence": "Начало строительно-монтажных работ намечено на 4 квартал 2019 года"
+    },
+    {
+      "entity_type": "date",
+      "name": "3 квартал 2022 года",
+      "attributes": {},
+      "evidence": "окончание пуско-наладочных работ – 3 квартал 2022 года"
+    },
+    {
+      "entity_type": "metric",
+      "name": "28 000 т/год",
+      "attributes": {},
+      "evidence": "снизится на 28 000 т/год"
+    },
+    {
+      "entity_type": "metric",
+      "name": "144 500 т/год",
+      "attributes": {},
+      "evidence": "увеличению выхода файнштейна на 144 500 т/год"
+    },
+    {
+      "entity_type": "metric",
+      "name": "30 см",
+      "attributes": {},
+      "evidence": "крупность частиц сплава не должна превышать 30 см"
+    },
+    {
+      "entity_type": "metric",
+      "name": "22,0-22,8 %",
+      "attributes": {},
+      "evidence": "диапазоне 22,0-22,8 %"
+    },
+    {
+      "entity_type": "metric",
+      "name": "19 %",
+      "attributes": {},
+      "evidence": "содержание серы снижается до 19 %"
+    },
+    {
+      "entity_type": "metric",
+      "name": "4,5 %",
+      "attributes": {},
+      "evidence": "не превышает 4,5 % отн"
+    },
+    {
+      "entity_type": "metric",
+      "name": "8-9 %",
+      "attributes": {},
+      "evidence": "избыток тепла составит ~ 8-9 %"
+    },
+    {
+      "entity_type": "condition",
+      "name": "400 °С",
+      "attributes": {},
+      "evidence": "доохлаждается до ~ 400 °С"
+    }
+  ],
+  "clarification_questions": [],
+  "is_final_answer": true,
+  "chunks_processed": 3,
+  "prompt_source": "builtin"
+}

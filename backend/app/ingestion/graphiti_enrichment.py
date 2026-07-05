@@ -19,6 +19,7 @@ class GraphitiEnrichmentStats:
     chunks_total: int = 0
     chunks_ingested: int = 0
     chunks_skipped: int = 0
+    chunks_failed: int = 0
     skipped: bool = False
     skip_reason: str | None = None
 
@@ -63,7 +64,17 @@ async def _enrich_async(
             IngestionStep.GRAPHITI_ENRICHMENT,
             f"{start + len(batch)}/{len(pending)}",
         )
-        await ingest_chunks_bulk(batch)
+        try:
+            await ingest_chunks_bulk(batch)
+        except Exception as exc:
+            logger.exception(
+                "Graphiti batch failed (chunks %s–%s): %s",
+                start + 1,
+                start + len(batch),
+                exc,
+            )
+            stats.chunks_failed += len(batch)
+            continue
         batch_names = [_episode_name(c) for c in batch]
         ingested_names.extend(batch_names)
         checkpoint.mark_graphiti_episodes(group_id, batch_names)

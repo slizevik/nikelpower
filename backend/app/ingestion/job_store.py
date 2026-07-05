@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import json
+import logging
+import os
 import uuid
 from dataclasses import asdict, dataclass, field
 from datetime import datetime, timezone
@@ -10,6 +12,8 @@ from pathlib import Path
 from typing import Literal
 
 from app.config import settings
+
+logger = logging.getLogger(__name__)
 
 JobStatus = Literal["queued", "processing", "completed", "failed", "awaiting_clarification"]
 
@@ -78,16 +82,28 @@ class JobStore:
 
     def save(self, job: IngestionJob) -> None:
         job.updated_at = datetime.now(timezone.utc).isoformat()
-        self._path(job.job_id).write_text(
-            json.dumps(asdict(job), ensure_ascii=False, indent=2),
-            encoding="utf-8",
-        )
+        path = self._path(job.job_id)
+        payload = json.dumps(asdict(job), ensure_ascii=False, indent=2)
+        tmp_path = path.with_suffix(".json.tmp")
+        tmp_path.write_text(payload, encoding="utf-8")
+        os.replace(tmp_path, path)
+
+    def exists(self, job_id: str) -> bool:
+        return self._path(job_id).exists()
 
     def load(self, job_id: str) -> IngestionJob | None:
         path = self._path(job_id)
         if not path.exists():
             return None
-        data = json.loads(path.read_text(encoding="utf-8"))
+        raw = path.read_text(encoding="utf-8").strip()
+        if not raw:
+            logger.warning("Job file %s is empty", job_id)
+            return None
+        try:
+            data = json.loads(raw)
+        except json.JSONDecodeError as exc:
+            logger.warning("Job file %s is not valid JSON yet: %s", job_id, exc)
+            return None
         return IngestionJob(**data)
 
     def set_status(self, job_id: str, status: JobStatus) -> None:

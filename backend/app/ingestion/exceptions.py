@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-SUPPORTED_DOCUMENT_EXTENSIONS = frozenset({".pdf", ".docx", ".pptx"})
+SUPPORTED_DOCUMENT_EXTENSIONS = frozenset({".pdf", ".docx", ".doc", ".pptx"})
 
 
 class UnsupportedFormatError(ValueError):
